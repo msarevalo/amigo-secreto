@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Celmedia | Amigo Secreto</title>
+    <meta charset="UTF-8">
+    <!-- Estilos -->
+    <link href="../css/estilos.css" rel="stylesheet">
+    <!--<link href="../css/estilos.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/index.js" type="application/javascript"></script>
+</head>
+<?php
+include '../back/conexion.php';
+
+if (!isset($_SESSION['username'])){
+    header("Location: ../public/index.php");
+}
+
+if (isset($_GET['id'])){
+    $idPersonaje = $_GET['id'];
+    $_SESSION['idPersonaje'] = $_GET['id'];
+}
+
+$consulta = mysqli_query($con,"SELECT * FROM `personajes` WHERE `idPersonaje`='" . $idPersonaje . "';");
+$personaje = mysqli_fetch_array($consulta);
+
+?>
+<body>
+<div style="position: relative">
+    <nav id="menu" class="left show">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i><?php echo $_SESSION['username']?></a></li>
+            <li><a href="admin.php"><i class="fa fa-home"></i>Inicio</a></li>
+            <li><a href="personajes-admin.php" class="active"><i class="fa fa-laptop"></i>Personajes</a></li>
+            <li><a href="usuarios-admin.php"><i class="fa fa-laptop"></i>Usuarios</a></li>
+            <li><a href="asginar-personaje.php"><i class="fa fa-laptop"></i>Asignacion de Personajes</a></li>
+            <li><a href="asignar-amigo.php"><i class="fa fa-laptop"></i>Aleatorio</a></li>
+            <li><a href="../back/cerrar.php"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
+        </ul>
+    </nav>
+</div>
+
+<div style="margin-left: 350px">
+    <header id="crear-header">Editar Personaje</header>
+    <form action="../back/editarPersonaje.php" enctype="multipart/form-data" method="post" id="crear" style="padding: 30px">
+        <!--<input id="archivo" accept=".csv" name="archivo" type="file" required/><br><br><br>-->
+        <label for="nombre" class="titulos">Nombre</label>
+        <?php
+        echo "<input type=\"text\" id=\"nombre\" name=\"nombre\" value='" . $personaje['nombre'] . "' required><br><br>";
+        ?>
+        <label for="genero" class="titulos">Genero</label>
+        <select id="genero" name="genero" required>
+            <?php
+            if ($personaje['genero']==='F'){
+                echo "<option value='F' selected>Femenino</option>
+                    <option value='M'>Masculino</option>";
+            }else{
+                echo "<option value='F'>Femenino</option>
+                    <option value='M' selected>Masculino</option>";
+            }
+            ?>
+        </select><br><br>
+        <label class="file" title="" >
+            <input id="imagen" name="imagen" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))"/>
+        </label><br>
+        <output id="list"></output><br>
+        <label for="activo" class="titulos">Activo</label>
+        <select id="activo" name="activo" required>
+            <?php
+            if ($personaje['activo']==='1'){
+                echo "<option value='1' selected>Activo</option>
+                    <option value='0'>Inactivo</option>";
+            }else{
+                echo "<option value='1'>Activo</option>
+                    <option value='0' selected>Inactivo</option>";
+            }
+            ?>
+        </select><br><br>
+
+        <script>
+            function archivo(evt) {
+                var files = evt.target.files; // FileList object
+
+                // Obtenemos la imagen del campo "file".
+                for (var i = 0, f; f = files[i]; i++) {
+                    //Solo admitimos imágenes.
+                    if (!f.type.match('image.*')) {
+                        continue;
+                    }
+
+                    var reader = new FileReader();
+
+                    reader.onload = (function(theFile) {
+                        return function(e) {
+                            // Insertamos la imagen
+                            document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" style= "width: 250px;" title="', escape(theFile.name), '"/>'].join('');
+                        };
+                    })(f);
+
+                    reader.readAsDataURL(f);
+                }
+            }
+
+            document.getElementById('imagen').addEventListener('change', archivo, false);
+        </script>
+        <input name="enviar" type="submit" value="Editar" id="btnHorario"/><br>
+    </form>
+</div>

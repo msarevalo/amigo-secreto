@@ -1,0 +1,28 @@
+<?php
+
+session_start();
+
+//$con = mysqli_connect("localhost", "celmedia","ninguna123.", "asecreto");
+$con = mysqli_connect("107.180.41.94", "UserBaseDatos", "Celmedia2016", "ia_cel");
+
+if (!$con){
+    echo "<script>alert('Algo ha ocurrido'); window.location.href='../public/index.php'</script>";
+    //echo "fallo";
+}else{
+    //echo "ok";
+}
+
+/*$resultado = mysqli_query($con, "SELECT * FROM `user`");
+print_r($resultado);
+/*if (!isset($_SESSION['tiempo'])) {
+    $_SESSION['tiempo']=time();
+}
+else if (time() - $_SESSION['tiempo'] > 10) {
+    session_destroy();
+    //header("Location: ../views/index.php");
+    die();
+}
+$_SESSION['tiempo']=time();
+*/
+?>
+
