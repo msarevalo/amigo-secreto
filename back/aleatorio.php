@@ -2,44 +2,17 @@
 include ('conexion.php');
 
 $perF = mysqli_query($con,"SELECT * FROM `personajes` WHERE `genero` LIKE '%F%' AND `activo`=1");
-//$resPerf = mysqli_fetch_assoc($perF);
+$resPerf = mysqli_fetch_all($perF);
 
 $userF = mysqli_query($con,"SELECT * FROM `user` WHERE `genero` LIKE '%F%'");
-$resUserf = mysqli_fetch_assoc($userF);
+$resUserf = mysqli_fetch_all($userF);
 
 $perM = mysqli_query($con,"SELECT * FROM `personajes` WHERE `genero` LIKE '%M%' AND `activo`=1");
-$resPerm = mysqli_fetch_assoc($perM);
+$resPerm = mysqli_fetch_all($perM);
 
 $userM = mysqli_query($con,"SELECT * FROM `user` WHERE `genero` LIKE '%M%'");
-$resUserm = mysqli_fetch_assoc($userM);
-//echo sizeof($userF);exit();
-//print_r($resPerf);
-//echo "<br>";
-//$resPerf = mysqli_fetch_assoc($perF);
-//print_r($resPerf);
-//echo "<br>";
-//$resPerf = mysqli_fetch_assoc($perF);
-//print_r($resPerf);
-//echo "<br>";
-//$resPerf = mysqli_fetch_assoc($perF);
-//print_r($resPerf);
-/*for ($i=0; $i<=30; $i++){
-    $resPerf = mysqli_fetch_assoc($perF);
-    print_r($resPerf);
-    echo "<br>";
-}*/
-while ($row = $perF->fetch_assoc()) {
-    $results_array[] = $row;
-}
-
-print_r($results_array);
-exit();
-//$contador = 0;
-/*while ($perF){
-    $resPerf = mysqli_fetch_assoc($perF);
-    print_r($resPerf);
-    echo "<br>";
-}
+$resUserm = mysqli_fetch_all($userM);
+echo sizeof($perF);
 /*for ($i = 0; $i<sizeof($resPerf); $i++){
     //echo $resPerf[$i][0] . "<br>";
 }*/
