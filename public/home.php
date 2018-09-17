@@ -22,7 +22,11 @@ if (!isset($_SESSION['username'])){
 <header id="header" class="left show">
     <img src="../img/LOGO_blanco.png" style="width: 270px; margin-top: 20px">
     <label style="margin-left: 50%; font-size: 40px; margin-top: -5px">Muro Público</label>
+    <img src="../img/banner.gif" style="margin-left: 87.1%; margin-top: 7.5%; z-index: 9; position: fixed; height: 100%;" class="left show">
 </header>
+
+<div>
+</div>
 <div style="position: relative;">
     <nav id="menu" class="left show">
         <ul>
@@ -48,7 +52,7 @@ if (!isset($_SESSION['username'])){
         </form>
     </div>
 <div style="margin-left: 18%">
-    <div style="margin-top: 25px; margin-left: 20%; width: 650px; background-color: #f1f1f1">
+    <div style="margin-top: 25px; margin-left: 17%; width: 650px; background-color: #f1f1f1">
         <?php
         $public =mysqli_query($con, "SELECT * FROM `publicaciones` ORDER BY `publicaciones`.`fecha` DESC");
         $respuesta = mysqli_fetch_all($public);

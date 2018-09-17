@@ -7,9 +7,9 @@
     <link href="../css/estilos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700" rel="stylesheet">
     <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/index.js" type="application/javascript"></script>.
     <link rel="shortcut icon" type="image/x-icon" href="../img/favico.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/index.js" type="application/javascript"></script>
 </head>
 <?php
 include ('../back/conexion.php');
@@ -22,7 +22,11 @@ if (!isset($_SESSION['username'])){
 <header id="header" class="left show">
     <img src="../img/LOGO_blanco.png" style="width: 270px; margin-top: 20px">
     <label style="margin-left: 50%; font-size: 40px; margin-top: -5px">Mi Perfil</label>
+    <img src="../img/banner.gif" style="margin-left: 87.1%; margin-top: 7.5%; z-index: 9; position: fixed; height: 100%;" class="left show">
 </header>
+
+<div>
+</div>
 <div style="position: relative;">
     <nav id="menu" class="left show">
         <ul>
