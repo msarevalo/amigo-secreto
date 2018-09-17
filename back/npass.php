@@ -18,7 +18,7 @@ if (isset($_SESSION['restablece'])){
 if ($pass == $rpass){
     $encrip = password_hash($pass, PASSWORD_BCRYPT);
     //UPDATE `user` SET `spass` = '.' WHERE `user`.`idUser` = 1;
-    $consulta = mysqli_query($con, "UPDATE `user` SET `spass` = NULL, `pass` = " . $encrip . " WHERE `user`.`idUser` = " . $id . ";");
+    $consulta = mysqli_query($con, "UPDATE `user` SET `pass`= '" . $encrip . "', `spass` = null WHERE `idUser`=" . $id);
     if ($consulta){
         echo "<script>alert('Se restableció la contraseña con exito'); window.location.href='../public/index.php'</script>";
     }else{
