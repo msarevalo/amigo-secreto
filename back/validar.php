@@ -48,6 +48,8 @@ else
             echo '<script language="javascript">alert("Error en la contraseña"); window.location.href="../public/index.php"</script>';
             exit();
         }
+    }else{
+        echo "fallo consulta";
     }
 
 ?>
