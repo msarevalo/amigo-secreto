@@ -12,11 +12,11 @@ $resPerm = mysqli_fetch_all($perM);
 
 $userM = mysqli_query($con,"SELECT * FROM `user` WHERE `genero` LIKE '%M%'");
 $resUserm = mysqli_fetch_all($userM);
-echo sizeof($perF);
+//echo sizeof($perF);
 /*for ($i = 0; $i<sizeof($resPerf); $i++){
     //echo $resPerf[$i][0] . "<br>";
 }*/
-echo "<br>";
+//echo "<br>";
 $randF = range(0, sizeof($resPerf)-1);
 shuffle($randF);
 //print_r($rand);
@@ -24,7 +24,7 @@ shuffle($randF);
     //echo $val . '<br />';
     echo $resPerf[$val][0] . "<br>";
 }*/
-echo "<br>";
+//echo "<br>";
 
 $randF1 = range(0, sizeof($resUserf)-1);
 shuffle($randF1);
@@ -41,7 +41,7 @@ shuffle($randM);
     //echo $val . '<br />';
     echo $resPerf[$val][0] . "<br>";
 }*/
-echo "<br>";
+//echo "<br>";
 
 $randM1 = range(0, sizeof($resUserm)-1);
 shuffle($randM1);

@@ -30,7 +30,7 @@ $subject = "Reestablecer Password";
 //$usuario = $respuesta[0][1];
 $usuario = $user;
 $nombre = $nombreR;
-$pass = $pass;
+$passR = $pass;
 //}
 //}
 //$to = 'msscout11@gmail.com'; // note the comma
@@ -44,7 +44,7 @@ $message = '
     </head>
     <body>
     <label>Haga click en el siguiente link para reestablecer el password</label>
-    <a href="http://52.15.245.23/amigo-secreto/back/validar.php?id=' . $idRes . '&usuario=' . $usuario . '&pass=' . $pass . '">Cambiar mi password</a>
+    <a href="http://52.15.245.23/amigo-secreto/back/validar.php?id=' . $idRes . '&usuario=' . $usuario . '&pass=' . $passR . '">Cambiar mi password</a>
 </body>
 </html>
 ';
