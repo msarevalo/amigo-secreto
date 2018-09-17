@@ -19,6 +19,7 @@ input{
     transition: all 0.3s ease;
     opacity:1;
     font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 7.5%;
 }
 
 #menu ul{
@@ -321,10 +322,26 @@ label.file:after {
     margin-left: 33%;
     background-color: #ffffff;
     width: 700px;
+    margin-top: 10%;
 }
 
 #boton{
     padding: 5px 20px 5px 20px;
     color: #ffffff;
     background-color: #889d6f;
+}
+
+#header{
+    background-color: #db6464;
+    position:fixed;
+    z-index:10;
+    width: 100%;
+    height: 16.5%;
+    color:#ffffff;
+    top:0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity:1;
+    font-family: 'Source Sans Pro', sans-serif;
 }

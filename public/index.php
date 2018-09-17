@@ -8,7 +8,7 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/index.js" type="application/javascript"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="../img/LOGO_blanco.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favico.png">
 </head>
 <body onload="noVolver()">
 <div><img src="../img/amormania-logo.png" style="width: 25%"></div>
