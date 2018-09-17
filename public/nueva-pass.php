@@ -19,7 +19,7 @@ if (isset($_GET['id'])){
 
 ?>
 <div>
-    <form method="post" action="../back/npass" enctype="multipart/form-data" id="restrablece">
+    <form method="post" action="../back/npass.php" enctype="multipart/form-data" id="restrablece">
         <label for="pass">Contraseña</label>
         <input type="password" placeholder="Contraseña" id="pass" name="pass" required><br><br>
         <label for="rpass">Repetir Contraseña</label>
