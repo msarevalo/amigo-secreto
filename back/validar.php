@@ -7,7 +7,7 @@ $psw = null;
 
 if(isset($_GET['id'])){
     $idUser = $_GET['id'];
-    echo $user;
+    //echo $idUser;
 }
 else{
     //echo "fallo user";
@@ -34,21 +34,22 @@ else{
 else
     echo "conexion exitosa";*/
 
-    $resultado = mysqli_query($con, "SELECT * FROM `user` WHERE `idUser` = " . $idUser);
+    $resultado = mysqli_query($con, "SELECT * FROM `user` WHERE `user`.`idUser` = " . $idUser);
 //$result = mysql_query("SELECT * from users where user='" . $usuario . "'");
     $respuesta = mysqli_fetch_all($resultado);
 
-    //print_r($respuesta);
+    print_r($respuesta);
+    echo "<br>";
 
+echo $respuesta[0][6];
     if ($respuesta) {
         $hash = $respuesta[0][6];
-        if (password_verify($psw, $hash)) {
-            echo "entro ok";
-            //header("Location: /amigo-secreto/public/nueva.php");
-        } else {
-            //header("Location: index.html");
-            //echo '<script language="javascript">alert("Error en la contraseña"); window.location.href="../public/index.php"</script>';
-            exit();
+        if ($hash === $psw){
+            //echo "entro";
+            header("Location: ../public/nueva-pass.php");
+        }else{
+            echo "fallo";
+            //echo "<script>alert('Usuario o ontraseña incorrectos');window.location.href='../public/index.php'</script>";
         }
     }else{
         echo "fallo consulta";
