@@ -34,7 +34,7 @@ else{
 else
     echo "conexion exitosa";*/
 
-    $resultado = mysqli_query($con, "SELECT * FROM `user` WHERE `idUser` = " . $idUser . ";");
+    $resultado = mysqli_query($con, "SELECT * FROM `user` WHERE `idUser` = " . $idUser);
 //$result = mysql_query("SELECT * from users where user='" . $usuario . "'");
     $respuesta = mysqli_fetch_all($resultado);
 
