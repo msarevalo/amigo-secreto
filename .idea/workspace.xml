@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048b2885-f854-4d9a-996d-cfcdc711ee06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/back/aleatorio.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/aleatorio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/remember.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/remember.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/validar.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/validar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/remember.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="374">
+              <caret line="46" column="122" selection-start-line="46" selection-start-column="122" selection-end-line="46" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -104,8 +102,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back/validar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state relative-caret-position="412">
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -169,8 +167,8 @@
         <option value="$PROJECT_DIR$/back/conexion.php" />
         <option value="$PROJECT_DIR$/public/home.php" />
         <option value="$PROJECT_DIR$/back/restablecerAdmin.php" />
-        <option value="$PROJECT_DIR$/back/remember.php" />
         <option value="$PROJECT_DIR$/back/aleatorio.php" />
+        <option value="$PROJECT_DIR$/back/remember.php" />
         <option value="$PROJECT_DIR$/back/validar.php" />
       </list>
     </option>
@@ -277,12 +275,12 @@
       <updated>1536769460411</updated>
       <workItem from="1536769462356" duration="24936000" />
       <workItem from="1536853249182" duration="41215000" />
-      <workItem from="1537196396163" duration="2369000" />
+      <workItem from="1537196396163" duration="2525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68520000" />
+    <option name="totallyTimeSpent" value="68676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -525,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/remember.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/restablecerAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -546,10 +537,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back/remember.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="46" column="122" selection-start-line="46" selection-start-column="122" selection-end-line="46" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back/validar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="412">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
         </state>
       </provider>
     </entry>
