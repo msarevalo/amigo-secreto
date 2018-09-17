@@ -53,7 +53,7 @@ $actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE 
 //$confirmar = mysqli_fetch_all($actual);
 
 if ($actual){
-    echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
+    //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
 }else{
     echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin.php'</script>";
 }

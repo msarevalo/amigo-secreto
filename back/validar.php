@@ -38,7 +38,7 @@ else
 //$result = mysql_query("SELECT * from users where user='" . $usuario . "'");
     $respuesta = mysqli_fetch_all($resultado);
 
-    print_r($respuesta);
+    //print_r($respuesta);
 
     if ($respuesta) {
         $hash = $respuesta[0][6];
