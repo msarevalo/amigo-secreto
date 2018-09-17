@@ -6,8 +6,8 @@ $user =null;
 $psw = null;
 
 if(isset($_GET['id'])){
-    $idUser = $_POST['id'];
-    //echo $user;
+    $idUser = $_GET['id'];
+    echo $user;
 }
 else{
     //echo "fallo user";
