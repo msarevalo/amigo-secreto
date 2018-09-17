@@ -32,7 +32,7 @@ $message = '
     </head>
     <body>
     <label>Haga click en el siguiente link para reestablecer el password</label>
-    <a href="http://localhost:63342/amigo-secreto/public/validar.php?id=' . $idRes . '&usuario=' . $usuario . '&pass=' . $pass . '">Cambiar mi password</a>
+    <a href="http://52.15.245.23/amigo-secreto/back/validar.php?id=' . $idRes . '&usuario=' . $usuario . '&pass=' . $pass . '">Cambiar mi password</a>
 </body>
 </html>
 ';
