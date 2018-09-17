@@ -38,6 +38,8 @@ else
 //$result = mysql_query("SELECT * from users where user='" . $usuario . "'");
     $respuesta = mysqli_fetch_all($resultado);
 
+    print_r($respuesta);
+
     if ($respuesta) {
         $hash = $respuesta[0][6];
         if (password_verify($psw, $hash)) {
@@ -45,7 +47,7 @@ else
             //header("Location: /amigo-secreto/public/nueva.php");
         } else {
             //header("Location: index.html");
-            echo '<script language="javascript">alert("Error en la contraseña"); window.location.href="../public/index.php"</script>';
+            //echo '<script language="javascript">alert("Error en la contraseña"); window.location.href="../public/index.php"</script>';
             exit();
         }
     }else{
