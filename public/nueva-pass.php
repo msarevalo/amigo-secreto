@@ -10,13 +10,21 @@
     <script src="../js/index.js" type="application/javascript"></script>
 </head>
 <body onload="noVolver()">
+<?php
+include ('../back/conexion.php');
+
+if (isset($_GET['id'])){
+    $_SESSION['restablece'] = $_GET['id'];
+}
+
+?>
 <div>
-    <form>
+    <form method="post" action="../back/npass" enctype="multipart/form-data" id="restrablece">
         <label for="pass">Contraseña</label>
         <input type="password" placeholder="Contraseña" id="pass" name="pass" required><br><br>
         <label for="rpass">Repetir Contraseña</label>
         <input type="password" placeholder="Contraseña" id="rpass" name="rpass" required><br><br>
-        <input type="submit" value="Reestablecer">
+        <input type="submit" value="Restablecer">
     </form>
 </div>
 </body>

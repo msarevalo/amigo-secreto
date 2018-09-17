@@ -46,7 +46,8 @@ echo $respuesta[0][6];
         $hash = $respuesta[0][6];
         if ($hash === $psw){
             //echo "entro";
-            header("Location: ../public/nueva-pass.php");
+            //$_SESSION['restablece'] = $idUser;
+            header("Location: ../public/nueva-pass.php?id=" . $idUser);
         }else{
             echo "fallo";
             //echo "<script>alert('Usuario o ontraseña incorrectos');window.location.href='../public/index.php'</script>";
