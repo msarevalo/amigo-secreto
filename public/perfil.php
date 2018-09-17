@@ -21,7 +21,7 @@ if (!isset($_SESSION['username'])){
 <body style="background-color: #f1f1f1">
 <header id="header" class="left show">
     <img src="../img/LOGO_blanco.png" style="width: 270px; margin-top: 20px">
-    <label style="margin-left: 50%; font-size: 40px; margin-top: -5px">Muro Público</label>
+    <label style="margin-left: 50%; font-size: 40px; margin-top: -5px">Mi Perfil</label>
 </header>
 <div style="position: relative;">
     <nav id="menu" class="left show">

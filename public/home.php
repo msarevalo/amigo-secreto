@@ -7,9 +7,9 @@
     <link href="../css/estilos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700" rel="stylesheet">
     <!-- Scripts -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favico.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/index.js" type="application/javascript"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="../img/favico.png">
 </head>
 <?php
 include ('../back/conexion.php');
