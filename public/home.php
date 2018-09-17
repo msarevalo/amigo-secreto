@@ -5,31 +5,83 @@
     <meta charset="UTF-8">
     <!-- Estilos -->
     <link href="../css/estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700" rel="stylesheet">
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/index.js" type="application/javascript"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/LOGO_blanco.png">
 </head>
 <?php
-include '../back/conexion.php';
+include ('../back/conexion.php');
 
 if (!isset($_SESSION['username'])){
     header("Location: ../public/index.php");
 }
 ?>
-<body>
-<div style="position: relative">
+<body style="background-color: #f1f1f1">
+<div style="position: relative;">
     <nav id="menu" class="left show">
         <ul>
-            <li><a href="#"><i class="fa fa-home"></i><?php echo $_SESSION['username']?></a></li>
+            <!--<li style="margin-bottom: 5px; margin-left: 30px"><img src="../img/perfil.png" style="width: 16px"><?php //echo "<label class='titulos'>" . $_SESSION['username'] . "</label>"?></li>-->
             <li><a href="" class="active"><i class="fa fa-home"></i>Inicio</a></li>
-            <li><a href=""><i class="fa fa-laptop"></i>Muro</a></li>
+            <li><a href=""><i class="fa fa-laptop"></i>Mi Perfil</a></li>
+            <li><a href=""><i class="fa fa-laptop"></i>Muro de regalos</a></li>
             <li><a href=""><i class="fa fa-laptop"></i>Buzon</a></li>
             <li><a href="../back/cerrar.php"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
         </ul>
     </nav></div>
-<div style="margin-left: 300px">
-    <label>Prueba</label><br>
-    <a href="../back/cerrar.php"><img src="../img/cerrar.png" style="width: 25%"></a>
+
+    <div id="texto">
+        <header id='public'>Redactar Mensaje</header>
+        <form method="post" action="../back/publicar.php" id="publicar">
+            <textarea required maxlength="600" rows="5" cols="85" placeholder="Publique su mensaje aqui..." id="publicacion" name="publicacion" onpaste="contarcaracteres();" onkeyup="contarcaracteres();"></textarea><br>
+            <label id="res" style="color: #bbbbbb; margin-left: 85%">0 / 600</label><br>
+            <select style="margin-left: 54%" id="persona" name="persona">
+                <option value="0" selected>Anonimo</option>
+                <option value="1">Publicar con mi personaje</option>
+            </select>
+            <button id="boton">Publicar</button><br><br>
+        </form>
+    </div>
+<div style="margin-left: 18%">
+    <div style="margin-top: 50px; margin-left: 20%; width: 650px; background-color: #f1f1f1">
+        <?php
+        $public =mysqli_query($con, "SELECT * FROM `publicaciones` ORDER BY `publicaciones`.`fecha` DESC");
+        $respuesta = mysqli_fetch_all($public);
+
+        //echo $_SESSION['id'];
+        for ($i = 0; $i<sizeof($respuesta); $i++){
+            $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
+            $nom = mysqli_fetch_all($nomPer);
+            echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes'>";
+
+            if (sizeof($nom)==0){
+                echo "Anonimo</header><table><tr><label id='date'>" . $respuesta[$i][1];
+            }else{
+                echo $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
+            }
+
+
+            echo "</label></tr><tr>";
+
+            if ($respuesta[$i][2]==0){
+                echo "<td><img src='../img/anonimo.png' style='width: 100px; height: 100px; padding-left: 5px'></td>";
+            }else{
+                $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
+                $img = mysqli_fetch_all($personaje);
+                echo "<td><img src='.." . $img[0][1] . $img[0][2] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
+            }
+            if(strlen($respuesta[$i][3]) > 73) { // verifica si el texto tiene mas de 80 caracteres
+
+                $respuesta[$i][3] = wordwrap($respuesta[$i][3],73,"<br>",1); } // inserta el salto a los 80 car...
+
+            else $respuesta[$i][3]=$respuesta[$i][3]; // si no es mas largo de 80 caracteres, lo deja igual
+
+            echo "<td><label>" . $respuesta[$i][3] . "</label></td>";
+            echo "</tr></table><br></div>";
+        }
+        ?>
+    </div>
 </div>
 </body>
 </html>

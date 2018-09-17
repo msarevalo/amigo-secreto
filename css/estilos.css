@@ -12,7 +12,7 @@ input{
     height:100%;
     z-index:10;
     width:280px;
-    color:#bbb;
+    color:#ffffff;
     top:0;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -47,11 +47,11 @@ input{
 }
 #menu ul a i[class*='fa-caret']{float: right;}
 #menu ul a:hover,#menu ul a.active{
-    background-color:#111;
-    border-left-color: #ff2a34;
-    color: #ff2a34;
+    background-color:#db6464;
+    border-left-color: #db6464;
+    color: #ffffff;
 }
-#menu ul a:hover i:first-child{color:#ff2a34;}
+#menu ul a:hover i:first-child{color:#db6464;}
 
 /* Submenu */
 #menu ul li a.active+ul{display:block}
@@ -94,7 +94,7 @@ input{
 #personajes th{
     font-size: 14px;
     font-weight: normal;
-    color: #ff2a34;
+    color: #db6464;
     border-bottom: 2px solid #111;
     padding: 10px 48px;
     text-align: center;
@@ -114,7 +114,7 @@ input{
 
 #personajes td {
     border-bottom: 1px solid grey;
-    color: #ff2a34;
+    color: #db6464;
     padding: 7px 50px;
     font-size: 14px;
 }
@@ -141,7 +141,7 @@ input{
 
 #listado header{
     background-color: #111;
-    color: #ff2a34;
+    color: #db6464;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -153,7 +153,7 @@ input{
 
 #listado-admin header{
     background-color: #111;
-    color: #ff2a34;
+    color: #db6464;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -165,7 +165,7 @@ input{
 
 #crear-header{
     background-color: #111;
-    color: #ff2a34;
+    color: #db6464;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -259,7 +259,7 @@ label.file:after {
     font-family: 'Helvetica';
     font-size: 11px;
     text-transform: uppercase;
-    color: #ff2a34;
+    color: #db6464;
     background-color: #111;
     border-style: solid;
     border-radius: 15px;
@@ -269,7 +269,62 @@ label.file:after {
 }
 
 #btnHorario:hover {
-    background-color: #ff2a34;
+    background-color: #db6464;
     color: #111;
     transform: translateY(-7px);
+}
+
+#mensajes{
+    background-color: #db6464;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 635px;
+    //margin-right: 50%;
+    text-align: right;
+    line-height: 40px;
+    //border-radius: 25px 25px 0px 0px;
+    margin-top: 0.5%;
+    padding-right: 15px;
+}
+
+#public{
+    background-color: #889d6f;
+    //margin-left: 20%;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 680px;
+    //margin-right: 50%;
+    line-height: 40px;
+    //border-radius: 25px 25px 0px 0px;
+    margin-top: 0.5%;
+    padding-left: 20px;
+}
+
+#date{
+    margin-left: 75%;
+    color: #bbbbbb;
+}
+
+#publicacion{
+    margin-top: 15px;
+    resize: none;
+    margin-left: 5%;
+}
+
+#texto{
+    margin-left: 33%;
+    background-color: #ffffff;
+    width: 700px;
+}
+
+#boton{
+    padding: 5px 20px 5px 20px;
+    color: #ffffff;
+    background-color: #889d6f;
 }

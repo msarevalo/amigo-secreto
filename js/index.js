@@ -42,3 +42,16 @@ function alertaPersonaje(ideliminar) {
     }else {
         //alert('Falso');
     }}
+
+function contarcaracteres(){
+
+    var total=600;
+
+    setTimeout(function(){
+        var valor=document.getElementById('publicacion');
+        var respuesta=document.getElementById('res');
+        var cantidad=valor.value.length;
+        document.getElementById('res').innerHTML = cantidad + ' / 600 ';
+    },10);
+
+}

@@ -49,11 +49,11 @@ echo $respuesta[0][6];
             //$_SESSION['restablece'] = $idUser;
             header("Location: ../public/nueva-pass.php?id=" . $idUser);
         }else{
-            echo "fallo";
-            //echo "<script>alert('Usuario o ontraseña incorrectos');window.location.href='../public/index.php'</script>";
+            //echo "fallo";
+            echo "<script>alert('El hash ha cambiado');window.location.href='../public/index.php'</script>";
         }
     }else{
-        echo "fallo consulta";
+        //echo "fallo consulta";
     }
 
 ?>

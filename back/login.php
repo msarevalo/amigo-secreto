@@ -32,9 +32,11 @@ if($resultado){
     if (password_verify($pass, $hash) ){
         if ($respuesta[0][5]==="admin"){
             $_SESSION['username'] = $respuesta[0][3];
+            $_SESSION['id'] = $respuesta[0][1];
             header("Location: ../public/admin.php");
         }else {
             $_SESSION['username'] = $respuesta[0][3];
+            $_SESSION['id'] = $respuesta[0][0];
             header("Location: ../public/home.php");
             //echo "entro bien";
         }
