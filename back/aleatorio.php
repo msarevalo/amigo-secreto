@@ -75,7 +75,7 @@ for ($i = 0; $i<sizeof($randF); $i++){
     <p>Estos son los pasos para que puedas hacer parte de la celebracion:</p>
     <ol>
     <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index con tu usuario y contrasena</li>
-    <li>Puedes agregar tu foto de perfil de tu personaje. Puede ser un JPG, PNG o GIF animado</li>
+    <li>Puedes agregar la foto de perfil de tu personaje. Puede ser un JPG, PNG o GIF animado</li>
     <li>Escribe en los muros publicos de la plataforma</li>
     <li>Sonrie compartiendo con tus companeros!</li>
 </ol><br>
@@ -133,7 +133,7 @@ for ($i = 0; $i<sizeof($randM); $i++){
     <p>Estos son los pasos para que puedas hacer parte de la celebracion:</p>
     <ol>
     <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index con tu usuario y contrasena</li>
-    <li>Puedes agregar tu foto de perfil de tu personaje. Puede ser un JPG, PNG o GIF animado</li>
+    <li>Puedes agregar la foto de perfil de tu personaje. Puede ser un JPG, PNG o GIF animado</li>
     <li>Escribe en los muros publicos de la plataforma</li>
     <li>Sonrie compartiendo con tus companeros!</li>
 </ol><br>
