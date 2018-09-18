@@ -40,10 +40,11 @@ if ($nombre_img == !NULL)
         $result = mysqli_query($con, $sql);
         if ($result) {
             // Ruta donde se guardarán las imágenes que subamos
-            //$directorio = $_SERVER['DOCUMENT_ROOT'] . $ruta;
+            $directorio = $_SERVER['DOCUMENT_ROOT'] . $ruta;
             // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
-            move_uploaded_file($_FILES['fotografia']['tmp_name'], "http://52.15.245.23/amigo-secreto/img/personajes/" . $nom_temp);
-            echo "<script>alert('Se edito tu imagen con exito'); window.location.href='../public/perfil.php'</script>";
+            echo $directorio;
+            move_uploaded_file($_FILES['fotografia']['tmp_name'], $directorio . $nom_temp);
+            //echo "<script>alert('Se edito tu imagen con exito'); window.location.href='../public/perfil.php'</script>";
         }else{
             echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil.php'</script>";
         }
