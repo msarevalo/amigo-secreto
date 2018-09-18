@@ -51,12 +51,12 @@ if (!isset($_SESSION['username'])){
             $nom = mysqli_fetch_all($nomPer);
             echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes'>";
 
-            echo $nom[0][1] . "</header><table><br><tr>";
+            echo $nom[0][0] . "</header><table><br><tr>";
 
-            $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][1]);
+            $personaje =mysqli_query($con, "SELECT personajes.ruta, personajes.imagen FROM personajes WHERE personajes.idPersonaje = " . $respuesta[$i][1]);
             $img = mysqli_fetch_all($personaje);
                 //echo $img[0][2] . "<br>";
-            echo "<td><img src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
+            echo "<td><img src='http://52.15.245.23" . $img[0][0] . $img[0][1] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
             if(strlen($respuesta[$i][2]) > 73) { // verifica si el texto tiene mas de 80 caracteres
 
                 $respuesta[$i][3] = wordwrap($respuesta[$i][3],73,"<br>",1); } // inserta el salto a los 80 car...
