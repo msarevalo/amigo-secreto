@@ -59,7 +59,7 @@ if (!isset($_SESSION['username'])){
             echo "<td><img src='http://52.15.245.23" . $img[0][0] . $img[0][1] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
             if(strlen($respuesta[$i][2]) > 73) { // verifica si el texto tiene mas de 80 caracteres
 
-                $respuesta[$i][3] = wordwrap($respuesta[$i][3],73,"<br>",1); } // inserta el salto a los 80 car...
+                $respuesta[$i][2] = wordwrap($respuesta[$i][2],73,"<br>",1); } // inserta el salto a los 80 car...
 
             else $respuesta[$i][2]=$respuesta[$i][2]; // si no es mas largo de 80 caracteres, lo deja igual
 

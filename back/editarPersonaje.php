@@ -9,7 +9,7 @@ $temp = explode(".", $_FILES['imagen']['name']);
 $extension = end($temp);
 $id = rand(0, 999999999);
 $nom_temp = 'personaje' . $id .'.'. $extension;
-$ruta = '/img/personajes/';
+$ruta = '/amigo-secreto/img/personajes/';
 
 if (isset($_POST['nombre'])){
     $nombre = $_POST['nombre'];
