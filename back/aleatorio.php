@@ -53,7 +53,7 @@ shuffle($randM1);
 
 for ($i = 0; $i<sizeof($randF); $i++){
     $to = $resUserf[$randF[$i]][1];
-    $subject = "¡Este será tu personaje para jugar al Amigo Secreto!";
+    $subject = "Este sera tu personaje para jugar al Amigo Secreto!";
 //$usuario = $respuesta[0][1];
     $nombre = $resUserf[$randF[$i]][3];
 //}
@@ -65,25 +65,23 @@ for ($i = 0; $i<sizeof($randF); $i++){
     $message = '
 <html>
     <head>
-        <title>¡Este será tu personaje para jugar al Amigo Secreto!</title>
+        <title>Este sera tu personaje para jugar al Amigo Secreto!</title>
         <meta charset="UTF-8">
     </head>
     <body>
-    <label>¡Bienvenido ' . $nombre . ' a Amormanía!</label><br><br>
-    <p>Se han sorteado los personajes y el personaje que te corresponde es: ' . $resPerf[$randF1[$i]][1] . '</p><br>
-    <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Allí podrás escribir en un muro público, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p><br>
-    <p>Estos son los pasos para que puedas hacer parte de la celebración:</p>
+    <label>Bienvenido ' . $nombre . ' a Amormania!</label><br><br>
+    <p>Se han sorteado los personajes y el personaje que te corresponde es: ' . $resPerf[$randF1[$i]][1] . '</p>
+    <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Alli podras escribir en un muro publico, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p>
+    <p>Estos son los pasos para que puedas hacer parte de la celebracion:</p>
     <ol>
     <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index</li>
-    <li>Crea tu usuario con tu correo corporativo</li>
-    <li>Agrega tu foto de perfil. Puede ser un JPG, PNG o GIF animado</li>
-    <li>Escribe en los muros públicos de la plataforma</li>
-    <li>Escribe en los muros públicos de la plataforma</li>
-    <li>¡Sonríe compartiendo con tus compañeros!</li>
+    <li>Puedes agregar tu foto de perfil de tu personaje. Puede ser un JPG, PNG o GIF animado</li>
+    <li>Escribe en los muros publicos de la plataforma</li>
+    <li>Sonrie compartiendo con tus companieros!</li>
 </ol><br>
 <p>Ate.,
 <br>
-Equipo de Desarrollo de Amormanía.
+Equipo de Desarrollo de Amormania.
 </p>
 </body>
 </html>
@@ -113,7 +111,7 @@ Equipo de Desarrollo de Amormanía.
 
 for ($i = 0; $i<sizeof($randM); $i++){
     $toM = $resUserm[$randM[$i]][1];
-    $subjectM = "¡Este será tu personaje para jugar al Amigo Secreto!";
+    $subjectM = "Este sera tu personaje para jugar al Amigo Secreto!";
 //$usuario = $respuesta[0][1];
     $nombreM = $resUserm[$randM[$i]][3];
 //}
@@ -125,25 +123,23 @@ for ($i = 0; $i<sizeof($randM); $i++){
     $messageM = '
 <html>
     <head>
-        <title>¡Este será tu personaje para jugar al Amigo Secreto!</title>
+        <title>Este sera tu personaje para jugar al Amigo Secreto!</title>
         <meta charset="UTF-8">
     </head>
     <body>
-    <label>¡Bienvenido ' . $nombreM . ' a Amormanía!</label><br><br>
-    <p>Se han sorteado los personajes y el personaje que te corresponde es: ' . $resPerm[$randM1[$i]][1] . '</p><br>
-    <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Allí podrás escribir en un muro público, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p><br>
-    <p>Estos son los pasos para que puedas hacer parte de la celebración:</p>
+    <label>Bienvenido ' . $nombreM . ' a Amormania!</label><br><br>
+    <p>Se han sorteado los personajes y el personaje que te corresponde es: ' . $resPerm[$randM1[$i]][1] . '</p>
+    <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Alli podras escribir en un muro publico, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p><br>
+    <p>Estos son los pasos para que puedas hacer parte de la celebracion:</p>
     <ol>
     <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index</li>
-    <li>Crea tu usuario con tu correo corporativo</li>
-    <li>Agrega tu foto de perfil. Puede ser un JPG, PNG o GIF animado</li>
-    <li>Escribe en los muros públicos de la plataforma</li>
-    <li>Escribe en los muros públicos de la plataforma</li>
-    <li>¡Sonríe compartiendo con tus compañeros!</li>
+    <li>Puedes agregar tu foto de perfil de tu personaje. Puede ser un JPG, PNG o GIF animado</li>
+    <li>Escribe en los muros publicos de la plataforma</li>
+    <li>Sonrie compartiendo con tus companieros!</li>
 </ol><br>
 <p>Ate.,
 <br>
-Equipo de Desarrollo de Amormanía.
+Equipo de Desarrollo de Amormania.
 </p>
 </body>
 </html>
