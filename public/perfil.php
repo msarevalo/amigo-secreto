@@ -48,6 +48,7 @@ if (!isset($_SESSION['username'])){
 
     $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
     $img = mysqli_fetch_all($personaje);
+    echo $img[0][1];
 
     if ($resregalo){
         echo "
