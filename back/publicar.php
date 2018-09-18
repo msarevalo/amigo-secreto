@@ -13,10 +13,8 @@ if ($_POST['publicacion']){
 if ($usuario != 0 ){
     $usuario = $_SESSION['id'];
 }
-
-date_default_timezone_set('UTC -5'); // your user's timezone
-$my_datetime='2013-10-23 15:47:10';
-$dia = date('Y-m-d H:i:s',strtotime("$my_datetime UTC"));
+$prueba = date_default_timezone_set('UTC -5');
+$dia = date('Y-m-d h:i:s', $prueba);
 
 $publicar = mysqli_query($con, "INSERT INTO `publicaciones` (`fecha`, `usuario`, `publicacion`) VALUES ('" . $dia['year'] . "-" . $dia['mon'] ."-" . $dia['mday'] . " " . $dia['hours'] . ":" . $dia['minutes'] . ":" . $dia['seconds'] . "', '" . $usuario . "', '" . $public . "');");
 
