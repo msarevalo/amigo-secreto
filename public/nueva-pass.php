@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <!-- Estilos -->
     <link href="../css/estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700" rel="stylesheet">
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/index.js" type="application/javascript"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favico.png">
 </head>
-<body onload="noVolver()" style="background-color: #1A1A1A">
+<body onload="noVolver()" style="background-color: #1A1A1A; font-family: 'Cairo', sans-serif;">
 <?php
 include ('../back/conexion.php');
 
