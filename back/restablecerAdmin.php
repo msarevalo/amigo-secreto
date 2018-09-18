@@ -45,9 +45,9 @@ $headers[] = 'To: ' . $nombre . ' <' . $to . '>';
 $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
 if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))){
-    echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/index'</script>";
+    echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin'</script>";
 }else{
-    echo "<script>alert('Algo ha pasado'); window.location.href='../public/index'</script>";
+    echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin'</script>";
 }
 
 $actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE `user`.`idUser` = " . $idRes . ";");
@@ -56,5 +56,5 @@ $actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE 
 if ($actual){
     //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
 }else{
-    echo "<script>alert('Algo ha pasado'); window.location.href='../public/index'</script>";
+    echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin'</script>";
 }
