@@ -75,7 +75,10 @@ if (!isset($_SESSION['username'])){
         <input id="fotografia" name="fotografia" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))" required/>
     </label>
     <?php
-    echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
+    //print_r($img);
+    if ($img) {
+        echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
+    }
     ?>
     <br>
     <button style="margin-left: 80%" id="boton">Editar</button><br><br>
