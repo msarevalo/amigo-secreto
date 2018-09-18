@@ -74,7 +74,7 @@ for ($i = 0; $i<sizeof($randF); $i++){
     <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Alli podras escribir en un muro publico, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p>
     <p>Estos son los pasos para que puedas hacer parte de la celebracion:</p>
     <ol>
-    <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index</li>
+    <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index con tu usuario y contraseña</li>
     <li>Puedes agregar tu foto de perfil de tu personaje. Puede ser un JPG, PNG o GIF animado</li>
     <li>Escribe en los muros publicos de la plataforma</li>
     <li>Sonrie compartiendo con tus companieros!</li>
@@ -132,7 +132,7 @@ for ($i = 0; $i<sizeof($randM); $i++){
     <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Alli podras escribir en un muro publico, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p><br>
     <p>Estos son los pasos para que puedas hacer parte de la celebracion:</p>
     <ol>
-    <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index</li>
+    <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index con tu usuario y contraseña</li>
     <li>Puedes agregar tu foto de perfil de tu personaje. Puede ser un JPG, PNG o GIF animado</li>
     <li>Escribe en los muros publicos de la plataforma</li>
     <li>Sonrie compartiendo con tus companieros!</li>
