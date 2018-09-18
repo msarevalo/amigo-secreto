@@ -70,7 +70,7 @@ for ($i = 0; $i<sizeof($randF); $i++){
     </head>
     <body>
     <label>Bienvenido ' . $nombre . ' a Amormania!</label><br><br>
-    <p>Se han sorteado los personajes y el personaje que te corresponde es: ' . $resPerf[$randF1[$i]][1] . '</p>
+    <p>Se han sorteado los personajes y el personaje que te corresponde es: <b>' . $resPerf[$randF1[$i]][1] . '</b></p>
     <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Alli podras escribir en un muro publico, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p>
     <p>Estos son los pasos para que puedas hacer parte de la celebracion:</p>
     <ol>
@@ -128,7 +128,7 @@ for ($i = 0; $i<sizeof($randM); $i++){
     </head>
     <body>
     <label>Bienvenido ' . $nombreM . ' a Amormania!</label><br><br>
-    <p>Se han sorteado los personajes y el personaje que te corresponde es: ' . $resPerm[$randM1[$i]][1] . '</p>
+    <p>Se han sorteado los personajes y el personaje que te corresponde es: <b>' . $resPerm[$randM1[$i]][1] . '</b></p>
     <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Alli podras escribir en un muro publico, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p><br>
     <p>Estos son los pasos para que puedas hacer parte de la celebracion:</p>
     <ol>
