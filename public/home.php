@@ -77,6 +77,7 @@ if (!isset($_SESSION['username'])){
             }else{
                 $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
                 $img = mysqli_fetch_all($personaje);
+                echo $img[0][2];
                 echo "<td><img src='.." . $img[0][1] . $img[0][2] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
             }
             if(strlen($respuesta[$i][3]) > 73) { // verifica si el texto tiene mas de 80 caracteres
