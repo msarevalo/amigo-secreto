@@ -10,33 +10,34 @@
     <script src="../js/index.js" type="application/javascript"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favico.png">
 </head>
-<body onload="noVolver()">
-<div>
-    <a href="index.php" style="text-decoration: none">Volver</a>
+<body style="background-color: #1A1A1A">
+<div style="margin-left: 35%; margin-top: 8%; background-color: #f1f1f1; width: 450px; border-radius: 10px;
+box-shadow: 0 0 15px #ececec;">
+    <a href="index.php" style="text-decoration: none; padding-left: 10px" class="titulos">Volver</a>
     <form method="post" action="../back/registrar.php" enctype="multipart/form-data" id="registro">
-        <table>
+        <table style="margin-left: 13%">
             <tr>
                 <th>
-                    <label>Nombre</label>
+                    <label class="titulos">Nombre</label>
                 </th>
                 <th>
-                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" required class="entradas">
                 </th>
             </tr>
             <tr>
                 <th>
-                    <label>Correo</label>
+                    <label class="titulos">Correo</label>
                 </th>
                 <th>
-                    <input type="email" placeholder="Correo" id="mail" name="mail" required>
+                    <input type="email" placeholder="Correo" id="mail" name="mail" required class="entradas">
                 </th>
             </tr>
             <tr>
                 <th>
-                    <label>Genero</label>
+                    <label class="titulos">Genero</label>
                 </th>
                 <th>
-                    <select id="genero" name="genero" required>
+                    <select id="genero" name="genero" required class="entradas">
                         <option disabled selected value="">Seleccione</option>
                         <option value="F">Femenino</option>
                         <option value="M">Masculino</option>
@@ -45,22 +46,22 @@
             </tr>
             <tr>
                 <th>
-                    <label>Contraseña</label>
+                    <label class="titulos">Contraseña</label>
                 </th>
                 <th>
-                    <input type="password" placeholder="Contraseña" id="pass" name="pass" required>
+                    <input type="password" placeholder="Contraseña" id="pass" name="pass" required class="entradas">
                 </th>
             </tr>
             <tr>
                 <th>
-                    <label>Repetir</br>Contraseña</label>
+                    <label class="titulos">Repetir Contraseña</label>
                 </th>
                 <th>
-                    <input type="password" placeholder="Contraseña" id="rpass" name="rpass" required>
+                    <input type="password" placeholder="Contraseña" id="rpass" name="rpass" required class="entradas">
                 </th>
             </tr>
-        </table>
-        <input type="submit" value="Registrarme">
+        </table><br>
+        <input type="submit" value="Registrarme" id="boton-login" style="margin-left: 40%"><br><br>
     </form>
 </div>
 </body>

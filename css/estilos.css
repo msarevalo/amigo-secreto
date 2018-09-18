@@ -344,6 +344,12 @@ label.file:after {
     background-color: #889d6f;
 }
 
+#boton-login{
+    padding: 5px 20px 5px 20px;
+    color: #ffffff;
+    background-color: #db6464;
+}
+
 #header{
     background-color: #db6464;
     position:fixed;
@@ -369,4 +375,10 @@ label.file:after {
 #archi{
     margin-left: 24%;
     padding-top: 20px;
+}
+
+.entradas{ width: 200px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border: 1px solid #BDC2C9;
 }

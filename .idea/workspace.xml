@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048b2885-f854-4d9a-996d-cfcdc711ee06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/buzon.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/muro-regalos.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/muro-regalos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/estilos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/nueva-pass.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/nueva-pass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/olvide.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/olvide.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/registro.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,84 +28,42 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="9" />
-          <entry key="js" value="10" />
-          <entry key="php" value="242" />
+          <entry key="css" value="11" />
+          <entry key="js" value="11" />
+          <entry key="php" value="249" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="9" />
-          <entry key="JavaScript" value="10" />
-          <entry key="PHP" value="242" />
+          <entry key="CSS" value="11" />
+          <entry key="JavaScript" value="11" />
+          <entry key="PHP" value="249" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="654" />
-          <entry key="js" value="198" />
-          <entry key="php" value="13931" />
+          <entry key="css" value="690" />
+          <entry key="js" value="200" />
+          <entry key="php" value="14262" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="654" />
+          <entry key="CSS" value="690" />
           <entry key="HTML" value="17" />
-          <entry key="JavaScript" value="198" />
-          <entry key="PHP" value="13914" />
+          <entry key="JavaScript" value="200" />
+          <entry key="PHP" value="14245" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="35" column="99" selection-start-line="35" selection-start-column="99" selection-end-line="35" selection-end-column="99" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/perfil.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="35" column="99" selection-start-line="35" selection-start-column="99" selection-end-line="35" selection-end-column="99" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#form#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back/conexion.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/muro-regalos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="35" column="114" selection-start-line="35" selection-start-column="114" selection-end-line="35" selection-end-column="114" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -131,6 +91,7 @@
       <find>contarcaracteres</find>
       <find>imagen</find>
       <find>$directorio</find>
+      <find>bo</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -167,17 +128,11 @@
         <option value="$PROJECT_DIR$/public/crear-usuario.php" />
         <option value="$PROJECT_DIR$/public/editar-personaje.php" />
         <option value="$PROJECT_DIR$/public/editar-usuario.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/public/nueva-pass.php" />
-        <option value="$PROJECT_DIR$/public/olvide.php" />
         <option value="$PROJECT_DIR$/public/personajes-admin.php" />
-        <option value="$PROJECT_DIR$/public/registro.php" />
         <option value="$PROJECT_DIR$/public/usuarios-admin.php" />
         <option value="$PROJECT_DIR$/back/publicar.php" />
         <option value="$PROJECT_DIR$/back/regalo.php" />
         <option value="$PROJECT_DIR$/back/regaloedit.php" />
-        <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/css/estilos.css" />
         <option value="$PROJECT_DIR$/back/fotoPefil.php" />
         <option value="$PROJECT_DIR$/back/crearPersonaje.php" />
         <option value="$PROJECT_DIR$/back/editarPersonaje.php" />
@@ -185,6 +140,12 @@
         <option value="$PROJECT_DIR$/public/home.php" />
         <option value="$PROJECT_DIR$/public/perfil.php" />
         <option value="$PROJECT_DIR$/public/muro-regalos.php" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/css/estilos.css" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/public/registro.php" />
+        <option value="$PROJECT_DIR$/public/olvide.php" />
+        <option value="$PROJECT_DIR$/public/nueva-pass.php" />
         <option value="$PROJECT_DIR$/back/conexion.php" />
       </list>
     </option>
@@ -296,12 +257,12 @@
       <updated>1536769460411</updated>
       <workItem from="1536769462356" duration="24936000" />
       <workItem from="1536853249182" duration="41215000" />
-      <workItem from="1537196396163" duration="36285000" />
+      <workItem from="1537196396163" duration="40720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102436000" />
+    <option name="totallyTimeSpent" value="106871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -453,38 +414,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/nueva-pass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/olvide.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/prueba.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/registro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -527,24 +460,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/crear-personaje.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="49" column="16" selection-start-line="47" selection-start-column="8" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="337" column="17" selection-start-line="337" selection-start-column="17" selection-end-line="337" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -649,6 +568,73 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/estilos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="383" column="1" selection-start-line="383" selection-start-column="1" selection-end-line="383" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/registro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="59" column="116" selection-start-line="59" selection-start-column="116" selection-end-line="59" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/olvide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/nueva-pass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="89" selection-start-line="28" selection-start-column="89" selection-end-line="28" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

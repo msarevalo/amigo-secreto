@@ -10,7 +10,7 @@
     <script src="../js/index.js" type="application/javascript"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favico.png">
 </head>
-<body onload="noVolver()">
+<body onload="noVolver()" style="background-color: #1A1A1A">
 <?php
 include ('../back/conexion.php');
 
@@ -19,13 +19,14 @@ if (isset($_GET['id'])){
 }
 
 ?>
-<div>
-    <form method="post" action="../back/npass.php" enctype="multipart/form-data" id="restrablece">
-        <label for="pass">Contraseña</label>
-        <input type="password" placeholder="Contraseña" id="pass" name="pass" required><br><br>
-        <label for="rpass">Repetir Contraseña</label>
-        <input type="password" placeholder="Contraseña" id="rpass" name="rpass" required><br><br>
-        <input type="submit" value="Restablecer">
+<div style="margin-left: 35%; margin-top: 8%; background-color: #f1f1f1; width: 400px; border-radius: 10px;
+box-shadow: 0 0 15px #ececec;">
+    <form method="post" action="../back/npass.php" enctype="multipart/form-data" id="restrablece" style="margin-left: 10%">
+        <label for="pass" class="titulos">Contraseña</label>
+        <input type="password" placeholder="Contraseña" id="pass" name="pass" required class="entradas"><br><br>
+        <label for="rpass" class="titulos">Repetir Contraseña</label>
+        <input type="password" placeholder="Contraseña" id="rpass" name="rpass" required class="entradas"><br><br>
+        <input type="submit" value="Restablecer" id="boton-login" style="margin-left: 30%"><br><br>
     </form>
 </div>
 </body>

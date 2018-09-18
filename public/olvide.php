@@ -10,22 +10,23 @@
     <script src="../js/index.js" type="application/javascript"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favico.png">
 </head>
-<body>
-<div>
-    <header>Olvidé mi contraseña</header>
-    <form method="post" action="../back/enviar.php" autocomplete="off">
+<body style="background-color: #1A1A1A">
+<div style="margin-left: 35%; margin-top: 8%; background-color: #f1f1f1; width: 400px; border-radius: 10px;
+box-shadow: 0 0 15px #ececec;">
+    <a href="index.php" style="text-decoration: none; padding-left: 10px" class="titulos">Volver</a>
+    <form method="post" action="../back/enviar.php" autocomplete="off" style="margin-left: 20%">
         <table>
             <tr>
                 <td>
                     <label class="titulos">Correo</label>
                 </td>
                 <td>
-                    <input type="email" placeholder="Correo" id="correo" name="correo" required>
+                    <input type="email" placeholder="Correo" id="correo" name="correo" required class="entradas">
                 </td>
             </tr>
-        </table>
-        <input type="submit" value="Enviar">
+        </table><br>
+        <input type="submit" value="Enviar" id="boton-login" style="margin-left: 25%">
     </form>
-    <br /><a href="index.php">Volver</a>
+    <br />
 </div>
 </body>
