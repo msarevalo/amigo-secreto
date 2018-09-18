@@ -48,7 +48,7 @@ if (!isset($_SESSION['username'])){
 
     $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
     $img = mysqli_fetch_all($personaje);
-    echo $img[0][1];
+    //echo $img[0][1];
 
     if ($resregalo){
         echo "
@@ -76,7 +76,7 @@ if (!isset($_SESSION['username'])){
         <input id="fotografia" name="fotografia" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))" required/>
     </label>
     <?php
-    echo "<img id='foto' src='.." . $img[0][1] . $img[0][2] . "'></img>";
+    echo "<img id='foto' src='/var/www/html" . $img[0][1] . $img[0][2] . "'></img>";
     ?>
     <br>
     <button style="margin-left: 80%" id="boton">Editar</button><br><br>
