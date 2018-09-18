@@ -66,6 +66,7 @@ for ($i = 0; $i<sizeof($randF); $i++){
 <html>
     <head>
         <title>¡Este será tu personaje para jugar al Amigo Secreto!</title>
+        <meta charset="UTF-8">
     </head>
     <body>
     <label>¡Bienvenido ' . $nombre . ' a Amormanía!</label><br><br>
@@ -125,6 +126,7 @@ for ($i = 0; $i<sizeof($randM); $i++){
 <html>
     <head>
         <title>¡Este será tu personaje para jugar al Amigo Secreto!</title>
+        <meta charset="UTF-8">
     </head>
     <body>
     <label>¡Bienvenido ' . $nombreM . ' a Amormanía!</label><br><br>

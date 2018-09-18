@@ -41,6 +41,7 @@ $message = '
 <html>
     <head>
         <title>Reestablecer Password</title>
+        <meta charset="UTF-8">
     </head>
     <body>
     <label>Haga click en el siguiente link para reestablecer el password</label>
