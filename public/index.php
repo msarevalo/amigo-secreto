@@ -37,7 +37,7 @@ box-shadow: 0 0 15px #ececec;">
             <label for="ver" class="titulos" style="margin-left: 25%">Ver Contraseña</label>
             <input type="checkbox" id="ver"><br>
             <input type="submit" value="Ingresar" id="boton-login" style="margin-left: 30%"><br><br>
-            <a href="olvide.php" style="text-decoration: none; margin-left: 22%" class="titulos">Olvide mi contraseña</a><br>
+            <a href="olvide" style="text-decoration: none; margin-left: 22%" class="titulos">Olvide mi contraseña</a><br>
             <a href="registro.php" style="text-decoration: none; margin-left: 22%" class="titulos">Aun no tengo cuenta</a>
         </form>
     </div>
