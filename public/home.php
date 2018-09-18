@@ -34,7 +34,6 @@ if (!isset($_SESSION['username'])){
             <li><a href="perfil.php"><i class="fa fa-laptop"></i>Mi Perfil</a></li>
             <li><a href="home.php" class="active"><i class="fa fa-home"></i>Muro Público</a></li>
             <li><a href="muro-regalos.php"><i class="fa fa-laptop"></i>Muro de los regalos</a></li>
-            <li><a href="buzon.php"><i class="fa fa-laptop"></i>Buzon</a></li>
             <li><a href="../back/cerrar.php"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
         </ul>
     </nav></div>
