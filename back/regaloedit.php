@@ -16,7 +16,7 @@ $publicar = mysqli_query($con, "UPDATE `regalos` SET `regalo` = '" . $public . "
 
 if ($publicar){
     //header("Location: ../public/perfil.php");
-    echo "<script>alert('Se ha editado tu regalo'); window.location.href='../public/perfil.php'</script>";
+    echo "<script>alert('Se ha editado tu regalo'); window.location.href='../public/perfil'</script>";
 }else{
-    echo "<script>alert('Algo pasó, intenta nuevamente'); window.location.href='../public/perfil.php'</script>";
+    echo "<script>alert('Algo pasó, intenta nuevamente'); window.location.href='../public/perfil'</script>";
 }

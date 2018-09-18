@@ -47,10 +47,10 @@ echo $respuesta[0][6];
         if ($hash === $psw){
             //echo "entro";
             //$_SESSION['restablece'] = $idUser;
-            header("Location: ../public/nueva-pass.php?id=" . $idUser);
+            header("Location: ../public/nueva-pass?id=" . $idUser);
         }else{
             //echo "fallo";
-            echo "<script>alert('El hash ha cambiado');window.location.href='../public/index.php'</script>";
+            echo "<script>alert('El hash ha cambiado');window.location.href='../public/index'</script>";
         }
     }else{
         //echo "fallo consulta";

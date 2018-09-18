@@ -31,9 +31,9 @@ if (!isset($_SESSION['username'])){
     <nav id="menu" class="left show">
         <ul>
             <!--<li style="margin-bottom: 5px; margin-left: 30px"><img src="../img/perfil.png" style="width: 16px"><?php //echo "<label class='titulos'>" . $_SESSION['username'] . "</label>"?></li>-->
-            <li><a href="perfil.php"><i class="fa fa-laptop"></i>Mi Perfil</a></li>
-            <li><a href="home.php" class="active"><i class="fa fa-home"></i>Muro Público</a></li>
-            <li><a href="muro-regalos.php"><i class="fa fa-laptop"></i>Muro de los regalos</a></li>
+            <li><a href="perfil"><i class="fa fa-laptop"></i>Mi Perfil</a></li>
+            <li><a href="home" class="active"><i class="fa fa-home"></i>Muro Público</a></li>
+            <li><a href="muro-regalos"><i class="fa fa-laptop"></i>Muro de los regalos</a></li>
             <li><a href="../back/cerrar.php"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
         </ul>
     </nav></div>

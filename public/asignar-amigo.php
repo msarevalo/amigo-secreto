@@ -23,11 +23,11 @@ if (!isset($_SESSION['username'])){
     <nav id="menu" class="left show">
         <ul>
             <li><a href="#"><i class="fa fa-home"></i><?php echo $_SESSION['username']?></a></li>
-            <li><a href="admin.php"><i class="fa fa-home"></i>Inicio</a></li>
-            <li><a href="personajes-admin.php"><i class="fa fa-laptop"></i>Personajes</a></li>
-            <li><a href="usuarios-admin.php"><i class="fa fa-laptop"></i>Usuarios</a></li>
-            <li><a href="asginar-personaje.php"><i class="fa fa-laptop"></i>Asignacion de Personajes</a></li>
-            <li><a href="asignar-amigo.php" class="active"><i class="fa fa-laptop"></i>Aleatorio</a></li>
+            <li><a href="admin"><i class="fa fa-home"></i>Inicio</a></li>
+            <li><a href="personajes-admin"><i class="fa fa-laptop"></i>Personajes</a></li>
+            <li><a href="usuarios-admin"><i class="fa fa-laptop"></i>Usuarios</a></li>
+            <li><a href="asginar-personaje"><i class="fa fa-laptop"></i>Asignacion de Personajes</a></li>
+            <li><a href="asignar-amigo" class="active"><i class="fa fa-laptop"></i>Aleatorio</a></li>
             <li><a href="../back/cerrar.php"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
         </ul>
     </nav>

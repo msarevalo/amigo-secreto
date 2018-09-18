@@ -33,19 +33,19 @@ if($resultado){
         if ($respuesta[0][5]==="admin"){
             $_SESSION['username'] = $respuesta[0][3];
             $_SESSION['id'] = $respuesta[0][1];
-            header("Location: ../public/admin.php");
+            header("Location: ../public/admin");
         }else {
             $_SESSION['username'] = $respuesta[0][3];
             $_SESSION['id'] = $respuesta[0][0];
-            header("Location: ../public/home.php");
+            header("Location: ../public/home");
             //echo "entro bien";
         }
     }else{
         //echo "fallo";
-        echo "<script>alert('Usuario o ontraseña incorrectos');window.location.href='../public/index.php'</script>";
+        echo "<script>alert('Usuario o ontraseña incorrectos');window.location.href='../public/index'</script>";
     }
 }else{
     //echo 'no entro';exit;
-    echo "<script>alert('Usuario o ontraseña incorrectos');window.location.href='../public/index.php'</script>";
+    echo "<script>alert('Usuario o ontraseña incorrectos');window.location.href='../public/index'</script>";
 }
 ?>

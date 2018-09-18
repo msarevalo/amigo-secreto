@@ -44,7 +44,7 @@ $message = '
     </head>
     <body>
     <label>Haga click en el siguiente link para reestablecer el password</label>
-    <a href="http://52.15.245.23/amigo-secreto/back/validar.php?id=' . $idRes . '&usuario=' . $usuario . '&pass=' . $passR . '">Cambiar mi password</a>
+    <a href="http://52.15.245.23/amigo-secreto/back/validar?id=' . $idRes . '&usuario=' . $usuario . '&pass=' . $passR . '">Cambiar mi password</a>
 </body>
 </html>
 ';
@@ -56,16 +56,16 @@ $headers[] = 'To: ' . $nombre . ' <' . $to . '>';
 $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
 if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))){
-    echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
+    echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/index'</script>";
 }else{
-    echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin.php'</script>";
+    echo "<script>alert('Algo ha pasado'); window.location.href='../public/index'</script>";
 }
 
 $actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE `user`.`idUser` = " . $idRes . ";");
 //$confirmar = mysqli_fetch_all($actual);
 
 if ($actual){
-    echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
+    echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/index'</script>";
 }else{
-    echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin.php'</script>";
+    echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin'</script>";
 }

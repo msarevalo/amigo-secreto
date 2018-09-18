@@ -44,9 +44,9 @@ if ($nombre_img == !NULL)
             // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
             //echo $directorio;
             move_uploaded_file($_FILES['fotografia']['tmp_name'], $directorio . $nom_temp);
-            echo "<script>alert('Se edito tu imagen con exito'); window.location.href='../public/perfil.php'</script>";
+            echo "<script>alert('Se edito tu imagen con exito'); window.location.href='../public/perfil'</script>";
         }else{
-            echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil.php'</script>";
+            echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil'</script>";
         }
     }
     else

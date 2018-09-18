@@ -15,13 +15,13 @@ $respuesta = mysqli_fetch_all($resultado);
 if ($respuesta){
     if (!empty($respuesta[0][6])){
         $actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $password_hash . "' WHERE `users`.`id_user` = " . $respuesta[0][0] . ";");
-        header("Location: /amigo-secreto/back/remember.php?id=" . $respuesta[0][0] . "&user=" . $respuesta[0][1] . "&pass=" . $password_hash);
+        header("Location: /amigo-secreto/back/remember?id=" . $respuesta[0][0] . "&user=" . $respuesta[0][1] . "&pass=" . $password_hash);
         $_SESSION['user_correo'] = $user;
     }else{
         $actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $password_hash . "' WHERE `users`.`id_user` = " . $respuesta[0][0] . ";");
-        header("Location: /amigo-secreto/back/remember.php?id=" . $respuesta[0][0] . "&user=" . $respuesta[0][1] . "&pass=" . $password_hash . "&nombre=" . $respuesta[0][3]);
+        header("Location: /amigo-secreto/back/remember?id=" . $respuesta[0][0] . "&user=" . $respuesta[0][1] . "&pass=" . $password_hash . "&nombre=" . $respuesta[0][3]);
         $_SESSION['user_correo'] = $user;
     }
 }else{
-    echo "<script>alert('Usuario " . $user . " inexistente');window.location.href='../public/olvide.php'</script>";
+    echo "<script>alert('Usuario " . $user . " inexistente');window.location.href='../public/olvide'</script>";
 }

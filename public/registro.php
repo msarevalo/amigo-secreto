@@ -13,7 +13,7 @@
 <body style="background-color: #1A1A1A">
 <div style="margin-left: 35%; margin-top: 8%; background-color: #f1f1f1; width: 450px; border-radius: 10px;
 box-shadow: 0 0 15px #ececec;">
-    <a href="index.php" style="text-decoration: none; padding-left: 10px" class="titulos">Volver</a>
+    <a href="index" style="text-decoration: none; padding-left: 10px" class="titulos">Volver</a>
     <form method="post" action="../back/registrar.php" enctype="multipart/form-data" id="registro">
         <table style="margin-left: 13%">
             <tr>

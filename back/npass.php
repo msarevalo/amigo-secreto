@@ -20,10 +20,10 @@ if ($pass == $rpass){
     //UPDATE `user` SET `spass` = '.' WHERE `user`.`idUser` = 1;
     $consulta = mysqli_query($con, "UPDATE `user` SET `pass`= '" . $encrip . "', `spass` = null WHERE `idUser`=" . $id);
     if ($consulta){
-        echo "<script>alert('Se restableció la contraseña con exito'); window.location.href='../public/index.php'</script>";
+        echo "<script>alert('Se restableció la contraseña con exito'); window.location.href='../public/index'</script>";
     }else{
-        echo "<script>alert('Algo ha fallado'); window.location.href='../public/nueva-pass.php?id=" . $id ."'</script>";
+        echo "<script>alert('Algo ha fallado'); window.location.href='../public/nueva-pass?id=" . $id ."'</script>";
     }
 }else{
-    echo "<script>alert('Las contraseñas deben ser iguales'); window.location.href='../public/nueva-pass.php?id=" . $id ."'</script>";
+    echo "<script>alert('Las contraseñas deben ser iguales'); window.location.href='../public/nueva-pass?id=" . $id ."'</script>";
 }

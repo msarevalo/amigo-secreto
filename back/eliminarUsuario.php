@@ -9,9 +9,9 @@ if (isset($_GET['id'])){
 
 $consulta = mysqli_query($con,"DELETE FROM `user` WHERE `user`.`idUser` = '" . $idEliminar . "';");
 if ($consulta){
-    echo "<script>alert('Se elimino correctamente el usuario'); window.location.href='../public/usuarios-admin.php'</script>";
+    echo "<script>alert('Se elimino correctamente el usuario'); window.location.href='../public/usuarios-admin'</script>";
 }else{
-    echo "<script>alert('Algo ha fallado'); window.location.href='../public/usuarios-admin.php'</script>";
+    echo "<script>alert('Algo ha fallado'); window.location.href='../public/usuarios-admin'</script>";
 }
 
 

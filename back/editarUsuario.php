@@ -17,7 +17,7 @@ if (isset($_POST['genero'])){
 $consulta = mysqli_query($con, "UPDATE `user` SET `correo` = '" . $correo . "', `nombre`='" . $nombre . "', `genero`='" . $genero . "' WHERE `user`.`idUser` = ". $_SESSION['idUsuario'] . ";");
 
 if ($consulta){
-    echo "<script>alert('Se editó el registro con exito'); window.location.href='../public/usuarios-admin.php'</script>";
+    echo "<script>alert('Se editó el registro con exito'); window.location.href='../public/usuarios-admin'</script>";
 }else{
-    echo "<script>alert('Algo ha fallado'); window.location.href='../public/editar-usuario.php?id=" . $_SESSION['idUsuario'] . "'</script>";
+    echo "<script>alert('Algo ha fallado'); window.location.href='../public/editar-usuario?id=" . $_SESSION['idUsuario'] . "'</script>";
 }

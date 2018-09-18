@@ -41,15 +41,15 @@ if ($nombre_img == !NULL)
             $directorio = $_SERVER['DOCUMENT_ROOT'] . $ruta;
             // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
             move_uploaded_file($_FILES['imagen']['tmp_name'], $directorio . $nom_temp);
-            echo "<script>alert('Se cargo correctamente el personaje'); window.location.href='../public/personajes-admin.php'</script>";
+            echo "<script>alert('Se cargo correctamente el personaje'); window.location.href='../public/personajes-admin'</script>";
         }else{
-            echo "<script>alert('Algo ha fallado'); window.location.href='../public/crear-personaje.php'</script>";
+            echo "<script>alert('Algo ha fallado'); window.location.href='../public/crear-personaje'</script>";
         }
     }
     else
     {
         //si no cumple con el formato
-        echo "<script>alert('No se puede subir una imagen con ese formato'); window.location.href='../public/crear-personaje.php'</script>";
+        echo "<script>alert('No se puede subir una imagen con ese formato'); window.location.href='../public/crear-personaje'</script>";
     }
 }
 else

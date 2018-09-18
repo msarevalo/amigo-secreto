@@ -53,7 +53,7 @@ shuffle($randM1);
 
 for ($i = 0; $i<sizeof($randF); $i++){
     $to = $resUserf[$randF[$i]][1];
-    $subject = "Tu personaje de amigo secreto";
+    $subject = "¡Este será tu personaje para jugar al Amigo Secreto!";
 //$usuario = $respuesta[0][1];
     $nombre = $resUserf[$randF[$i]][3];
 //}
@@ -65,12 +65,25 @@ for ($i = 0; $i<sizeof($randF); $i++){
     $message = '
 <html>
     <head>
-        <title>Tu personaje de amigo secreto</title>
+        <title>¡Este será tu personaje para jugar al Amigo Secreto!</title>
     </head>
     <body>
-    <label>Hola ' . $nombre . '</label><br><br>
-    <p>Te queremos informar que tu personaje para amigo secreto es ' . $resPerf[$randF1[$i]][1] . '</p><br>
-    <p>Recuerda que es secreto entonces no le digas a nadie quien eres.</p>
+    <label>¡Bienvenido ' . $nombre . ' a Amormanía!</label><br><br>
+    <p>Se han sorteado los personajes y el personaje que te corresponde es: ' . $resPerf[$randF1[$i]][1] . '</p><br>
+    <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Allí podrás escribir en un muro público, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p><br>
+    <p>Estos son los pasos para que puedas hacer parte de la celebración:</p>
+    <ol>
+    <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index</li>
+    <li>Crea tu usuario con tu correo corporativo</li>
+    <li>Agrega tu foto de perfil. Puede ser un JPG, PNG o GIF animado</li>
+    <li>Escribe en los muros públicos de la plataforma</li>
+    <li>Escribe en los muros públicos de la plataforma</li>
+    <li>¡Sonríe compartiendo con tus compañeros!</li>
+</ol><br>
+<p>Ate.,
+<br>
+Equipo de Desarrollo de Amormanía.
+</p>
 </body>
 </html>
 ';
@@ -93,13 +106,13 @@ for ($i = 0; $i<sizeof($randF); $i++){
     if ($consulta){
         //echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";
     }else{
-        echo "<script>alert('Algo ha fallado'); window.location.href='../public/asginar-personaje.php'</script>";
+        echo "<script>alert('Algo ha fallado'); window.location.href='../public/asginar-personaje'</script>";
     }
 }
 
 for ($i = 0; $i<sizeof($randM); $i++){
     $toM = $resUserm[$randM[$i]][1];
-    $subjectM = "Tu personaje de amigo secreto";
+    $subjectM = "¡Este será tu personaje para jugar al Amigo Secreto!";
 //$usuario = $respuesta[0][1];
     $nombreM = $resUserm[$randM[$i]][3];
 //}
@@ -111,12 +124,25 @@ for ($i = 0; $i<sizeof($randM); $i++){
     $messageM = '
 <html>
     <head>
-        <title>Tu personaje de amigo secreto</title>
+        <title>¡Este será tu personaje para jugar al Amigo Secreto!</title>
     </head>
     <body>
-    <label>Hola ' . $nombreM . '</label><br><br>
-    <p>Te queremos informar que tu personaje para amigo secreto es ' . $resPerm[$randM1[$i]][1] . '</p><br>
-    <p>Recuerda que es secreto entonces no le digas a nadie quien eres.</p>
+    <label>¡Bienvenido ' . $nombreM . ' a Amormanía!</label><br><br>
+    <p>Se han sorteado los personajes y el personaje que te corresponde es: ' . $resPerm[$randM1[$i]][1] . '</p><br>
+    <p>Para disfrutar de este mes de amor y amistad hemos creado una plataforma para ti. Allí podrás escribir en un muro público, escribir que quieres de regalo en el muro de regalos, editar tu foto de perfil.</p><br>
+    <p>Estos son los pasos para que puedas hacer parte de la celebración:</p>
+    <ol>
+    <li>Ingresa a http://52.15.245.23/amigo-secreto/public/index</li>
+    <li>Crea tu usuario con tu correo corporativo</li>
+    <li>Agrega tu foto de perfil. Puede ser un JPG, PNG o GIF animado</li>
+    <li>Escribe en los muros públicos de la plataforma</li>
+    <li>Escribe en los muros públicos de la plataforma</li>
+    <li>¡Sonríe compartiendo con tus compañeros!</li>
+</ol><br>
+<p>Ate.,
+<br>
+Equipo de Desarrollo de Amormanía.
+</p>
 </body>
 </html>
 ';
@@ -138,9 +164,9 @@ for ($i = 0; $i<sizeof($randM); $i++){
     if ($consulta){
         //echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";
     }else{
-        echo "<script>alert('Algo ha fallado'); window.location.href='../public/asginar-personaje.php'</script>";
+        echo "<script>alert('Algo ha fallado'); window.location.href='../public/asginar-personaje'</script>";
     }
 }
 
-echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";
+echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje'</script>";
 //$asignacion = mysqli_query($con,"SELECT * FROM `personajes` WHERE `genero` LIKE '%F%'");
