@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])){
 <header id="header" class="left show">
     <img src="../img/LOGO_blanco.png" style="width: 270px; margin-top: 20px">
     <label style="margin-left: 50%; font-size: 40px; margin-top: -5px">Mi Perfil</label>
-    <img src="../img/banner.gif" style="margin-left: 87.1%; margin-top: 7.5%; z-index: 9; position: fixed; height: 100%;" class="left show">
+    <img src="../img/banner.gif" style="margin-left: 88%; margin-top: 7.5%; z-index: 9; position: fixed; height: 90%;" class="left show">
 </header>
 
 <div>
