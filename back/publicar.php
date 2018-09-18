@@ -14,7 +14,7 @@ if ($usuario != 0 ){
     $usuario = $_SESSION['id'];
 }
 $prueba = date_default_timezone_set('UTC -5');
-$dia = date('Y-m-d h:i:s', $prueba);
+$dia = date('YYYY-mm-dd hh:ii:ss', $prueba);
 
 $publicar = mysqli_query($con, "INSERT INTO `publicaciones` (`fecha`, `usuario`, `publicacion`) VALUES ('" . $dia['year'] . "-" . $dia['mon'] ."-" . $dia['mday'] . " " . $dia['hours'] . ":" . $dia['minutes'] . ":" . $dia['seconds'] . "', '" . $usuario . "', '" . $public . "');");
 
