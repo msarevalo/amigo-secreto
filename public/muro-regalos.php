@@ -51,7 +51,7 @@ if (!isset($_SESSION['username'])){
             $nom = mysqli_fetch_all($nomPer);
             echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes'>";
 
-            echo $nom[0][1]; exit();. "</header><table><br><tr>";
+            echo $nom[0][1] . "</header><table><br><tr>";
 
             $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][1]);
             $img = mysqli_fetch_all($personaje);
