@@ -33,22 +33,22 @@ if (!isset($_SESSION['username'])){
             <!--<li style="margin-bottom: 5px; margin-left: 30px"><img src="../img/perfil.png" style="width: 16px"><?php //echo "<label class='titulos'>" . $_SESSION['username'] . "</label>"?></li>-->
             <li><a href="perfil.php"><i class="fa fa-laptop"></i>Mi Perfil</a></li>
             <li><a href="home.php" class="active"><i class="fa fa-home"></i>Inicio</a></li>
-            <li><a href=""><i class="fa fa-laptop"></i>Muro de los regalos</a></li>
+            <li><a href="muro-regalos.php"><i class="fa fa-laptop"></i>Muro de los regalos</a></li>
             <li><a href=""><i class="fa fa-laptop"></i>Buzon</a></li>
             <li><a href="../back/cerrar.php"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
         </ul>
     </nav></div>
 
     <div id="texto">
-        <header id='public'>Redactar Mensaje</header>
+        <header id='public'>Escribe en el Muro</header>
         <form method="post" action="../back/publicar.php" id="publicar">
-            <textarea required maxlength="600" rows="5" cols="85" placeholder="Publique su mensaje aqui..." id="publicacion" name="publicacion" onpaste="contarcaracteres();" onkeyup="contarcaracteres();"></textarea><br>
+            <textarea required maxlength="600" rows="5" cols="85" placeholder="Publica tu mensaje aquí...Todos van a leer tu mensaje jajajaja (risa malévola)" id="publicacion" name="publicacion" onpaste="contarcaracteres();" onkeyup="contarcaracteres();"></textarea><br>
             <label id="res" style="color: #bbbbbb; margin-left: 85%">0 / 600</label><br>
-            <select style="margin-left: 54%" id="persona" name="persona">
+            <select style="margin-left: 46%" id="persona" name="persona">
                 <option value="0" selected>Anonimo</option>
                 <option value="1">Publicar con mi personaje</option>
             </select>
-            <button id="boton">Publicar</button><br><br>
+            <button id="boton">Publicar Mensaje</button><br><br>
         </form>
     </div>
 <div style="margin-left: 18%">

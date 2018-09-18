@@ -21,5 +21,5 @@ $publicar = mysqli_query($con, "INSERT INTO `publicaciones` (`fecha`, `usuario`,
 if ($publicar){
     header("Location: ../public/home.php");
 }else{
-    echo "<script>alert('Algo pasó, intenta nuevamente'); window.location.href='../public/index.php'</script>";
+    echo "<script>alert('Algo pasó, intenta nuevamente'); window.location.href='../public/home.php'</script>";
 }
