@@ -47,7 +47,7 @@ if (!isset($_SESSION['username'])){
 
         //echo $_SESSION['id'];
         for ($i = 0; $i<sizeof($respuesta); $i++){
-            $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][1]);
+            $nomPer =mysqli_query($con, "SELECT personajes.nombre FROM personajes WHERE personajes.idPersonaje = " . $respuesta[$i][1]);
             $nom = mysqli_fetch_all($nomPer);
             echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes'>";
 
