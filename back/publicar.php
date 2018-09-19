@@ -15,7 +15,7 @@ if ($usuario != 0 ){
 }
 
 date_default_timezone_set('America/Bogota'); // your user's timezone
-$my_datetime='2013-10-23 15:47:10';
+$my_datetime= getdate();
 $dia = date('Y-m-d H:i:s',strtotime("$my_datetime UTC"));
 
 //$dia = date('Y-m-d h:i:s', 'America/Bogota');
