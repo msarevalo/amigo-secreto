@@ -66,7 +66,7 @@ $resas = mysqli_fetch_all($asignacion);
     <form method=\"post\" action=\"../back/regalo.php\" id=\"publicar\">
         <textarea required maxlength=\"600\" rows=\"5\" cols=\"85\" placeholder=\"¿Quieres un viaje, un carro, una casa? ¡Escribe aquí qué es lo que quieres!\" id=\"publicacion\" name=\"publicacion\" onpaste=\"contarcaracteres();\" onkeyup=\"contarcaracteres();\"></textarea><br>
         <label id=\"res\" style=\"color: #bbbbbb; margin-left: 85%\">0 / 600</label><br>";
-        if (sizeof($resas) == 0) {
+        if (sizeof($resas) != 0) {
                 echo "<button style=\"margin-left: 80%\" id=\"boton\">Publicar</button><br><br>";
         }else{
             echo "<label style='margin-left: 30%'>Espera el sorteo para escribir tu regalo</label>";
@@ -94,14 +94,14 @@ $resas = mysqli_fetch_all($asignacion);
         <br><label class="titulos" for="color" style="margin-left: 40%; padding-top: 10px">Elige tu color</label>
         <?php
         if (sizeof($resas) != 0) {
-            echo "<input type='color' name='color' id='color' value='" . $img[0][3] . "'></input>";
+            echo "<input type='color' name='color' id='color' value='" . $img[0][3] . "'></input>
+    <br>
+    <button style=\"margin-left: 80%\" id=\"boton\">Editar</button><br><br>";
     }
     }else{
         echo "<label style='margin-left: 30%'>Espera el sorteo para editar a tu personaje</label>";
     }
     ?>
-    <br>
-    <button style="margin-left: 80%" id="boton">Editar</button><br><br>
 </form>
 
     </div>
