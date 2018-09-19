@@ -13,18 +13,18 @@ $contador =0;
 //echo sizeof($correos);
 for ($i=1; $i<sizeof($correos); $i++ ){
     $to = $correos[$i][0];
-    $subject = "Correo Informativo Amormania";
+    $subject = "Amormania te invita";
 //$usuario = $respuesta[0][1];
     $usuario = $correos[$i][0];
     $nombre = $correos[$i][1];
-    echo $nombre . " " . $usuario . "<br>";
+    //echo $nombre . " " . $usuario . "<br>";
 //}
 //}
 //$to = 'msscout11@gmail.com'; // note the comma
 // Subject
 //$subject = 'Pruebas';
 // Message
-    /*$message = '
+    $message = '
 <html>
     <head>
         <title>Correo Informativo Amormania</title>
@@ -63,7 +63,7 @@ Equipo de Desarrollo de Amormania.
     }
     //$actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE `user`.`idUser` = " . $idRes . ";");
 //$confirmar = mysqli_fetch_all($actual);
-
+unset($headers);
     /*if ($actual){
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
     }else{
