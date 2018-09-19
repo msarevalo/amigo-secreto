@@ -17,6 +17,10 @@ include ('../back/conexion.php');
 if (!isset($_SESSION['username'])){
     header("Location: ../public/index.php");
 }
+
+$asignacion = mysqli_query($con, "SELECT * FROM `asignacion` ")
+$resas = mysqli_fetch_all($asignacion);
+
 ?>
 <body style="background-color: #f1f1f1; font-family: 'Cairo', sans-serif;">
 <header id="header" class="left show">
@@ -56,6 +60,7 @@ if (!isset($_SESSION['username'])){
         $public =mysqli_query($con, "SELECT * FROM `publicaciones` ORDER BY `publicaciones`.`fecha` DESC");
         $respuesta = mysqli_fetch_all($public);
 
+        echo sizeof($resas);exit();
         //echo $_SESSION['id'];
         for ($i = 0; $i<sizeof($respuesta); $i++){
             $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
