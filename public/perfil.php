@@ -17,6 +17,9 @@ include ('../back/conexion.php');
 if (!isset($_SESSION['username'])){
     header("Location: ../public/index.php");
 }
+
+$asignacion = mysqli_query($con, "SELECT * FROM `asignacion` ");
+$resas = mysqli_fetch_all($asignacion);
 ?>
 <body style="background-color: #f1f1f1; font-family: 'Cairo', sans-serif;">
 <header id="header" class="left show">
@@ -62,27 +65,40 @@ if (!isset($_SESSION['username'])){
     <header id='public'>Cuéntale al mundo que quieres de regalo</header>
     <form method=\"post\" action=\"../back/regalo.php\" id=\"publicar\">
         <textarea required maxlength=\"600\" rows=\"5\" cols=\"85\" placeholder=\"¿Quieres un viaje, un carro, una casa? ¡Escribe aquí qué es lo que quieres!\" id=\"publicacion\" name=\"publicacion\" onpaste=\"contarcaracteres();\" onkeyup=\"contarcaracteres();\"></textarea><br>
-        <label id=\"res\" style=\"color: #bbbbbb; margin-left: 85%\">0 / 600</label><br>
-        <button style=\"margin-left: 80%\" id=\"boton\">Publicar</button><br><br>
-    </form>";
+        <label id=\"res\" style=\"color: #bbbbbb; margin-left: 85%\">0 / 600</label><br>";
+        if (sizeof($resas) == 0) {
+                echo "<button style=\"margin-left: 80%\" id=\"boton\">Publicar</button><br><br>";
+        }else{
+            echo "<label style='margin-left: 30%'>Espera el sorteo para escribir tu regalo</label>";
+        }
+    echo "</form>";
     }
     ?>
 </div>
 <div id="texto1">
 <header id='public'>Cambia como la gente ve a tu personaje</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
-    <label class="file" title="" id="archi">
-        <input id="fotografia" name="fotografia" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))"/>
-    </label>
     <?php
-    //print_r($img);
-    if ($img) {
-        echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
+    if (sizeof($resas) != 0) {
+        ?>
+        <label class="file" title="" id="archi">
+            <input id="fotografia" name="fotografia" type="file"
+                   onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))"/>
+        </label>
+        <?php
+        //print_r($img);
+        if ($img) {
+            echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
+        }
+        ?>
+        <br><label class="titulos" for="color" style="margin-left: 40%; padding-top: 10px">Elige tu color</label>
+        <?php
+        if (sizeof($resas) != 0) {
+            echo "<input type='color' name='color' id='color' value='" . $img[0][3] . "'></input>";
     }
-    ?>
-    <br><label class="titulos" for="color" style="margin-left: 40%; padding-top: 10px">Elige tu color</label>
-    <?php
-    echo "<input type='color' name='color' id='color' value='" . $img[0][3] . "'></input>"
+    }else{
+        echo "<label style='margin-left: 30%'>Espera el sorteo para editar a tu personaje</label>";
+    }
     ?>
     <br>
     <button style="margin-left: 80%" id="boton">Editar</button><br><br>
