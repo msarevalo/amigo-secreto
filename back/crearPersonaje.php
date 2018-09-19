@@ -1,6 +1,20 @@
 <?php
 
 include('conexion.php');
+function hexadecimalAzar($caracteres){
+
+    $caracteresPosibles = "0123456789abcdef";
+    $azar = '';
+
+    for($i=0; $i<$caracteres; $i++){
+
+        $azar .= $caracteresPosibles[rand(0,strlen($caracteresPosibles)-1)];
+
+    }
+
+    return $azar;
+
+}
 
 $nombre_img = $_FILES['imagen']['name'];
 $tipo = $_FILES['imagen']['type'];
@@ -34,7 +48,7 @@ if ($nombre_img == !NULL)
         || ($_FILES["imagen"]["type"] == "image/jpg")
         || ($_FILES["imagen"]["type"] == "image/png"))
     {
-        $sql = "INSERT INTO `personajes` (`nombre`, `genero`, `imagen`, `ruta`, `activo`) VALUES ('" . $nombre ."', '" . $genero ."', '" . $nom_temp . "', '" . $ruta ."', '" . $activo . "');";
+        $sql = "INSERT INTO `personajes` (`nombre`, `genero`, `imagen`, `ruta`, `activo`, `color`) VALUES ('" . $nombre ."', '" . $genero ."', '" . $nom_temp . "', '" . $ruta ."', '" . $activo . "', '" . hexadecimalAzar(6) . "');";
         $result = mysqli_query($con, $sql);
         if ($result) {
             // Ruta donde se guardarán las imágenes que subamos

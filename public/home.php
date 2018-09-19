@@ -58,14 +58,14 @@ if (!isset($_SESSION['username'])){
 
         //echo $_SESSION['id'];
         for ($i = 0; $i<sizeof($respuesta); $i++){
-            $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
+            $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
             $nom = mysqli_fetch_all($nomPer);
             echo "<div style='background-color: #ffffff; margin-bottom: 10px'>";
 
             if (sizeof($nom)==0){
                 echo "<header id='mensajes1'>Anonimo</header><table><tr><label id='date'>" . $respuesta[$i][1];
             }else{
-                echo "<header id='mensajes'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
+                echo "<header id='mensajes' style='background-color: " . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
             }
 
 
