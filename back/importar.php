@@ -41,7 +41,7 @@ try{
                 $contacto = $dia;
                 $contacto = $nombre;
             }
-            $correos = $contacto;
+            $correos[] = $contacto;
             unset($contacto);
             $i++;
         }
