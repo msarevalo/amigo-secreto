@@ -96,7 +96,7 @@ $resas = mysqli_fetch_all($asignacion);
         if (sizeof($resas) != 0) {
             echo "<input type='color' name='color' id='color' value='" . $img[0][3] . "'></input>
     <br>
-    <button style=\"margin-left: 80%\" id=\"boton\">Editar</button><br><br>";
+    <button style=\"margin-left: 80%\" id=\"boton\">Guardar</button><br><br>";
     }
     }else{
         echo "<label style='margin-left: 30%'>Espera el sorteo para editar a tu personaje</label>";
