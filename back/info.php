@@ -8,7 +8,7 @@ if (isset($_GET['arreglo'])){
     echo "fallo";
 }
 
-$contador =1;
+$contador =0;
 //print_r($correos);
 //echo sizeof($correos);
 for ($i=1; $i<sizeof($correos); $i++ ){
@@ -60,7 +60,7 @@ Equipo de Desarrollo de Amormania.
     }else{
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
-
+unset($to);
     //$actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE `user`.`idUser` = " . $idRes . ";");
 //$confirmar = mysqli_fetch_all($actual);
 
