@@ -47,15 +47,16 @@ $resas = mysqli_fetch_all($asignacion);
         <form method="post" action="../back/publicar.php" id="publicar">
             <textarea required maxlength="600" rows="5" cols="85" placeholder="Publica tu mensaje aquí...Todos van a leer tu mensaje jajajaja (risa malévola)" id="publicacion" name="publicacion" onpaste="contarcaracteres();" onkeyup="contarcaracteres();"></textarea><br>
             <label id="res" style="color: #bbbbbb; margin-left: 85%">0 / 600</label><br>
-            <select style="margin-left: 46%" id="persona" name="persona">
-                <option value="0" selected>Anonimo</option>
-                <option value="1">Publicar con mi personaje</option>
-            </select>
             <?php
             if (sizeof($resas)== 0){
-                echo "<br><label>Espera el sorteo para participar en el muro</label>";
+                echo "<br><label style='margin-left: 30%'>Espera el sorteo para participar en el muro</label>";
             }else{
-              echo "<button id=\"boton\">Publicar Mensaje</button>";
+              echo "
+            <select style=\"margin-left: 46%\" id=\"persona\" name=\"persona\">
+                <option value=\"0\" selected>Anonimo</option>
+                <option value=\"1\">Publicar con mi personaje</option>
+            </select>
+            <button id=\"boton\">Publicar Mensaje</button>";
             }
             ?>
             <br><br>
