@@ -38,8 +38,8 @@ try{
                 if (isset($datos[1])) {
                     $nombre = $datos[1];
                 }
-                $contacto[] = $dia;
-                $contacto[] = $nombre;
+                $contacto[0] = $dia;
+                $contacto[1] = $nombre;
             }
             $correos[] = $contacto;
             unset($contacto);
