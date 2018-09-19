@@ -14,7 +14,7 @@ $consulta = mysqli_query($con, "SELECT * FROM `user` WHERE `IDuser`=" . $idRes .
 $respuesta = mysqli_fetch_assoc($consulta);
 
 $to = $respuesta['correo'];
-$subject = "Reestablecer Password";
+$subject = "Reestablecer Contrasena";
 //$usuario = $respuesta[0][1];
 $usuario = $respuesta['correo'];
 $nombre = $respuesta['nombre'];
@@ -28,11 +28,11 @@ $pass = $password_hash;
 $message = '
 <html>
     <head>
-        <title>Reestablecer Password</title>
+        <title>Reestablecer Contrasena</title>
         <meta charset="UTF-8">
     </head>
     <body>
-    <label>Haga click en el siguiente link para reestablecer el password</label>
+    <label>Haz clic en el siguiente link para reestablecer la contrasena de Amormania</label>
     <a href="http://52.15.245.23/amigo-secreto/back/validar?id=' . $idRes . '&usuario=' . $usuario . '&pass=' . $pass . '">Cambiar mi password</a>
 </body>
 </html>
