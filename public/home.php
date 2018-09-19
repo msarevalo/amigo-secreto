@@ -51,7 +51,14 @@ $resas = mysqli_fetch_all($asignacion);
                 <option value="0" selected>Anonimo</option>
                 <option value="1">Publicar con mi personaje</option>
             </select>
-            <button id="boton">Publicar Mensaje</button><br><br>
+            <?php
+            if (sizeof($resas)== 0){
+                echo "<label>Espera el sorteo para participar en el muro</label>";
+            }else{
+              echo "<button id=\"boton\">Publicar Mensaje</button>";
+            }
+            ?>
+            <br><br>
         </form>
     </div>
 <div style="margin-left: 18%">
@@ -60,7 +67,6 @@ $resas = mysqli_fetch_all($asignacion);
         $public =mysqli_query($con, "SELECT * FROM `publicaciones` ORDER BY `publicaciones`.`fecha` DESC");
         $respuesta = mysqli_fetch_all($public);
 
-        echo sizeof($resas); exit();
         //echo $_SESSION['id'];
         for ($i = 0; $i<sizeof($respuesta); $i++){
             $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
