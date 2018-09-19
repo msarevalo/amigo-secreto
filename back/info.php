@@ -62,7 +62,7 @@ Equipo de Desarrollo de Amormania.
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
 
-    //unset($headers);
+    unset($headers);
 
 }
 echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
