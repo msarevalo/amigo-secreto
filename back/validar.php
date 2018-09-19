@@ -38,8 +38,8 @@ else
 //$result = mysql_query("SELECT * from users where user='" . $usuario . "'");
     $respuesta = mysqli_fetch_all($resultado);
 
-    print_r($respuesta);
-    echo "<br>";
+    //print_r($respuesta);
+    //echo "<br>";
 
 echo $respuesta[0][6];
     if ($respuesta) {
