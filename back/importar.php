@@ -33,7 +33,7 @@ try{
                 //usamos la función utf8_encode para leer correctamente los caracteres especiales
 
                 if (isset($datos[0])) {
-                    $correo = utf8_encode($datos[0]);
+                    $correo = $datos[0];
                 }
                 if (isset($datos[1])) {
                     $nombre = $datos[1];
