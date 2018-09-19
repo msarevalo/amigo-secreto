@@ -15,9 +15,15 @@
 <?php
 include ('../back/conexion.php');
 
+$restablecer = mysqli_query($con, "SELECT `nombre` FROM `user` WHERE  `idUser`=" . $_GET['id']);
+$respuesta = mysqli_fetch_all($restablecer);
+print_r($respuesta);
+
 if (isset($_GET['id'])){
     $_SESSION['restablece'] = $_GET['id'];
 }
+
+
 
 ?>
 <div style="margin-left: 35%; margin-top: 8%; background-color: #f1f1f1; width: 400px; border-radius: 10px;
