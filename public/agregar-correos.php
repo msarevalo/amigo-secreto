@@ -32,6 +32,11 @@ if (!isset($_SESSION['username'])){
         </ul>
     </nav></div>
 <div style="margin-left: 350px">
-    <label>Enviar correo informativo a la base cargada:</label><br>
-    <a href="agregar-correos"><button>Enviar</button></a>
+    <form action="../back/importar.php" enctype="multipart/form-data" method="post" id="crear" style="padding: 30px">
+        <!--<input id="archivo" accept=".csv" name="archivo" type="file" required/><br><br><br>-->
+        <label class="file" title="">
+            <input id="archivo" accept=".csv" name="archivo" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))" required/>
+        </label><br><br><br>
+        <input name="enviar" type="submit" value="Importar" id="boton-login"/><br>
+    </form>
 </div>

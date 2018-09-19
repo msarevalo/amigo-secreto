@@ -5,6 +5,8 @@ include('conexion.php');
 $correo[] = 'soportecolombia@celmedia.com';
 $correo[] = 'Manuel';
 $correos[] = $correo;
+unset($correo);
+
 $correo[] = 'ftorres@celmedia.com';
 $correo[] = 'Fernando';
 $correos[] = $correo;
