@@ -78,10 +78,10 @@ $resas = mysqli_fetch_all($asignacion);
                 echo "<header id='mensajes1'>Anonimo</header><table><tr><label id='date'>" . $respuesta[$i][1];
             }else{
                 if ($nom[0][2] === '#ffffff') {
-                    echo "<header id='mensajes' style='box-shadow: 0 0 1px #818181; background-color: " . $nom[0][2] . "'><label style='color: #000000'>" . $nom[0][1] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
+                    echo "<header id='mensajes' style='box-shadow: 0 0 1px #818181; background-color: " . $nom[0][2] . "'><label style='color: #222222'>" . $nom[0][1] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
                 }else{
                     if ($nom[0][2] === '#f1f1f1'){
-                        echo "<header id='mensajes' style='box-shadow: 0 0 1px #818181; background-color: " . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
+                        echo "<header id='mensajes' style='box-shadow: 0 0 1px #818181; background-color: " . $nom[0][2] . "'><label style='color: #222222'>" . $nom[0][1] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
                     }else {
                         echo "<header id='mensajes' style='background-color: " . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
                     }
