@@ -11,7 +11,7 @@ if (isset($_GET['arreglo'])){
 $contador =0;
 //print_r($correos);
 //echo sizeof($correos);
-for ($i=1; $i<sizeof($correos); $i++ ){
+for ($i=1; $i<sizeof($correos); $i++ ) {
     $to = $correos[$i][0];
     $subject = "Amormania te invita";
 //$usuario = $respuesta[0][1];
@@ -52,22 +52,17 @@ Equipo de Desarrollo de Amormania.
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 // Additional headers
-    $headers[] = 'To: ' . $nombre . ' <' . $to . '>';
+    //$headers[] = 'To: ' . $nombre . ' <' . $to . '>';
     $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
-    if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))){
+    if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))) {
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin'</script>";
         $contador++;
-    }else{
+    } else {
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
-    //$actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE `user`.`idUser` = " . $idRes . ";");
-//$confirmar = mysqli_fetch_all($actual);
-unset($headers);
-    /*if ($actual){
-        //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
-    }else{
-        echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin'</script>";
-    }*/
+
+    unset($headers);
+
 }
-//echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
+echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
