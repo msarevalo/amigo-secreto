@@ -56,7 +56,7 @@ Equipo de Desarrollo de Amormania.
     $headers[] = 'To: ' . $nombre . ' <' . $to . '>';
     $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
-print_r($headers); echo "<br>";}
+print_r($headers); echo "<br>";unset($headers);}
 /*if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))) {
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin'</script>";
         $contador++;
