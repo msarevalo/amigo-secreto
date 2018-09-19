@@ -65,6 +65,8 @@ if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n"
     }
 
     $insert = mysqli_query($con, "INSERT INTO `asignacion` (`nombre`, `correo`, `mensaje`) VALUES ('" . $nombre . "', '" . $to . "', '" . $message . "')");
+    $co = mysqli_fetch_all($insert);
+
     print_r($headers); echo " prueba1 <br>";
     unset($headers);
     print_r($headers); echo " prueba2 <br>";
