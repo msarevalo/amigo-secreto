@@ -32,18 +32,18 @@ try{
                 //Almacenamos los datos que vamos leyendo en una variable
                 //usamos la función utf8_encode para leer correctamente los caracteres especiales
 
-                print_r($datos);echo "<br>";
+                //print_r($datos);echo "<br>";
                 if (isset($datos[0])) {
                     $correo = $datos[0];
                 }
                 if (isset($datos[1])) {
                     $nombre = $datos[1];
                 }
-                $contacto[0] = $dia;
+                $contacto[0] = $correo;
                 $contacto[1] = $nombre;
             }
             $correos[] = $contacto;
-            print_r($contacto);echo "<br>";
+            //print_r($contacto);echo "<br>";
             unset($contacto);
             $i++;
         }
