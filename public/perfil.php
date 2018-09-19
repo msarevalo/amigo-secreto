@@ -69,7 +69,7 @@ if (!isset($_SESSION['username'])){
     ?>
 </div>
 <div id="texto1">
-<header id='public'>Cambia la foto de tu personaje</header>
+<header id='public'>Cambia como la gente ve a tu personaje</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
     <label class="file" title="" id="archi">
         <input id="fotografia" name="fotografia" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))"/>
@@ -80,7 +80,7 @@ if (!isset($_SESSION['username'])){
         echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
     }
     ?>
-    <label class="titulos" for="color">Elige tu color</label>
+    <br><label class="titulos" for="color" style="margin-left: 40%; padding-top: 10px">Elige tu color</label>
     <?php
     echo "<input type='color' name='color' id='color' value='" . $img[0][3] . "'></input>"
     ?>
