@@ -16,7 +16,7 @@ $mail->SMTPDebug = 2;
 
 $mail->Timeout=60;
 
-$mail->Helo = "dominio.com"; //Muy importante para que llegue a hotmail y otros
+$mail->Helo = "celmedia.com"; //Muy importante para que llegue a hotmail y otros
 
 //Set the hostname of the mail server
 $mail->Host = 'smtp.gmail.com';
@@ -40,7 +40,7 @@ $mail->Password = "euuhsmfyahxymdox";
 $mail->setFrom('amormania.celmedia@gmail.com', 'Amormania');
 
 //Set an alternative reply-to address
-$mail->addReplyTo('correo@envia.com', 'Nombre');
+$mail->addReplyTo('amormania.celmedia@gmail.com', 'Amormania');
 
 //Set who the message is to be sent to
 $mail->addAddress('soportecolombia@celmedia.com');
