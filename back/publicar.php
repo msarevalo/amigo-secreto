@@ -13,8 +13,8 @@ if ($_POST['publicacion']){
 if ($usuario != 0 ){
     $usuario = $_SESSION['id'];
 }
-$zona = date_default_timezone_set('America/Bogota');
-$dia = date('Y-m-d h:i:s', $zona);
+
+$dia = date('Y-m-d h:i:s', 'America/Bogota');
 
 $publicar = mysqli_query($con, "INSERT INTO `publicaciones` (`fecha`, `usuario`, `publicacion`) VALUES ('" . $dia . "', '" . $usuario . "', '" . $public . "');");
 

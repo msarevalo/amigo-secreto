@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048b2885-f854-4d9a-996d-cfcdc711ee06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/publicar.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/publicar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +43,7 @@
           <entry key="css" value="690" />
           <entry key="htaccess" value="2" />
           <entry key="js" value="200" />
-          <entry key="php" value="14861" />
+          <entry key="php" value="14876" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -52,7 +51,7 @@
           <entry key="CSS" value="690" />
           <entry key="HTML" value="30" />
           <entry key="JavaScript" value="200" />
-          <entry key="PHP" value="14831" />
+          <entry key="PHP" value="14846" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -77,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back/publicar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+            <state relative-caret-position="272">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -275,12 +274,12 @@
       <updated>1536769460411</updated>
       <workItem from="1536769462356" duration="24936000" />
       <workItem from="1536853249182" duration="41215000" />
-      <workItem from="1537196396163" duration="49063000" />
+      <workItem from="1537196396163" duration="49206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115214000" />
+    <option name="totallyTimeSpent" value="115357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -655,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back/publicar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+        <state relative-caret-position="272">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>
