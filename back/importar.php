@@ -48,8 +48,10 @@ try{
             $i++;
         }
     }
+    $correos = serialize($correos);
+    $correos = urlencode($correos);
     //print_r($correos);
-    header("Location: /amigo-secreto/back/info?arreglo=" . serialize($correos));
+    header("Location: /amigo-secreto/back/info?arreglo=" . $correos);
 }catch (Exception $e){
     echo "<script>alert('Algo ha pasado, verifica tu archivo'); window.location.href='../views/importar-horario.php'</script>";
 }
