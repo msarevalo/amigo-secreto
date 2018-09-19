@@ -8,4 +8,6 @@ if (isset($_GET['arreglo'])){
     echo "fallo";
 }
 
-print_r($correos);
+//print_r($correos);
+echo sizeof($correos);
+//for ($i=1; $i<= )
