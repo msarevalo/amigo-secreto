@@ -23,7 +23,7 @@ function alertaPersonaje(ideliminar) {
     if (r == true){
         location.href="../back/eliminarPersonaje.php?id=" + ideliminar;
     }else {
-        //alert('Falso');
+        location.href="../public/personajes-admin"
     }}
     function alertaUsuario(ideliminar) {
     var eliminar = ideliminar;
@@ -31,7 +31,7 @@ function alertaPersonaje(ideliminar) {
     if (r == true){
         location.href="../back/eliminarUsuario.php?id=" + ideliminar;
     }else {
-        //alert('Falso');
+        location.href="../public/usuarios-admin";
     }}
 
     function alertaRestablecer(ideliminar) {
@@ -40,7 +40,15 @@ function alertaPersonaje(ideliminar) {
     if (r == true){
         location.href="../back/restablecerAdmin.php?id=" + ideliminar;
     }else {
-        //alert('Falso');
+        location.href="../public/usuarios-admin";
+    }}
+
+    function alertaEnvio() {
+    var r = confirm('Desdea enviar el correo informativo?');
+    if (r == true){
+        location.href="../back/info.php";
+    }else {
+        location.href="../public/correo-informativo";
     }}
 
 function contarcaracteres(){
