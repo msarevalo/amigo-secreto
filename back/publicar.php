@@ -14,11 +14,7 @@ if ($usuario != 0 ){
     $usuario = $_SESSION['id'];
 }
 
-date_default_timezone_set('America/Bogota'); // your user's timezone
-$my_datetime= getdate();
-$dia = date('Y-m-d H:i:s',strtotime("$my_datetime UTC"));
-
-//$dia = date('Y-m-d h:i:s', 'America/Bogota');
+$dia = date('Y-m-d h:i:s');
 
 $publicar = mysqli_query($con, "INSERT INTO `publicaciones` (`fecha`, `usuario`, `publicacion`) VALUES ('" . $dia . "', '" . $usuario . "', '" . $public . "');");
 
