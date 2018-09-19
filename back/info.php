@@ -60,7 +60,7 @@ Equipo de Desarrollo de Amormania.
     }else{
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
-unset($to);
+$to=null;
     //$actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE `user`.`idUser` = " . $idRes . ";");
 //$confirmar = mysqli_fetch_all($actual);
 
