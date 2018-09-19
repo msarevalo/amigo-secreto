@@ -82,7 +82,7 @@ if (!isset($_SESSION['username'])){
     ?>
     <label class="titulos" for="color">Elige tu color</label>
     <?php
-    echo "<input type='color' name='color' id='color' value='#" . $img[0][3] . "'></input>"
+    echo "<input type='color' name='color' id='color' value='" . $img[0][3] . "'></input>"
     ?>
     <br>
     <button style="margin-left: 80%" id="boton">Editar</button><br><br>

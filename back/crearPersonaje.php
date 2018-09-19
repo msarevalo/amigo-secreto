@@ -51,7 +51,7 @@ if ($nombre_img == !NULL)
         || ($_FILES["imagen"]["type"] == "image/jpg")
         || ($_FILES["imagen"]["type"] == "image/png"))
     {
-        $sql = "INSERT INTO `personajes` (`nombre`, `genero`, `imagen`, `ruta`, `activo`, `color`) VALUES ('" . $nombre ."', '" . $genero ."', '" . $nom_temp . "', '" . $ruta ."', '" . $activo . "', '" . hexadecimalAzar(6) . "');";
+        $sql = "INSERT INTO `personajes` (`nombre`, `genero`, `imagen`, `ruta`, `activo`, `color`) VALUES ('" . $nombre ."', '" . $genero ."', '" . $nom_temp . "', '" . $ruta ."', '" . $activo . "', '#" . hexadecimalAzar(6) . "');";
         $result = mysqli_query($con, $sql);
         if ($result) {
             // Ruta donde se guardarán las imágenes que subamos
