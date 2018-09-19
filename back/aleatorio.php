@@ -100,7 +100,7 @@ Equipo de Desarrollo de Amormania.
         echo "<script>alert('Algo ha pasado')</script>";
     }
 
-
+unset($headers);
     $consulta = mysqli_query($con, "INSERT INTO `asignacion` (`usuario`, `personaje`) VALUES ('" . $resUserf[$randF[$i]][0] . "', '" . $resPerf[$randF1[$i]][0] . "')");
     if ($consulta){
         //echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";
@@ -157,7 +157,7 @@ Equipo de Desarrollo de Amormania.
     }else{
         echo "<script>alert('Algo ha pasado')</script>";
     }
-
+    unset($headers);
     $consulta = mysqli_query($con, "INSERT INTO `asignacion` (`usuario`, `personaje`) VALUES ('" . $resUserm[$randM[$i]][0] . "', '" . $resPerm[$randM1[$i]][0] . "')");
     if ($consulta){
         //echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";

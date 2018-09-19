@@ -52,7 +52,7 @@ Equipo de Desarrollo de Amormania.
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 // Additional headers
-    //$headers[] = 'To: ' . $nombre . ' <' . $to . '>';
+    $headers[] = 'To: ' . $nombre . ' <' . $to . '>';
     $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
     if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))) {
