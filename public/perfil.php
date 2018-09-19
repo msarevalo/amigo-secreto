@@ -72,17 +72,20 @@ if (!isset($_SESSION['username'])){
 <header id='public'>Cambia la foto de tu personaje</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
     <label class="file" title="" id="archi">
-        <input id="fotografia" name="fotografia" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))" required/>
+        <input id="fotografia" name="fotografia" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))"/>
     </label>
     <?php
     //print_r($img);
     if ($img) {
         echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
     }
-    //echo "<input type='color' name='color' id='color' value='#" . $img[0][3] . "'></input>"
+    ?>
+    <label class="titulos" for="color">Elige tu color</label>
+    <?php
+    echo "<input type='color' name='color' id='color' value='#" . $img[0][3] . "'></input>"
     ?>
     <br>
-    <input type="submit" style="margin-left: 80%" id="boton">Editar</input><br><br>
+    <button style="margin-left: 80%" id="boton">Editar</button><br><br>
 </form>
 
     </div>
