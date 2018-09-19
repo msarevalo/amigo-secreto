@@ -33,5 +33,5 @@ if (!isset($_SESSION['username'])){
     </nav></div>
 <div style="margin-left: 350px">
     <label>Enviar correo informativo a la base cargada:</label><br>
-    <button onclick="alertaEnvio()">Enviar</button>
+    <a onclick="alertaEnvio()"><button>Enviar</button></a>
 </div>
