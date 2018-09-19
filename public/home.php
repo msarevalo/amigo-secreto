@@ -18,7 +18,7 @@ if (!isset($_SESSION['username'])){
     header("Location: ../public/index.php");
 }
 
-$asignacion = mysqli_query($con, "SELECT * FROM `asignacion` ")
+$asignacion = mysqli_query($con, "SELECT * FROM `asignacion` ");
 $resas = mysqli_fetch_all($asignacion);
 
 ?>
@@ -60,7 +60,7 @@ $resas = mysqli_fetch_all($asignacion);
         $public =mysqli_query($con, "SELECT * FROM `publicaciones` ORDER BY `publicaciones`.`fecha` DESC");
         $respuesta = mysqli_fetch_all($public);
 
-        echo sizeof($resas);exit();
+        echo sizeof($resas); exit();
         //echo $_SESSION['id'];
         for ($i = 0; $i<sizeof($respuesta); $i++){
             $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
