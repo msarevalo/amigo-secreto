@@ -45,7 +45,7 @@ if (!isset($_SESSION['username'])){
     $regalo = mysqli_query($con, "SELECT * FROM `regalos` WHERE `idPersonaje` = " . $respuesta[0][0]);
     $resregalo = mysqli_fetch_all($regalo);
 
-    $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen, personaje.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
+    $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
     $img = mysqli_fetch_all($personaje);
     //echo $img[0][1];
 
