@@ -8,10 +8,11 @@ if (isset($_GET['arreglo'])){
     echo "fallo";
 }
 
+print_r($correos);
 $contador =0;
 //print_r($correos);
 //echo sizeof($correos);
-for ($i=1; $i<sizeof($correos); $i++ ) {
+/*for ($i=1; $i<sizeof($correos); $i++ ) {
     $to = $correos[$i][0];
     $subject = "Amormania te invita";
 //$usuario = $respuesta[0][1];

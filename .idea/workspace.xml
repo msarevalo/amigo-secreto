@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048b2885-f854-4d9a-996d-cfcdc711ee06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/back/aleatorio.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/aleatorio.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/info.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +43,7 @@
           <entry key="css" value="695" />
           <entry key="htaccess" value="2" />
           <entry key="js" value="304" />
-          <entry key="php" value="18090" />
+          <entry key="php" value="18104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -52,7 +51,7 @@
           <entry key="CSS" value="695" />
           <entry key="HTML" value="50" />
           <entry key="JavaScript" value="304" />
-          <entry key="PHP" value="18040" />
+          <entry key="PHP" value="18054" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -115,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="63" column="146" selection-start-line="63" selection-start-column="146" selection-end-line="63" selection-end-column="146" />
+            <state relative-caret-position="170">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -124,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/aleatorio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="307">
               <caret line="160" column="48" lean-forward="true" selection-start-line="160" selection-start-column="48" selection-end-line="160" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#b#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -339,12 +338,12 @@
       <updated>1536769460411</updated>
       <workItem from="1536769462356" duration="24936000" />
       <workItem from="1536853249182" duration="41215000" />
-      <workItem from="1537196396163" duration="68067000" />
+      <workItem from="1537196396163" duration="68707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134218000" />
+    <option name="totallyTimeSpent" value="134858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -726,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/importar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/restablecerAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -742,7 +734,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back/aleatorio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="307">
           <caret line="160" column="48" lean-forward="true" selection-start-line="160" selection-start-column="48" selection-end-line="160" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#b#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -750,10 +742,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back/importar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back/info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="63" column="146" selection-start-line="63" selection-start-column="146" selection-end-line="63" selection-end-column="146" />
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
