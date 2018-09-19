@@ -51,7 +51,7 @@ shuffle($randM1);
         echo $resUserf[$val1][0] . "<br>";
 }*/
 
-for ($i = 0; $i<sizeof($randF); $i++){
+for ($i = 0; $i<=sizeof($randF); $i++){
     $to = $resUserf[$randF[$i]][1];
     $subject = "Este sera tu personaje para jugar al Amigo Secreto!";
 //$usuario = $respuesta[0][1];
@@ -109,7 +109,7 @@ Equipo de Desarrollo de Amormania.
     }
 }
 
-for ($i = 0; $i<sizeof($randM); $i++){
+for ($i = 0; $i<=sizeof($randM); $i++){
     $toM = $resUserm[$randM[$i]][1];
     $subjectM = "Este sera tu personaje para jugar al Amigo Secreto!";
 //$usuario = $respuesta[0][1];

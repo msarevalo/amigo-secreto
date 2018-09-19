@@ -64,7 +64,7 @@ if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n"
     } else {
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
-    
+
 
     //print_r($headers); echo " prueba1 <br>";
 
