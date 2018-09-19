@@ -67,7 +67,7 @@ else
 {
     //si existe la variable pero se pasa del tamaño permitido
     //echo "<script>alert('No se cargo la imagen'); window.location.href='../public/crear-personaje.php'</script>";
-    if ($color != '#ffffff' || $color != '#f1f1f1' || $color != '#889d6f') {
+    if ($color !== '#ffffff' || $color !== '#f1f1f1' || $color !== '#889d6f') {
         $sql = "UPDATE `personajes` SET `color` = '" . $color . "' WHERE `personajes`.`idPersonaje` = " . $respuesta[0][0] . ";";
         $result = mysqli_query($con, $sql);
         if ($result) {
