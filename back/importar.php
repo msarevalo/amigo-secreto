@@ -42,6 +42,7 @@ try{
                 $contacto[1] = $nombre;
             }
             $correos[] = $contacto;
+            print_r($contacto);echo "<br>";
             unset($contacto);
             $i++;
         }
