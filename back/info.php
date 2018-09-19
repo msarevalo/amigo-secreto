@@ -60,6 +60,7 @@ Equipo de Desarrollo de Amormania.
 if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))) {
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin'</script>";
         $contador++;
+    unset($headers);
     } else {
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
@@ -68,7 +69,7 @@ if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n"
     $co = mysqli_fetch_all($insert);
 
     //print_r($headers); echo " prueba1 <br>";
-    //unset($headers);
+
     //print_r($headers); echo " prueba2 <br>";
 }
 echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
