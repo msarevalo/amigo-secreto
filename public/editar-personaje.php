@@ -37,6 +37,7 @@ $personaje = mysqli_fetch_array($consulta);
             <li><a href="usuarios-admin"><i class="fa fa-laptop"></i>Usuarios</a></li>
             <li><a href="asginar-personaje"><i class="fa fa-laptop"></i>Asignacion de Personajes</a></li>
             <li><a href="asignar-amigo"><i class="fa fa-laptop"></i>Aleatorio</a></li>
+            <li><a href="correo-informativo"><i class="fa fa-laptop"></i>Correo informativo</a></li>
             <li><a href="../back/cerrar.php"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
         </ul>
     </nav>

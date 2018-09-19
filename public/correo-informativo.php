@@ -31,9 +31,3 @@ if (!isset($_SESSION['username'])){
             <li><a href="../back/cerrar"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
         </ul>
     </nav></div>
-    <div style="margin-left: 300px">
-        <label>Prueba</label><br>
-    <a href="../back/cerrar.php"><img src="../img/cerrar.png" style="width: 25%"></a>
-</div>
-</body>
-</html>
