@@ -32,6 +32,7 @@ try{
                 //Almacenamos los datos que vamos leyendo en una variable
                 //usamos la función utf8_encode para leer correctamente los caracteres especiales
 
+                print_r($datos);echo "<br>";
                 if (isset($datos[0])) {
                     $correo = $datos[0];
                 }
