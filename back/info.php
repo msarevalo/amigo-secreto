@@ -15,7 +15,6 @@ for ($i=1; $i<sizeof($correos); $i++ ) {
     $to = $correos[$i][0];
     $subject = "Amormania te invita";
 //$usuario = $respuesta[0][1];
-    $usuario = $correos[$i][0];
     $nombre = $correos[$i][1];
     //echo $nombre . " " . $usuario . "<br>";
 //}
@@ -62,6 +61,7 @@ Equipo de Desarrollo de Amormania.
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
 
+    $insert = mysqli_query($con, "INSERT INTO `asignacion` (`nombre`, `correo`, `mensaje`) VALUES ('" . $nombre . "', '" . $to . "', '" . $message . "')");
     unset($headers);
 
 }
