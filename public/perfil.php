@@ -45,7 +45,7 @@ if (!isset($_SESSION['username'])){
     $regalo = mysqli_query($con, "SELECT * FROM `regalos` WHERE `idPersonaje` = " . $respuesta[0][0]);
     $resregalo = mysqli_fetch_all($regalo);
 
-    $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
+    $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen, personaje.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
     $img = mysqli_fetch_all($personaje);
     //echo $img[0][1];
 
@@ -71,7 +71,6 @@ if (!isset($_SESSION['username'])){
 <div id="texto1">
 <header id='public'>Cambia la foto de tu personaje</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
-    <input type="color" typeof="color">
     <label class="file" title="" id="archi">
         <input id="fotografia" name="fotografia" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))" required/>
     </label>
@@ -80,6 +79,7 @@ if (!isset($_SESSION['username'])){
     if ($img) {
         echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
     }
+    echo "<input type='color' name='color' id='color' value='#" . $img[0][3] . "'>"
     ?>
     <br>
     <button style="margin-left: 80%" id="boton">Editar</button><br><br>

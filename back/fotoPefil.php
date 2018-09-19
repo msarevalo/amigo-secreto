@@ -15,6 +15,10 @@ if (isset($_POST['nombre'])){
     $nombre = $_POST['nombre'];
 }
 
+if (isset($_POST['color'])){
+    $color = $_POST['color'];
+}
+
 if (isset($_POST['genero'])){
     $genero = $_POST['genero'];
 }
@@ -36,7 +40,7 @@ if ($nombre_img == !NULL)
         || ($_FILES["fotografia"]["type"] == "image/jpg")
         || ($_FILES["fotografia"]["type"] == "image/png"))
     {
-        $sql = "UPDATE `personajes` SET `imagen` = '" . $nom_temp . "', `ruta` = '" . $ruta . "' WHERE `personajes`.`idPersonaje` = " . $respuesta[0][0] . ";";
+        $sql = "UPDATE `personajes` SET `imagen` = '" . $nom_temp . "', `ruta` = '" . $ruta . "', `color` = '" . $color . "'  WHERE `personajes`.`idPersonaje` = " . $respuesta[0][0] . ";";
         $result = mysqli_query($con, $sql);
         if ($result) {
             // Ruta donde se guardarán las imágenes que subamos
@@ -44,7 +48,7 @@ if ($nombre_img == !NULL)
             // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
             //echo $directorio;
             move_uploaded_file($_FILES['fotografia']['tmp_name'], $directorio . $nom_temp);
-            echo "<script>alert('Se edito tu imagen con exito'); window.location.href='../public/perfil'</script>";
+            echo "<script>alert('Se edito el personaje con exito'); window.location.href='../public/perfil'</script>";
         }else{
             echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil'</script>";
         }
@@ -55,20 +59,20 @@ if ($nombre_img == !NULL)
         //echo "<script>alert('No se puede subir una imagen con ese formato'); window.location.href='../public/perfil.php'</script>";
     }
 }
-//else
-//{
+else
+{
     //si existe la variable pero se pasa del tamaño permitido
     //echo "<script>alert('No se cargo la imagen'); window.location.href='../public/crear-personaje.php'</script>";
-    /*$sql = "UPDATE `personajes` SET `nombre` = '" . $nombre . "', `genero` = '" . $genero . "', `ruta` = '" . $ruta . "', `activo` = '" . $activo . "'  WHERE `personajes`.`idPersonaje` = " . $_SESSION['idPersonaje'] . ";";
+    $sql = "UPDATE `personajes` SET `color` = '" . $color . "' WHERE `personajes`.`idPersonaje` = " . $respuesta[0][0] . ";";
     $result = mysqli_query($con, $sql);
     if ($result) {
         // Ruta donde se guardarán las imágenes que subamos
         //$directorio = $_SERVER['DOCUMENT_ROOT'] . $ruta;
         // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
         //move_uploaded_file($_FILES['imagen']['tmp_name'], $directorio . $nom_temp);
-        echo "<script>alert('Se cargo correctamente el personaje'); window.location.href='../public/personajes-admin.php'</script>";
+        echo "<script>alert('Se edito el personaje con exito'); window.location.href='../public/perfil'</script>";
     }else{
-        echo "<script>alert('Algo ha fallado'); window.location.href='../public/crear-personaje.php'</script>";
+        echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil'</script>";
     }
 }
 
