@@ -291,6 +291,22 @@ label.file:after {
     padding-right: 15px;
 }
 
+#mensajes1{
+    background-color: #889d6f;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 635px;
+    //margin-right: 50%;
+    text-align: right;
+    line-height: 40px;
+    //border-radius: 25px 25px 0px 0px;
+    margin-top: 0.5%;
+    padding-right: 15px;
+}
+
 #public{
     background-color: #889d6f;
     //margin-left: 20%;

@@ -60,7 +60,7 @@ if (!isset($_SESSION['username'])){
         for ($i = 0; $i<sizeof($respuesta); $i++){
             $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
             $nom = mysqli_fetch_all($nomPer);
-            echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes'>";
+            echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes1'>";
 
             if (sizeof($nom)==0){
                 echo "Anonimo</header><table><tr><label id='date'>" . $respuesta[$i][1];
