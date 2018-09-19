@@ -49,7 +49,7 @@ try{
         }
     }
     //print_r($correos);
-    header("Location: /amigo-secreto/back/info?arreglo=" . $correos);
+    header("Location: /amigo-secreto/back/info?arreglo=" . serialize($correos));
 }catch (Exception $e){
     echo "<script>alert('Algo ha pasado, verifica tu archivo'); window.location.href='../views/importar-horario.php'</script>";
 }
