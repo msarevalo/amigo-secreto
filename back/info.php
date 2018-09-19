@@ -13,8 +13,8 @@ $contador =0;
 //print_r($correos);
 //echo sizeof($correos);
 for ($i=1; $i<sizeof($correos); $i++ ) {
-    echo  $correos[$i][0] . " " . $correos[$i][1] . "<br>";}
-    /*$to = $correos[$i][0];
+    //echo  $correos[$i][0] . " " . $correos[$i][1] . "<br>";}
+    $to = $correos[$i][0];
     $subject = "Amormania te invita";
 //$usuario = $respuesta[0][1];
     $nombre = $correos[$i][1];
@@ -56,7 +56,8 @@ Equipo de Desarrollo de Amormania.
     $headers[] = 'To: ' . $nombre . ' <' . $to . '>';
     $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
-    if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))) {
+print_r($headers); echo "<br>";}
+/*if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))) {
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin'</script>";
         $contador++;
     } else {
