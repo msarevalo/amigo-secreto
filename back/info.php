@@ -56,8 +56,8 @@ Equipo de Desarrollo de Amormania.
     $headers[] = 'To: ' . $to . ' <' . $to . '>';
     $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
-print_r($headers); echo "<br>";unset($headers);}
-/*if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))) {
+//print_r($headers); echo "<br>";unset($headers);}
+if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))) {
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin'</script>";
         $contador++;
     } else {
@@ -65,7 +65,8 @@ print_r($headers); echo "<br>";unset($headers);}
     }
 
     $insert = mysqli_query($con, "INSERT INTO `asignacion` (`nombre`, `correo`, `mensaje`) VALUES ('" . $nombre . "', '" . $to . "', '" . $message . "')");
+    print_r($headers); echo " prueba1 <br>";
     unset($headers);
-
+    print_r($headers); echo " prueba2 <br>";
 }
-echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
+//echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
