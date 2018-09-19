@@ -79,7 +79,7 @@ if (!isset($_SESSION['username'])){
     if ($img) {
         echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
     }
-    echo "<input type='color' name='color' id='color' value='#" . $img[0][3] . "'>"
+    echo "<input type='color' name='color' id='color' value='#" . $img[0][3] . "'></input>"
     ?>
     <br>
     <button style="margin-left: 80%" id="boton">Editar</button><br><br>
