@@ -8,12 +8,13 @@ if (isset($_GET['arreglo'])){
     echo "fallo";
 }
 
-print_r($correos);
+//print_r($correos);
 $contador =0;
 //print_r($correos);
 //echo sizeof($correos);
-/*for ($i=1; $i<sizeof($correos); $i++ ) {
-    $to = $correos[$i][0];
+for ($i=1; $i<sizeof($correos); $i++ ) {
+    echo  $correos[$i][0] . " " . $correos[$i][1] . "<br>";}
+    /*$to = $correos[$i][0];
     $subject = "Amormania te invita";
 //$usuario = $respuesta[0][1];
     $nombre = $correos[$i][1];
