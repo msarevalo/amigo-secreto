@@ -91,7 +91,7 @@ Equipo de Desarrollo de Amormania.
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 // Additional headers
-    $headers[] = 'To: ' . $nombre . ' <' . $to . '>';
+    $headers[] = 'To: ' . $to . ' <' . $to . '>';
     $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
     if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))){
@@ -100,7 +100,7 @@ Equipo de Desarrollo de Amormania.
         echo "<script>alert('Algo ha pasado')</script>";
     }
 
-unset($headers);
+//unset($headers);
     $consulta = mysqli_query($con, "INSERT INTO `asignacion` (`usuario`, `personaje`) VALUES ('" . $resUserf[$randF[$i]][0] . "', '" . $resPerf[$randF1[$i]][0] . "')");
     if ($consulta){
         //echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";
@@ -149,7 +149,7 @@ Equipo de Desarrollo de Amormania.
     $headersm[] = 'MIME-Version: 1.0';
     $headersm[] = 'Content-type: text/html; charset=iso-8859-1';
 // Additional headers
-    $headersm[] = 'To: ' . $nombreM . ' <' . $toM . '>';
+    $headersm[] = 'To: ' . $toM . ' <' . $toM . '>';
     $headersm[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
     if (mail($toM, $subjectM, $messageM, "From: soporte@amormania.com" . implode("\r\n", $headersm))){
