@@ -14,7 +14,8 @@ if ($usuario != 0 ){
     $usuario = $_SESSION['id'];
 }
 
-$dia = date('Y-m-d h:i:s');
+$bogota = time() - (5 * 60 * 60);
+$dia = date('Y-m-d h:i:s', $bogota);
 
 $publicar = mysqli_query($con, "INSERT INTO `publicaciones` (`fecha`, `usuario`, `publicacion`) VALUES ('" . $dia . "', '" . $usuario . "', '" . $public . "');");
 
