@@ -49,7 +49,7 @@ $resas = mysqli_fetch_all($asignacion);
             <label id="res" style="color: #bbbbbb; margin-left: 85%">0 / 600</label><br>
             <?php
             if (sizeof($resas)== 0){
-                echo "<br><label style='margin-left: 30%'>Espera el sorteo para participar en el muro</label>";
+                echo "<label style='margin-left: 30%'>Espera el sorteo para participar en el muro</label>";
             }else{
               echo "
             <select style=\"margin-left: 46%\" id=\"persona\" name=\"persona\">
@@ -78,9 +78,13 @@ $resas = mysqli_fetch_all($asignacion);
                 echo "<header id='mensajes1'>Anonimo</header><table><tr><label id='date'>" . $respuesta[$i][1];
             }else{
                 if ($nom[0][2] === '#ffffff') {
-                    echo "<header id='mensajes' style=';background-color: " . $nom[0][2] . "'><label style='color: #000000'>" . $nom[0][1] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
+                    echo "<header id='mensajes' style='border-radius: 10px; box-shadow: 0 0 15px #ececec; background-color: " . $nom[0][2] . "'><label style='color: #000000'>" . $nom[0][1] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
                 }else{
-                    echo "<header id='mensajes' style='background-color: " . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
+                    if ($nom[0][2] === '#f1f1f1'){
+                        echo "<header id='mensajes' style='border-radius: 10px; box-shadow: 0 0 15px #ececec; background-color: " . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
+                    }else {
+                        echo "<header id='mensajes' style='background-color: " . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
+                    }
                 }
             }
 
