@@ -53,7 +53,7 @@ $resas = mysqli_fetch_all($asignacion);
             </select>
             <?php
             if (sizeof($resas)== 0){
-                echo "<label>Espera el sorteo para participar en el muro</label>";
+                echo "<br><label>Espera el sorteo para participar en el muro</label>";
             }else{
               echo "<button id=\"boton\">Publicar Mensaje</button>";
             }
