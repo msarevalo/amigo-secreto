@@ -11,7 +11,7 @@ function hexadecimalAzar($caracteres){
         $azar .= $caracteresPosibles[rand(0,strlen($caracteresPosibles)-1)];
 
     }
-    if ($azar != 'ffffff' || $azar != 'f1f1f1') {
+    if ($azar != 'ffffff' || $azar != 'f1f1f1' || $azar != '889d6f') {
 
         return $azar;
     }else{

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="048b2885-f854-4d9a-996d-cfcdc711ee06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/back/crearPersonaje.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/crearPersonaje.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/fotoPefil.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/fotoPefil.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,7 @@
           <entry key="css" value="695" />
           <entry key="htaccess" value="2" />
           <entry key="js" value="200" />
-          <entry key="php" value="15308" />
+          <entry key="php" value="15390" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -53,7 +52,7 @@
           <entry key="CSS" value="695" />
           <entry key="HTML" value="30" />
           <entry key="JavaScript" value="200" />
-          <entry key="PHP" value="15278" />
+          <entry key="PHP" value="15360" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -79,13 +78,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/crearPersonaje.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="53" column="201" selection-start-line="53" selection-start-column="201" selection-end-line="53" selection-end-column="201" />
+            <state relative-caret-position="221">
+              <caret line="13" column="67" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/perfil.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="358">
@@ -101,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back/fotoPefil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="74" column="86" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
+            <state relative-caret-position="324">
+              <caret line="82" column="124" selection-start-line="82" selection-start-column="124" selection-end-line="82" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -113,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/estilos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="277" column="9" selection-start-line="277" selection-start-column="1" selection-end-line="277" selection-end-column="9" />
+            <state relative-caret-position="140">
+              <caret line="294" column="29" selection-start-line="294" selection-start-column="23" selection-end-line="294" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -220,10 +219,10 @@
         <option value="$PROJECT_DIR$/back/aleatorio.php" />
         <option value="$PROJECT_DIR$/back/publicar.php" />
         <option value="$PROJECT_DIR$/css/estilos.css" />
-        <option value="$PROJECT_DIR$/back/fotoPefil.php" />
-        <option value="$PROJECT_DIR$/back/crearPersonaje.php" />
         <option value="$PROJECT_DIR$/public/home.php" />
         <option value="$PROJECT_DIR$/public/perfil.php" />
+        <option value="$PROJECT_DIR$/back/crearPersonaje.php" />
+        <option value="$PROJECT_DIR$/back/fotoPefil.php" />
       </list>
     </option>
   </component>
@@ -334,12 +333,12 @@
       <updated>1536769460411</updated>
       <workItem from="1536769462356" duration="24936000" />
       <workItem from="1536853249182" duration="41215000" />
-      <workItem from="1537196396163" duration="52291000" />
+      <workItem from="1537196396163" duration="52615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118442000" />
+    <option name="totallyTimeSpent" value="118766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -660,6 +659,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/estilos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="294" column="29" selection-start-line="294" selection-start-column="23" selection-end-line="294" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back/aleatorio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -678,36 +696,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="277" column="9" selection-start-line="277" selection-start-column="1" selection-end-line="277" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/fotoPefil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="74" column="86" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/crearPersonaje.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="53" column="201" selection-start-line="53" selection-start-column="201" selection-end-line="53" selection-end-column="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -722,6 +714,13 @@
             <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#form#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/fotoPefil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="82" column="124" selection-start-line="82" selection-start-column="124" selection-end-line="82" selection-end-column="124" />
         </state>
       </provider>
     </entry>

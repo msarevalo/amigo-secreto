@@ -40,17 +40,21 @@ if ($nombre_img == !NULL)
         || ($_FILES["fotografia"]["type"] == "image/jpg")
         || ($_FILES["fotografia"]["type"] == "image/png"))
     {
-        $sql = "UPDATE `personajes` SET `imagen` = '" . $nom_temp . "', `ruta` = '" . $ruta . "', `color` = '" . $color . "'  WHERE `personajes`.`idPersonaje` = " . $respuesta[0][0] . ";";
-        $result = mysqli_query($con, $sql);
-        if ($result) {
-            // Ruta donde se guardarán las imágenes que subamos
-            $directorio = $_SERVER['DOCUMENT_ROOT'] . $ruta;
-            // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
-            //echo $directorio;
-            move_uploaded_file($_FILES['fotografia']['tmp_name'], $directorio . $nom_temp);
-            echo "<script>alert('Se edito el personaje con exito'); window.location.href='../public/perfil'</script>";
+        if ($color != '#ffffff' || $color != '#f1f1f1' || $color != '#889d6f') {
+            $sql = "UPDATE `personajes` SET `imagen` = '" . $nom_temp . "', `ruta` = '" . $ruta . "', `color` = '" . $color . "'  WHERE `personajes`.`idPersonaje` = " . $respuesta[0][0] . ";";
+            $result = mysqli_query($con, $sql);
+            if ($result) {
+                // Ruta donde se guardarán las imágenes que subamos
+                $directorio = $_SERVER['DOCUMENT_ROOT'] . $ruta;
+                // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
+                //echo $directorio;
+                move_uploaded_file($_FILES['fotografia']['tmp_name'], $directorio . $nom_temp);
+                echo "<script>alert('Se edito el personaje con exito'); window.location.href='../public/perfil'</script>";
+            } else {
+                echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil'</script>";
+            }
         }else{
-            echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil'</script>";
+            echo "<script>alert('Este color es reservado, intenta con otro'); window.location.href='../public/perfil'</script>";
         }
     }
     else
@@ -63,16 +67,20 @@ else
 {
     //si existe la variable pero se pasa del tamaño permitido
     //echo "<script>alert('No se cargo la imagen'); window.location.href='../public/crear-personaje.php'</script>";
-    $sql = "UPDATE `personajes` SET `color` = '" . $color . "' WHERE `personajes`.`idPersonaje` = " . $respuesta[0][0] . ";";
-    $result = mysqli_query($con, $sql);
-    if ($result) {
-        // Ruta donde se guardarán las imágenes que subamos
-        //$directorio = $_SERVER['DOCUMENT_ROOT'] . $ruta;
-        // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
-        //move_uploaded_file($_FILES['imagen']['tmp_name'], $directorio . $nom_temp);
-        echo "<script>alert('Se edito el personaje con exito'); window.location.href='../public/perfil'</script>";
+    if ($color != '#ffffff' || $color != '#f1f1f1' || $color != '#889d6f') {
+        $sql = "UPDATE `personajes` SET `color` = '" . $color . "' WHERE `personajes`.`idPersonaje` = " . $respuesta[0][0] . ";";
+        $result = mysqli_query($con, $sql);
+        if ($result) {
+            // Ruta donde se guardarán las imágenes que subamos
+            //$directorio = $_SERVER['DOCUMENT_ROOT'] . $ruta;
+            // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
+            //move_uploaded_file($_FILES['imagen']['tmp_name'], $directorio . $nom_temp);
+            echo "<script>alert('Se edito el personaje con exito'); window.location.href='../public/perfil'</script>";
+        } else {
+            echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil'</script>";
+        }
     }else{
-        echo "<script>alert('Algo ha fallado'); window.location.href='../public/perfil'</script>";
+        echo "<script>alert('Este color es reservado, intenta con otro'); window.location.href='../public/perfil'</script>";
     }
 }
 
