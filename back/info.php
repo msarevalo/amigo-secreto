@@ -64,11 +64,11 @@ if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n"
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
 
-    $insert = mysqli_query($con, "INSERT INTO `asignacion` (`nombre`, `correo`, `mensaje`) VALUES ('" . $nombre . "', '" . $to . "', '" . $message . "')");
+    $insert = mysqli_query($con, "INSERT INTO `correos` (`nombre`, `correo`, `mensaje`) VALUES (NULL, '" . $nombre . "', '" . $to . "', '" . $message . "');");
     $co = mysqli_fetch_all($insert);
 
-    print_r($headers); echo " prueba1 <br>";
-    unset($headers);
-    print_r($headers); echo " prueba2 <br>";
+    //print_r($headers); echo " prueba1 <br>";
+    //unset($headers);
+    //print_r($headers); echo " prueba2 <br>";
 }
-//echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
+echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
