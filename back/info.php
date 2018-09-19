@@ -17,13 +17,14 @@ for ($i=1; $i<sizeof($correos); $i++ ){
 //$usuario = $respuesta[0][1];
     $usuario = $correos[$i][0];
     $nombre = $correos[$i][1];
+    echo $nombre . " " . $usuario . "<br>";
 //}
 //}
 //$to = 'msscout11@gmail.com'; // note the comma
 // Subject
 //$subject = 'Pruebas';
 // Message
-    $message = '
+    /*$message = '
 <html>
     <head>
         <title>Correo Informativo Amormania</title>
@@ -60,7 +61,6 @@ Equipo de Desarrollo de Amormania.
     }else{
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
-$to=null;
     //$actual = mysqli_query($con, "UPDATE `user` SET `spass` = '" . $pass . "' WHERE `user`.`idUser` = " . $idRes . ";");
 //$confirmar = mysqli_fetch_all($actual);
 
@@ -70,4 +70,4 @@ $to=null;
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin'</script>";
     }*/
 }
-echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
+//echo "<script>alert('Se enviaron " . $contador . " correos'); window.location.href='../public/correo-informativo'</script>";
