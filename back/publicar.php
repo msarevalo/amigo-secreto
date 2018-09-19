@@ -13,10 +13,10 @@ if ($_POST['publicacion']){
 if ($usuario != 0 ){
     $usuario = $_SESSION['id'];
 }
-$prueba = date_default_timezone_set('UTC -5');
-$dia = date('YYYY-mm-dd hh:ii:ss', $prueba);
+$zona = date_default_timezone_set('America/Bogota');
+$dia = date('Y-m-d h:i:s', $zona);
 
-$publicar = mysqli_query($con, "INSERT INTO `publicaciones` (`fecha`, `usuario`, `publicacion`) VALUES ('" . $dia['year'] . "-" . $dia['mon'] ."-" . $dia['mday'] . " " . $dia['hours'] . ":" . $dia['minutes'] . ":" . $dia['seconds'] . "', '" . $usuario . "', '" . $public . "');");
+$publicar = mysqli_query($con, "INSERT INTO `publicaciones` (`fecha`, `usuario`, `publicacion`) VALUES ('" . $dia . "', '" . $usuario . "', '" . $public . "');");
 
 if ($publicar){
     header("Location: ../public/home");
