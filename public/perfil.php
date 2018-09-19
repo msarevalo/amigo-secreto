@@ -71,6 +71,7 @@ if (!isset($_SESSION['username'])){
 <div id="texto1">
 <header id='public'>Cambia la foto de tu personaje</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
+    <input type="color" typeof="color">
     <label class="file" title="" id="archi">
         <input id="fotografia" name="fotografia" type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))" required/>
     </label>
