@@ -64,15 +64,7 @@ if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n"
     } else {
         echo "<script>alert('Algo ha pasado'); window.location.href='../public/correo-informativo'</script>";
     }
-
-    $insert = mysqli_query($con, "INSERT INTO `correos` (`nombre`, `correo`, `mensaje`) VALUES (NULL, '" . $nombre . "', '" . $to . "', '" . $message . "');");
-    $co = mysqli_fetch_all($insert);
-
-    if ($co){
-        //echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";
-    }else{
-        echo "<script>alert('Algo ha fallado'); window.location.href='../public/correo-informativo'</script>";
-    }
+    
 
     //print_r($headers); echo " prueba1 <br>";
 
