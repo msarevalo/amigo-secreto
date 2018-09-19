@@ -50,7 +50,7 @@ echo $respuesta[0][6];
             header("Location: ../public/nueva-pass?id=" . $idUser);
         }else{
             //echo "fallo";
-            echo "<script>alert('El hash ha cambiado');window.location.href='../public/index'</script>";
+            echo "<script>alert('Este link ya no se encuentra activo');window.location.href='../public/index'</script>";
         }
     }else{
         //echo "fallo consulta";

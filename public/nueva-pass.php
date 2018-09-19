@@ -15,10 +15,6 @@
 <?php
 include ('../back/conexion.php');
 
-$restablecer = mysqli_query($con, "SELECT `nombre` FROM `user` WHERE  `idUser`=" . $_GET['id']);
-$respuesta = mysqli_fetch_all($restablecer);
-print_r($respuesta);
-
 if (isset($_GET['id'])){
     $_SESSION['restablece'] = $_GET['id'];
 }
