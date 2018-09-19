@@ -65,7 +65,7 @@ if (!isset($_SESSION['username'])){
             if (sizeof($nom)==0){
                 echo "<header id='mensajes1'>Anonimo</header><table><tr><label id='date'>" . $respuesta[$i][1];
             }else{
-                echo "<header id='mensajes' style='background-color: " . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
+                echo "<header id='mensajes' style='background-color: #" . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
             }
 
 
