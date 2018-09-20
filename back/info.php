@@ -28,11 +28,11 @@ for ($i=1; $i<sizeof($correos); $i++ ) {
     $message = '
 <html>
     <head>
-        <title>Correo Informativo Amormania</title>
+        <title>Amormania te invita</title>
         <meta charset="UTF-8">
     </head>
     <body>
-    <p>Querido(a) ' . $nombre . '</p>
+    <p>Hola ' . $nombre . '!</p>
     <p>Queremos hacerte participe de este mes de amor y amistad, ingresa a <b><a href="http://52.15.245.23/amigo-secreto/public/index">Amormania</a></b> para crear tu cuenta y espera el sorteo de tu personaje</p>
     <p>Participar es muy facil, solo sigue los siguientes pasos</p>
     <ol>

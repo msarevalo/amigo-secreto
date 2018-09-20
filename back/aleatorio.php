@@ -97,7 +97,7 @@ Equipo de Desarrollo de Amormania.
     if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))){
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
     }else{
-        echo "<script>alert('Algo ha pasado')</script>";
+        echo "<script>alert('Algo ha pasado 1')</script>";
     }
 
 //unset($headers);
@@ -105,7 +105,7 @@ Equipo de Desarrollo de Amormania.
     if ($consulta){
         //echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";
     }else{
-        echo "<script>alert('Algo ha fallado'); window.location.href='../public/asginar-personaje'</script>";
+        echo "<script>alert('Algo ha fallado 2'); window.location.href='../public/asginar-personaje'</script>";
     }
 }
 
@@ -155,14 +155,14 @@ Equipo de Desarrollo de Amormania.
     if (mail($toM, $subjectM, $messageM, "From: soporte@amormania.com" . implode("\r\n", $headersm))){
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
     }else{
-        echo "<script>alert('Algo ha pasado')</script>";
+        echo "<script>alert('Algo ha pasado 3')</script>";
     }
 
     $consulta = mysqli_query($con, "INSERT INTO `asignacion` (`usuario`, `personaje`) VALUES ('" . $resUserm[$randM[$i]][0] . "', '" . $resPerm[$randM1[$i]][0] . "')");
     if ($consulta){
         //echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/asginar-personaje.php'</script>";
     }else{
-        echo "<script>alert('Algo ha fallado'); window.location.href='../public/asginar-personaje'</script>";
+        echo "<script>alert('Algo ha fallado 4'); window.location.href='../public/asginar-personaje'</script>";
     }
 }
 
