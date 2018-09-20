@@ -63,8 +63,9 @@ Equipo de Desarrollo de Amormania.
 // Mail it
 //print_r($headers); echo "<br>";unset($headers);}
 mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers));
-
-    $mail = mysqli_query($con, "INSERT INTO `correos` (`nombre`, `correo`, `mensaje`, `seccion`) VALUES ('" . $user . "', '" . $to . "', '" . $message . "', 'registro')");
+    $bogota = time() - (5 * 60 * 60);
+    $dia = date('Y-m-d H:i:s', $bogota);
+    $mail = mysqli_query($con, "INSERT INTO `correos` (`nombre`, `correo`, `mensaje`, `seccion`, `date`) VALUES ('" . $user . "', '" . $to . "', '" . $message . "', 'registro', '" . $dia . "')");
 
     if ($consulta){
         echo "<script>alert('Se realizó el registro con exito'); window.location.href='../public/index'</script>";
