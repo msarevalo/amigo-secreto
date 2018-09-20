@@ -45,6 +45,7 @@ $headers[] = 'To: ' . $nombre . ' <' . $to . '>';
 $headers[] = 'From: Soporte Amormania <soporte@amormania.com>';
 // Mail it
 if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))){
+    $mail = mysqli_query($con, "INSERT INTO `correos` (`nombre`, `correo`, `mensaje`, `seccion`) VALUES ('" . $nombre . "', '" . $to . "', '" . $message . "', 'restablecer admin')");
     echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin'</script>";
 }else{
     echo "<script>alert('Algo ha pasado'); window.location.href='../public/usuarios-admin'</script>";

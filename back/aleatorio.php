@@ -96,6 +96,7 @@ Equipo de Desarrollo de Amormania.
 // Mail it
     if (mail($to, $subject, $message, "From: soporte@amormania.com" . implode("\r\n", $headers))){
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
+        $mail = mysqli_query($con, "INSERT INTO `correos` (`nombre`, `correo`, `mensaje`, `seccion`) VALUES ('" . $nombre . "', '" . $to . "', '" . $message . "', 'aleatorio')");
     }else{
         echo "<script>alert('Algo ha pasado 1')</script>";
     }
@@ -154,6 +155,7 @@ Equipo de Desarrollo de Amormania.
 // Mail it
     if (mail($toM, $subjectM, $messageM, "From: soporte@amormania.com" . implode("\r\n", $headersm))){
         //echo "<script>alert('Mensaje de reestablecer contraseña enviado'); window.location.href='../public/usuarios-admin.php'</script>";
+        $mail = mysqli_query($con, "INSERT INTO `correos` (`nombre`, `correo`, `mensaje`, `seccion`) VALUES ('" . $nombreM . "', '" . $toM . "', '" . $messageM . "', 'aleatorio')");
     }else{
         echo "<script>alert('Algo ha pasado 3')</script>";
     }
