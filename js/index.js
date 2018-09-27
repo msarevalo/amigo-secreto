@@ -97,6 +97,7 @@ $(document).ready(function(){
         $('#expresiones').css('display', 'block');
         $('#iconos').css('display', 'none');
         $('#transportes').css('display', 'none');
+        $('#especiales').css('display', 'none');
     });
 });
 
@@ -105,6 +106,7 @@ $(document).ready(function(){
         $('#expresiones').css('display', 'none');
         $('#iconos').css('display', 'block');
         $('#transportes').css('display', 'none');
+        $('#especiales').css('display', 'none');
     });
 });
 
@@ -113,5 +115,15 @@ $(document).ready(function(){
         $('#expresiones').css('display', 'none');
         $('#iconos').css('display', 'none');
         $('#transportes').css('display', 'block');
+        $('#especiales').css('display', 'none');
+    });
+});
+
+$(document).ready(function(){
+    $('#especial').click(function(){
+        $('#expresiones').css('display', 'none');
+        $('#iconos').css('display', 'none');
+        $('#transportes').css('display', 'none');
+        $('#especiales').css('display', 'block');
     });
 });
