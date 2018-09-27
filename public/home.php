@@ -153,13 +153,55 @@ $resas = mysqli_fetch_all($asignacion);
                             <td><img src="../img/emojis/iconos/27b0.png" onclick="document.publicar.publicacion.value+='&#x27B0'" style="width: 25px; cursor: pointer"></td>
                         </tr>
                     </table>
+                    <table id="transportes" name="transportes" style="display: none;">
+                        <tr>
+                            <td><img src="../img/emojis/transportes/1f680.png" onclick="document.publicar.publicacion.value+='&#x1F680'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f683.png" onclick="document.publicar.publicacion.value+='&#x1F683'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f684.png" onclick="document.publicar.publicacion.value+='&#x1F684'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f685.png" onclick="document.publicar.publicacion.value+='&#x1F685'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f687.png" onclick="document.publicar.publicacion.value+='&#x1F687'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f689.png" onclick="document.publicar.publicacion.value+='&#x1F689'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f68c.png" onclick="document.publicar.publicacion.value+='&#x1F68C'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f68f.png" onclick="document.publicar.publicacion.value+='&#x1F68F'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f691.png" onclick="document.publicar.publicacion.value+='&#x1F691'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f692.png" onclick="document.publicar.publicacion.value+='&#x1F692'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f693.png" onclick="document.publicar.publicacion.value+='&#x1F693'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f695.png" onclick="document.publicar.publicacion.value+='&#x1F695'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f697.png" onclick="document.publicar.publicacion.value+='&#x1F697'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/transportes/1f699.png" onclick="document.publicar.publicacion.value+='&#x1F699'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f69a.png" onclick="document.publicar.publicacion.value+='&#x1F69A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6a2.png" onclick="document.publicar.publicacion.value+='&#x1F6A2'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6a4.png" onclick="document.publicar.publicacion.value+='&#x1F6A4'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6a5.png" onclick="document.publicar.publicacion.value+='&#x1F6A5'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6a7.png" onclick="document.publicar.publicacion.value+='&#x1F6A7'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6a8.png" onclick="document.publicar.publicacion.value+='&#x1F6A8'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6a9.png" onclick="document.publicar.publicacion.value+='&#x1F6A9'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6aa.png" onclick="document.publicar.publicacion.value+='&#x1F6AA'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6ab.png" onclick="document.publicar.publicacion.value+='&#x1F6AB'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6ac.png" onclick="document.publicar.publicacion.value+='&#x1F6AC'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6ad.png" onclick="document.publicar.publicacion.value+='&#x1F6AD'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6b2.png" onclick="document.publicar.publicacion.value+='&#x1F6B2'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6b6.png" onclick="document.publicar.publicacion.value+='&#x1F6B6'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/transportes/1f6b9.png" onclick="document.publicar.publicacion.value+='&#x1F6B9'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6ba.png" onclick="document.publicar.publicacion.value+='&#x1F6BA'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6bb.png" onclick="document.publicar.publicacion.value+='&#x1F6BB'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6bc.png" onclick="document.publicar.publicacion.value+='&#x1F6BC'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6bd.png" onclick="document.publicar.publicacion.value+='&#x1F6BD'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6be.png" onclick="document.publicar.publicacion.value+='&#x1F6BE'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/transportes/1f6c0.png" onclick="document.publicar.publicacion.value+='&#x1F6C0'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                    </table>
                 </div>
                 <div id="notificationFooter">
                     <table>
                         <tr>
                             <td><img src="../img/emojis/expresiones.png" alt="expresiones" id="expresion" name="expresion" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/iconos.png" alt="inconos" id="icono" name="icono" style="width: 25px; cursor: pointer"></td>
-                            <td>prueba</td>
+                            <td><img src="../img/emojis/transporte.png" alt="transportes" id="transporte" name="transporte" style="width: 25px; cursor: pointer"></td>
                         </tr>
                     </table>
                 </div>

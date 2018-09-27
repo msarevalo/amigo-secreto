@@ -96,6 +96,7 @@ $(document).ready(function(){
     $('#expresion').click(function(){
         $('#expresiones').css('display', 'block');
         $('#iconos').css('display', 'none');
+        $('#transportes').css('display', 'none');
     });
 });
 
@@ -103,5 +104,14 @@ $(document).ready(function(){
     $('#icono').click(function(){
         $('#expresiones').css('display', 'none');
         $('#iconos').css('display', 'block');
+        $('#transportes').css('display', 'none');
+    });
+});
+
+$(document).ready(function(){
+    $('#transporte').click(function(){
+        $('#expresiones').css('display', 'none');
+        $('#iconos').css('display', 'none');
+        $('#transportes').css('display', 'block');
     });
 });
