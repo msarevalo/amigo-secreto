@@ -84,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="268" column="165" selection-start-line="268" selection-start-column="165" selection-end-line="268" selection-end-column="165" />
+            <state relative-caret-position="204">
+              <caret line="261" column="131" selection-start-line="261" selection-start-column="131" selection-end-line="261" selection-end-column="131" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -504,12 +504,12 @@
       <workItem from="1536769462356" duration="24936000" />
       <workItem from="1536853249182" duration="41215000" />
       <workItem from="1537196396163" duration="79215000" />
-      <workItem from="1537993715252" duration="12170000" />
+      <workItem from="1537993715252" duration="12306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157536000" />
+    <option name="totallyTimeSpent" value="157672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -875,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="268" column="165" selection-start-line="268" selection-start-column="165" selection-end-line="268" selection-end-column="165" />
+        <state relative-caret-position="204">
+          <caret line="261" column="131" selection-start-line="261" selection-start-column="131" selection-end-line="261" selection-end-column="131" />
           <folding>
             <element signature="n#style#0;n#img#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />

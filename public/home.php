@@ -259,7 +259,7 @@ $resas = mysqli_fetch_all($asignacion);
                         </tr>
                         <tr>
                             <td><img src="../img/emojis/especiales/2611.png" onclick="document.publicar.publicacion.value+='&#x2611'" style="width: 25px; cursor: pointer"></td>
-                            <td><img src="../img/emojis/especiales/2648.png" onclick="document.publicar.publicacion.value+='&#x2648'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/especiales/26a1.png" onclick="document.publicar.publicacion.value+='&#x26A1'" style="width: 25px; cursor: pointer"></td>
                         </tr>
                     </table>
                 </div>
