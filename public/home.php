@@ -393,9 +393,9 @@ $resas = mysqli_fetch_all($asignacion);
                             <td><img src="../img/emojis/comidas/1f370.png" onclick="document.publicar.publicacion.value+='&#x1F370'" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/comidas/1f377.png" onclick="document.publicar.publicacion.value+='&#x1F377'" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/comidas/1f378.png" onclick="document.publicar.publicacion.value+='&#x1F378'" style="width: 25px; cursor: pointer"></td>
-                            <td><img src="../img/emojis/comidas/1f379.png" onclick="document.publicar.publicacion.value+='&#x1F379'" style="width: 25px; cursor: pointer"></td>
                         </tr>
                         <tr>
+                            <td><img src="../img/emojis/comidas/1f379.png" onclick="document.publicar.publicacion.value+='&#x1F379'" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/comidas/1f37a.png" onclick="document.publicar.publicacion.value+='&#x1F37A'" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/comidas/1f37b.png" onclick="document.publicar.publicacion.value+='&#x1F37B'" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/comidas/1f382.png" onclick="document.publicar.publicacion.value+='&#x1F382'" style="width: 25px; cursor: pointer"></td>
