@@ -98,3 +98,10 @@ $(document).ready(function(){
         $('#iconos').css('display', 'none');
     });
 });
+
+$(document).ready(function(){
+    $('#icono').click(function(){
+        $('#expresiones').css('display', 'none');
+        $('#iconos').css('display', 'block');
+    });
+});
