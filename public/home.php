@@ -44,9 +44,115 @@ $resas = mysqli_fetch_all($asignacion);
 
     <div id="texto">
         <header id='public'>Escribe en el Muro</header>
-        <form method="post" action="../back/publicar.php" id="publicar">
+        <form method="post" action="../back/publicar.php" id="publicar" name="publicar">
             <textarea required maxlength="600" rows="5" cols="85" placeholder="Publica tu mensaje aquí...Todos van a leer tu mensaje jajajaja (risa malévola)" id="publicacion" name="publicacion" onpaste="contarcaracteres();" onkeyup="contarcaracteres();"></textarea><br>
-            <label id="res" style="color: #bbbbbb; margin-left: 85%">0 / 600</label><br>
+            <img src="../img/emoji.png" style="width: 20px; margin-left: 79%; cursor: pointer" id="notificationLink">
+            <label id="res" style="color: #bbbbbb;">0 / 600</label>
+
+            <div id="notificationContainer">
+                <center><div id="notificationTitle">Emojis</div></center>
+                <div id="notificationsBody" class="notifications">
+                    <table id="expresiones" name="expresiones" style="display: none">
+                        <tr>
+                            <td><img src="../img/emojis/Expresiones/1f601.png" onclick="document.publicar.publicacion.value+='&#x1F601'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f602.png" onclick="document.publicar.publicacion.value+='&#x1F602'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f603.png" onclick="document.publicar.publicacion.value+='&#x1F603'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f604.png" onclick="document.publicar.publicacion.value+='&#x1F604'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f605.png" onclick="document.publicar.publicacion.value+='&#x1F605'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f606.png" onclick="document.publicar.publicacion.value+='&#x1F606'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f609.png" onclick="document.publicar.publicacion.value+='&#x1F609'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f60a.png" onclick="document.publicar.publicacion.value+='&#x1F60A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f60b.png" onclick="document.publicar.publicacion.value+='&#x1F60B'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f60c.png" onclick="document.publicar.publicacion.value+='&#x1F60C'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f60d.png" onclick="document.publicar.publicacion.value+='&#x1F60D'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f60f.png" onclick="document.publicar.publicacion.value+='&#x1F60F'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f612.png" onclick="document.publicar.publicacion.value+='&#x1F612'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/Expresiones/1f613.png" onclick="document.publicar.publicacion.value+='&#x1F613'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f614.png" onclick="document.publicar.publicacion.value+='&#x1F614'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f616.png" onclick="document.publicar.publicacion.value+='&#x1F616'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f618.png" onclick="document.publicar.publicacion.value+='&#x1F618'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f61a.png" onclick="document.publicar.publicacion.value+='&#x1F61A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f61c.png" onclick="document.publicar.publicacion.value+='&#x1F61C'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f61d.png" onclick="document.publicar.publicacion.value+='&#x1F61D'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f61e.png" onclick="document.publicar.publicacion.value+='&#x1F61E'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f620.png" onclick="document.publicar.publicacion.value+='&#x1F620'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f621.png" onclick="document.publicar.publicacion.value+='&#x1F621'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f622.png" onclick="document.publicar.publicacion.value+='&#x1F622'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f623.png" onclick="document.publicar.publicacion.value+='&#x1F623'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f624.png" onclick="document.publicar.publicacion.value+='&#x1F624'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/Expresiones/1f625.png" onclick="document.publicar.publicacion.value+='&#x1F625'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f628.png" onclick="document.publicar.publicacion.value+='&#x1F628'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f629.png" onclick="document.publicar.publicacion.value+='&#x1F629'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f62a.png" onclick="document.publicar.publicacion.value+='&#x1F62A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f62b.png" onclick="document.publicar.publicacion.value+='&#x1F62B'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f62d.png" onclick="document.publicar.publicacion.value+='&#x1F62D'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f630.png" onclick="document.publicar.publicacion.value+='&#x1F630'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f631.png" onclick="document.publicar.publicacion.value+='&#x1F631'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f632.png" onclick="document.publicar.publicacion.value+='&#x1F632'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f633.png" onclick="document.publicar.publicacion.value+='&#x1F633'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f635.png" onclick="document.publicar.publicacion.value+='&#x1F635'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f637.png" onclick="document.publicar.publicacion.value+='&#x1F637'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f638.png" onclick="document.publicar.publicacion.value+='&#x1F638'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/Expresiones/1f639.png" onclick="document.publicar.publicacion.value+='&#x1F639'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f63a.png" onclick="document.publicar.publicacion.value+='&#x1F63A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f63b.png" onclick="document.publicar.publicacion.value+='&#x1F63B'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f63c.png" onclick="document.publicar.publicacion.value+='&#x1F63C'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f63d.png" onclick="document.publicar.publicacion.value+='&#x1F63D'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f63e.png" onclick="document.publicar.publicacion.value+='&#x1F63E'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f63f.png" onclick="document.publicar.publicacion.value+='&#x1F63F'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f640.png" onclick="document.publicar.publicacion.value+='&#x1F640'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f645.png" onclick="document.publicar.publicacion.value+='&#x1F645'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f646.png" onclick="document.publicar.publicacion.value+='&#x1F646'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f647.png" onclick="document.publicar.publicacion.value+='&#x1F647'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f648.png" onclick="document.publicar.publicacion.value+='&#x1F648'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f649.png" onclick="document.publicar.publicacion.value+='&#x1F649'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/Expresiones/1f64a.png" onclick="document.publicar.publicacion.value+='&#x1F64A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f64b.png" onclick="document.publicar.publicacion.value+='&#x1F64B'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f64c.png" onclick="document.publicar.publicacion.value+='&#x1F64C'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f64d.png" onclick="document.publicar.publicacion.value+='&#x1F64D'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/Expresiones/1f64f.png" onclick="document.publicar.publicacion.value+='&#x1F64F'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                    </table>
+                    <table id="iconos" name="iconos">
+                        <tr>
+                            <td><img src="../img/emojis/iconos/2702.png" onclick="document.publicar.publicacion.value+='&#x2702'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2705.png" onclick="document.publicar.publicacion.value+='&#x2705'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2708.png" onclick="document.publicar.publicacion.value+='&#x2708'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2709.png" onclick="document.publicar.publicacion.value+='&#x2709'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/270b.png" onclick="document.publicar.publicacion.value+='&#x270B'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/270c.png" onclick="document.publicar.publicacion.value+='&#x270C'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/270f.png" onclick="document.publicar.publicacion.value+='&#x270F'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2714.png" onclick="document.publicar.publicacion.value+='&#x2714'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2716.png" onclick="document.publicar.publicacion.value+='&#x2716'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2728.png" onclick="document.publicar.publicacion.value+='&#x2728'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2733.png" onclick="document.publicar.publicacion.value+='&#x2733'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2734.png" onclick="document.publicar.publicacion.value+='&#x2734'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/2744.png" onclick="document.publicar.publicacion.value+='&#x2744'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/iconos/2747.png" onclick="document.publicar.publicacion.value+='&#x2747'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/iconos/274c.png" onclick="document.publicar.publicacion.value+='&#x274C'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="notificationFooter">
+                    <table>
+                        <tr>
+                            <td><img src="../img/emojis/expresiones.png" alt="expresiones" id="expresion" name="expresion" style="width: 25px; cursor: pointer"></td>
+                            <td>prueba</td>
+                            <td>prueba</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
             <?php
             if (sizeof($resas)== 0){
                 echo "<label style='margin-left: 30%'>Espera el sorteo para participar en el muro</label>";
