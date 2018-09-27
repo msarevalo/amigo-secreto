@@ -100,6 +100,7 @@ $(document).ready(function(){
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'none');
         $('#comidas').css('display', 'none');
+        $('#deportes').css('display', 'none');
     });
 });
 
@@ -111,6 +112,7 @@ $(document).ready(function(){
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'none');
         $('#comidas').css('display', 'none');
+        $('#deportes').css('display', 'none');
     });
 });
 
@@ -122,6 +124,7 @@ $(document).ready(function(){
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'none');
         $('#comidas').css('display', 'none');
+        $('#deportes').css('display', 'none');
     });
 });
 
@@ -133,6 +136,7 @@ $(document).ready(function(){
         $('#especiales').css('display', 'block');
         $('#natural').css('display', 'none');
         $('#comidas').css('display', 'none');
+        $('#deportes').css('display', 'none');
     });
 });
 
@@ -144,6 +148,7 @@ $(document).ready(function(){
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'block');
         $('#comidas').css('display', 'none');
+        $('#deportes').css('display', 'none');
     });
 });
 
@@ -155,5 +160,18 @@ $(document).ready(function(){
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'none');
         $('#comidas').css('display', 'block');
+        $('#deportes').css('display', 'none');
+    });
+});
+
+$(document).ready(function(){
+    $('#deporte').click(function(){
+        $('#expresiones').css('display', 'none');
+        $('#iconos').css('display', 'none');
+        $('#transportes').css('display', 'none');
+        $('#especiales').css('display', 'none');
+        $('#natural').css('display', 'none');
+        $('#comidas').css('display', 'none');
+        $('#deportes').css('display', 'block');
     });
 });

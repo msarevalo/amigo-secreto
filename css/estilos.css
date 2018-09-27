@@ -456,7 +456,7 @@ label.file:after {
 #notificationsBody
 {
     padding: 10px 10px 10px 10px !important;
-    min-height:200px;
+    min-height:auto;
 }
 
 #notificationFooter
