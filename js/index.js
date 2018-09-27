@@ -94,6 +94,7 @@ $(document).ready(function()
 
 $(document).ready(function(){
     $('#expresion').click(function(){
-        $('#expresiones').css('display', 'none');
+        $('#expresiones').css('display', 'block');
+        $('#iconos').css('display', 'none');
     });
 });
