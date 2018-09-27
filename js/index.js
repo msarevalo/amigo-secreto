@@ -99,6 +99,7 @@ $(document).ready(function(){
         $('#transportes').css('display', 'none');
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'none');
+        $('#comidas').css('display', 'none');
     });
 });
 
@@ -109,6 +110,7 @@ $(document).ready(function(){
         $('#transportes').css('display', 'none');
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'none');
+        $('#comidas').css('display', 'none');
     });
 });
 
@@ -119,6 +121,7 @@ $(document).ready(function(){
         $('#transportes').css('display', 'block');
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'none');
+        $('#comidas').css('display', 'none');
     });
 });
 
@@ -129,6 +132,7 @@ $(document).ready(function(){
         $('#transportes').css('display', 'none');
         $('#especiales').css('display', 'block');
         $('#natural').css('display', 'none');
+        $('#comidas').css('display', 'none');
     });
 });
 
@@ -139,5 +143,17 @@ $(document).ready(function(){
         $('#transportes').css('display', 'none');
         $('#especiales').css('display', 'none');
         $('#natural').css('display', 'block');
+        $('#comidas').css('display', 'none');
+    });
+});
+
+$(document).ready(function(){
+    $('#comida').click(function(){
+        $('#expresiones').css('display', 'none');
+        $('#iconos').css('display', 'none');
+        $('#transportes').css('display', 'none');
+        $('#especiales').css('display', 'none');
+        $('#natural').css('display', 'none');
+        $('#comidas').css('display', 'block');
     });
 });

@@ -357,6 +357,48 @@ $resas = mysqli_fetch_all($asignacion);
                             <td><img src="../img/emojis/natural/1f423.png" onclick="document.publicar.publicacion.value+='&#x1F423'" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/natural/1f424.png" onclick="document.publicar.publicacion.value+='&#x1F424'" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/natural/1f425.png" onclick="document.publicar.publicacion.value+='&#x1F425'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/natural/1f42e.png" onclick="document.publicar.publicacion.value+='&#x1F42E'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/natural/1f430.png" onclick="document.publicar.publicacion.value+='&#x1F430'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/natural/1f432.png" onclick="document.publicar.publicacion.value+='&#x1F432'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/natural/1f43d.png" onclick="document.publicar.publicacion.value+='&#x1F43D'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                    </table>
+                    <table id="comidas" name="comidas" style="display: none">
+                        <tr>
+                            <td><img src="../img/emojis/comidas/1f345.png" onclick="document.publicar.publicacion.value+='&#x1F345'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f346.png" onclick="document.publicar.publicacion.value+='&#x1F346'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f347.png" onclick="document.publicar.publicacion.value+='&#x1F347'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f349.png" onclick="document.publicar.publicacion.value+='&#x1F349'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f34a.png" onclick="document.publicar.publicacion.value+='&#x1F34A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f34c.png" onclick="document.publicar.publicacion.value+='&#x1F34C'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f34d.png" onclick="document.publicar.publicacion.value+='&#x1F34D'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f34e.png" onclick="document.publicar.publicacion.value+='&#x1F34E'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f34f.png" onclick="document.publicar.publicacion.value+='&#x1F34F'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f352.png" onclick="document.publicar.publicacion.value+='&#x1F352'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f354.png" onclick="document.publicar.publicacion.value+='&#x1F354'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f355.png" onclick="document.publicar.publicacion.value+='&#x1F355'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f356.png" onclick="document.publicar.publicacion.value+='&#x1F356'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/comidas/1f356.png" onclick="document.publicar.publicacion.value+='&#x1F356'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f357.png" onclick="document.publicar.publicacion.value+='&#x1F357'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f35f.png" onclick="document.publicar.publicacion.value+='&#x1F35F'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f366.png" onclick="document.publicar.publicacion.value+='&#x1F366'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f367.png" onclick="document.publicar.publicacion.value+='&#x1F367'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f369.png" onclick="document.publicar.publicacion.value+='&#x1F369'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f36a.png" onclick="document.publicar.publicacion.value+='&#x1F36A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f36b.png" onclick="document.publicar.publicacion.value+='&#x1F36B'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f36c.png" onclick="document.publicar.publicacion.value+='&#x1F36C'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f36d.png" onclick="document.publicar.publicacion.value+='&#x1F36D'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f370.png" onclick="document.publicar.publicacion.value+='&#x1F370'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f377.png" onclick="document.publicar.publicacion.value+='&#x1F377'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f378.png" onclick="document.publicar.publicacion.value+='&#x1F378'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f379.png" onclick="document.publicar.publicacion.value+='&#x1F379'" style="width: 25px; cursor: pointer"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/emojis/comidas/1f37a.png" onclick="document.publicar.publicacion.value+='&#x1F37A'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f37b.png" onclick="document.publicar.publicacion.value+='&#x1F37B'" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comidas/1f382.png" onclick="document.publicar.publicacion.value+='&#x1F382'" style="width: 25px; cursor: pointer"></td>
                         </tr>
                     </table>
                 </div>
@@ -364,6 +406,7 @@ $resas = mysqli_fetch_all($asignacion);
                     <table>
                         <tr>
                             <td><img src="../img/emojis/expresiones.png" alt="expresiones" id="expresion" name="expresion" style="width: 25px; cursor: pointer"></td>
+                            <td><img src="../img/emojis/comida.png" alt="comidas" id="comida" name="comida" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/natural.png" alt="natural" id="natu" name="natu" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/transporte.png" alt="transportes" id="transporte" name="transporte" style="width: 25px; cursor: pointer"></td>
                             <td><img src="../img/emojis/especiales.png" alt="especiales" id="especial" name="especial" style="width: 25px; cursor: pointer"></td>
