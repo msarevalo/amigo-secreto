@@ -472,7 +472,7 @@ $resas = mysqli_fetch_all($asignacion);
         </div>
     </div>
 </div>
-<div style="margin-left: 18%; margin-top: 10%">
+<div style="margin-left: 18%;">
     <div style="margin-top: 25px; margin-left: 17%; width: 650px; background-color: #f1f1f1">
         <?php
         $public =mysqli_query($con, "SELECT * FROM `regalos` ORDER BY `regalos`.`idPersonaje`");

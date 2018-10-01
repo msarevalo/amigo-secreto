@@ -14,7 +14,7 @@ $publicar = mysqli_query($con, "INSERT INTO `regalos` (`idPersonaje`, `regalo`) 
 
 if ($publicar){
     //header("Location: ../public/perfil.php");
-    echo "<script>alert('Se ha publicado tu regalo'); window.location.href='../public/perfil'</script>";
+    echo "<script>alert('Se ha publicado tu regalo'); window.location.href='../public/muro-regalos'</script>";
 }else{
-    echo "<script>alert('Algo pasó, intenta nuevamente'); window.location.href='../public/perfil'</script>";
+    echo "<script>alert('Algo pasó, intenta nuevamente'); window.location.href='../public/muro-regalos'</script>";
 }
