@@ -45,6 +45,14 @@ $resas = mysqli_fetch_all($asignacion);
 <header id='public'>Cambia como la gente ve a tu personaje</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
     <?php
+    $consulta = mysqli_query($con, "SELECT asignacion.personaje FROM asignacion WHERE asignacion.usuario = " . $_SESSION['id']);
+    $respuesta = mysqli_fetch_all($consulta);
+
+    $regalo = mysqli_query($con, "SELECT * FROM `regalos` WHERE `idPersonaje` = " . $respuesta[0][0]);
+    $resregalo = mysqli_fetch_all($regalo);
+
+    $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
+    $img = mysqli_fetch_all($personaje);
     if (sizeof($resas) != 0) {
         ?>
         <label class="file" title="" id="archi">
