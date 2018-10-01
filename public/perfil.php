@@ -41,7 +41,7 @@ $resas = mysqli_fetch_all($asignacion);
         </ul>
     </nav></div>
 
-<div id="texto1">
+<div id="texto">
 <header id='public'>Cambia como la gente ve a tu personaje</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
     <?php

@@ -17,6 +17,9 @@ include ('../back/conexion.php');
 if (!isset($_SESSION['username'])){
     header("Location: ../public/index.php");
 }
+
+$asignacion = mysqli_query($con, "SELECT * FROM `asignacion` ");
+$resas = mysqli_fetch_all($asignacion);
 ?>
 <body style="background-color: #f1f1f1; font-family: 'Cairo', sans-serif;">
 <header id="header" class="left show">
