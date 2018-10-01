@@ -45,15 +45,15 @@
           <entry key="css" value="754" />
           <entry key="htaccess" value="2" />
           <entry key="js" value="554" />
-          <entry key="php" value="20291" />
+          <entry key="php" value="20294" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="754" />
-          <entry key="HTML" value="50" />
+          <entry key="HTML" value="52" />
           <entry key="JavaScript" value="554" />
-          <entry key="PHP" value="20241" />
+          <entry key="PHP" value="20242" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -83,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6994">
-              <caret line="445" column="18" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="445" selection-end-column="18" />
+            <state relative-caret-position="262">
+              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -98,12 +98,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/muro-regalos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="470" column="10" selection-start-line="470" selection-start-column="10" selection-end-line="470" selection-end-column="10" />
+            <state relative-caret-position="392">
+              <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
@@ -325,12 +327,12 @@
       <workItem from="1537993715252" duration="12689000" />
       <workItem from="1538069931315" duration="9131000" />
       <workItem from="1538434274482" duration="1000" />
-      <workItem from="1538434285908" duration="568000" />
+      <workItem from="1538434285908" duration="658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167755000" />
+    <option name="totallyTimeSpent" value="167845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -680,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6994">
-          <caret line="445" column="18" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="445" selection-end-column="18" />
+        <state relative-caret-position="262">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -693,12 +695,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/muro-regalos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="470" column="10" selection-start-line="470" selection-start-column="10" selection-end-line="470" selection-end-column="10" />
+        <state relative-caret-position="392">
+          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />

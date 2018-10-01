@@ -57,7 +57,8 @@ $resas = mysqli_fetch_all($asignacion);
     <header id='public'>Edtia tu regalo</header>
     <form method=\"post\" action=\"../back/regaloedit.php\" id=\"publicar\">
         <textarea required maxlength=\"600\" rows=\"5\" cols=\"85\" placeholder=\"¿Quieres un viaje, un carro, una casa? ¡Escribe aquí qué es lo que quieres!\" id=\"edicion\" name=\"edicion\" onpaste=\"contarcaracteres();\" onkeyup=\"contarcaracteres2();\">" . $resregalo[0][2] . "</textarea><br>
-        <label id=\"res\" style=\"color: #bbbbbb; margin-left: 85%\">0 / 600</label><br>
+        <img src=\"../img/emoji.png\" style=\"width: 20px; margin-left: 79%; cursor: pointer\" id=\"notificationLink\">
+        <label id=\"res\" style=\"color: #bbbbbb;\">0 / 600</label><br>
         <button style=\"margin-left: 80%\" id=\"boton\">Guardar</button><br><br>
     </form>";
     }else{
@@ -65,7 +66,8 @@ $resas = mysqli_fetch_all($asignacion);
     <header id='public'>Cuéntale al mundo que quieres de regalo</header>
     <form method=\"post\" action=\"../back/regalo.php\" id=\"publicar\">
         <textarea required maxlength=\"600\" rows=\"5\" cols=\"85\" placeholder=\"¿Quieres un viaje, un carro, una casa? ¡Escribe aquí qué es lo que quieres!\" id=\"publicacion\" name=\"publicacion\" onpaste=\"contarcaracteres();\" onkeyup=\"contarcaracteres();\"></textarea><br>
-        <label id=\"res\" style=\"color: #bbbbbb; margin-left: 85%\">0 / 600</label><br>";
+        <img src=\"../img/emoji.png\" style=\"width: 20px; margin-left: 79%; cursor: pointer\" id=\"notificationLink\">
+        <label id=\"res\" style=\"color: #bbbbbb;\">0 / 600</label><br>";
         if (sizeof($resas) != 0) {
             echo "<button style=\"margin-left: 80%\" id=\"boton\">Publicar</button><br><br>";
         }else{
