@@ -56,7 +56,7 @@ $resas = mysqli_fetch_all($asignacion);
         echo "
     <header id='public'>Edtia tu regalo</header>
     <form method=\"post\" action=\"../back/regaloedit.php\" id=\"publicar\">
-        <textarea required maxlength=\"600\" rows=\"5\" cols=\"85\" placeholder=\"¿Quieres un viaje, un carro, una casa? ¡Escribe aquí qué es lo que quieres!\" id=\"edicion\" name=\"edicion\" onpaste=\"contarcaracteres();\" onkeyup=\"contarcaracteres2();\">" . $resregalo[0][2] . "</textarea><br>
+        <textarea required maxlength=\"600\" rows=\"5\" cols=\"85\" placeholder=\"¿Quieres un viaje, un carro, una casa? ¡Escribe aquí qué es lo que quieres!\" id=\"edicion\" name=\"publicacion\" onpaste=\"contarcaracteres();\" onkeyup=\"contarcaracteres2();\">" . $resregalo[0][2] . "</textarea><br>
         <img src=\"../img/emoji.png\" style=\"width: 20px; margin-left: 79%; cursor: pointer\" id=\"notificationLink\">
         <label id=\"res\" style=\"color: #bbbbbb;\">0 / 600</label><br>
         <button style=\"margin-left: 80%\" id=\"boton\">Guardar</button><br><br>

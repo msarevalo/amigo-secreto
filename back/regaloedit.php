@@ -3,8 +3,8 @@
 include ('conexion.php');
 
 
-if ($_POST['edicion']){
-    $public = $_POST['edicion'];
+if ($_POST['publicacion']){
+    $public = $_POST['publicacion'];
 }
 
 $consulta = mysqli_query($con, "SELECT asignacion.personaje FROM asignacion WHERE asignacion.usuario = " . $_SESSION['id']);
