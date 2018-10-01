@@ -40,41 +40,7 @@ $resas = mysqli_fetch_all($asignacion);
             <li><a href="../back/cerrar.php"><i class="fa fa-phone"></i>Salir<img src="../img/cerrar.png" style="width: 15px"></a></li>
         </ul>
     </nav></div>
-<div id="texto">
-    <?php
-    $consulta = mysqli_query($con, "SELECT asignacion.personaje FROM asignacion WHERE asignacion.usuario = " . $_SESSION['id']);
-    $respuesta = mysqli_fetch_all($consulta);
 
-    $regalo = mysqli_query($con, "SELECT * FROM `regalos` WHERE `idPersonaje` = " . $respuesta[0][0]);
-    $resregalo = mysqli_fetch_all($regalo);
-
-    $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
-    $img = mysqli_fetch_all($personaje);
-    //echo $img[0][1];
-
-    if ($resregalo){
-        echo "
-    <header id='public'>Edtia tu regalo</header>
-    <form method=\"post\" action=\"../back/regaloedit.php\" id=\"publicar\">
-        <textarea required maxlength=\"600\" rows=\"5\" cols=\"85\" placeholder=\"¿Quieres un viaje, un carro, una casa? ¡Escribe aquí qué es lo que quieres!\" id=\"edicion\" name=\"edicion\" onpaste=\"contarcaracteres();\" onkeyup=\"contarcaracteres2();\">" . $resregalo[0][2] . "</textarea><br>
-        <label id=\"res\" style=\"color: #bbbbbb; margin-left: 85%\">0 / 600</label><br>
-        <button style=\"margin-left: 80%\" id=\"boton\">Guardar</button><br><br>
-    </form>";
-    }else{
-        echo "
-    <header id='public'>Cuéntale al mundo que quieres de regalo</header>
-    <form method=\"post\" action=\"../back/regalo.php\" id=\"publicar\">
-        <textarea required maxlength=\"600\" rows=\"5\" cols=\"85\" placeholder=\"¿Quieres un viaje, un carro, una casa? ¡Escribe aquí qué es lo que quieres!\" id=\"publicacion\" name=\"publicacion\" onpaste=\"contarcaracteres();\" onkeyup=\"contarcaracteres();\"></textarea><br>
-        <label id=\"res\" style=\"color: #bbbbbb; margin-left: 85%\">0 / 600</label><br>";
-        if (sizeof($resas) != 0) {
-                echo "<button style=\"margin-left: 80%\" id=\"boton\">Publicar</button><br><br>";
-        }else{
-            echo "<label style='margin-left: 30%'>Espera el sorteo para escribir tu regalo</label>";
-        }
-    echo "</form>";
-    }
-    ?>
-</div>
 <div id="texto1">
 <header id='public'>Cambia como la gente ve a tu personaje</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
