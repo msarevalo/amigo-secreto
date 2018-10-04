@@ -476,7 +476,7 @@ $resas = mysqli_fetch_all($asignacion);
     <div style="margin-top: 25px; margin-left: 17%; width: 650px; background-color: #f1f1f1">
         <?php
 
-        $public =mysqli_query($con, "SELECT * FROM `regalos` WHERE `regalos`.`idPersonaje`<>44 ORDER BY `regalos`.`idPersonaje`");
+        $public =mysqli_query($con, "SELECT * FROM `regalos` ORDER BY `regalos`.`idPersonaje`");
         $respuesta = mysqli_fetch_all($public);
 
         //echo $_SESSION['id'];
