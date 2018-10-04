@@ -495,7 +495,7 @@ $resas = mysqli_fetch_all($asignacion);
 
         else $elMango[0][2]=$elMango[0][2]; // si no es mas largo de 80 caracteres, lo deja igual
 
-        echo "<td><label>" . $elMango[$i][2] . "</label></td>";
+        echo "<td><label>" . $elMango[0][2] . "</label></td>";
         echo "</tr></table><br></div>";
 
         $public =mysqli_query($con, "SELECT * FROM `regalos` WHERE `regalos`.`idPersonaje`<>45 ORDER BY `regalos`.`idPersonaje`");
