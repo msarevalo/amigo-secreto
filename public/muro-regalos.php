@@ -483,7 +483,7 @@ $resas = mysqli_fetch_all($asignacion);
         echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes'>";
 
 
-        echo $nomMan[0][0] . "</header><table><br><tr>";
+        echo $nomMan[0] . "</header><table><br><tr>";
 
         $manguito =mysqli_query($con, "SELECT personajes.ruta, personajes.imagen FROM personajes WHERE personajes.idPersonaje = " . $elMango[$i][1]);
         $imgMan = mysqli_fetch_all($manguito);
