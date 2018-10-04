@@ -477,7 +477,7 @@ $resas = mysqli_fetch_all($asignacion);
         <?php
         $mango =mysqli_query($con, "SELECT * FROM `regalos` WHERE `regalos`.`idPersonaje`=45");
         $elMango = mysqli_fetch_all($mango);
-        $nomMango =mysqli_query($con, "SELECT personajes.nombre FROM personajes WHERE personajes.idPersonaje = " . $respuesta[$i][1]);
+        $nomMango =mysqli_query($con, "SELECT personajes.nombre FROM personajes WHERE personajes.idPersonaje = " . $elMango[$i][1]);
         $nomMan = mysqli_fetch_all($nomMango);
 
         echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes'>";
