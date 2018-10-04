@@ -477,23 +477,23 @@ $resas = mysqli_fetch_all($asignacion);
         <?php
         $mango =mysqli_query($con, "SELECT * FROM `regalos` WHERE `regalos`.`idPersonaje`=45");
         $elMango = mysqli_fetch_all($mango);
-        $nomMango =mysqli_query($con, "SELECT personajes.nombre FROM personajes WHERE personajes.idPersonaje = " . $elMango[$i][1]);
+        $nomMango =mysqli_query($con, "SELECT personajes.nombre FROM personajes WHERE personajes.idPersonaje = " . $elMango[0][1]);
         $nomMan = mysqli_fetch_all($nomMango);
 
         echo "<div style='background-color: #ffffff; margin-bottom: 10px'><header id='mensajes'>";
 
 
-        echo $nomMan[0] . "</header><table><br><tr>";
+        echo $nomMan[0][0] . "</header><table><br><tr>";
 
-        $manguito =mysqli_query($con, "SELECT personajes.ruta, personajes.imagen FROM personajes WHERE personajes.idPersonaje = " . $elMango[$i][1]);
+        $manguito =mysqli_query($con, "SELECT personajes.ruta, personajes.imagen FROM personajes WHERE personajes.idPersonaje = " . $elMango[0][1]);
         $imgMan = mysqli_fetch_all($manguito);
         //echo $img[0][2] . "<br>";
         echo "<td><img src='http://52.15.245.23" . $imgMan[0][0] . $imgMan[0][1] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
         if(strlen($elMango[$i][2]) > 73) { // verifica si el texto tiene mas de 80 caracteres
 
-            $elMango[$i][2] = wordwrap($elMango[$i][2],73,"<br>",1); } // inserta el salto a los 80 car...
+            $elMango[0][2] = wordwrap($elMango[$i][2],73,"<br>",1); } // inserta el salto a los 80 car...
 
-        else $elMango[$i][2]=$elMango[$i][2]; // si no es mas largo de 80 caracteres, lo deja igual
+        else $elMango[0][2]=$elMango[0][2]; // si no es mas largo de 80 caracteres, lo deja igual
 
         echo "<td><label>" . $elMango[$i][2] . "</label></td>";
         echo "</tr></table><br></div>";
