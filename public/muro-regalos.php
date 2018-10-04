@@ -486,7 +486,7 @@ $resas = mysqli_fetch_all($asignacion);
         echo $nomMan[0][0] . "</header><table><br><tr>";
 
         $manguito =mysqli_query($con, "SELECT personajes.ruta, personajes.imagen FROM personajes WHERE personajes.idPersonaje = " . $elMango[$i][1]);
-        $imgMan = mysqli_fetch_all($personaje);
+        $imgMan = mysqli_fetch_all($manguito);
         //echo $img[0][2] . "<br>";
         echo "<td><img src='http://52.15.245.23" . $imgMan[0][0] . $imgMan[0][1] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
         if(strlen($elMango[$i][2]) > 73) { // verifica si el texto tiene mas de 80 caracteres
