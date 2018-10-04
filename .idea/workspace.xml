@@ -48,7 +48,7 @@
           <entry key="css" value="754" />
           <entry key="htaccess" value="2" />
           <entry key="js" value="554" />
-          <entry key="php" value="20432" />
+          <entry key="php" value="20435" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -56,7 +56,7 @@
           <entry key="CSS" value="754" />
           <entry key="HTML" value="52" />
           <entry key="JavaScript" value="554" />
-          <entry key="PHP" value="20380" />
+          <entry key="PHP" value="20383" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -95,12 +95,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/muro-regalos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="478" column="60" selection-start-line="478" selection-start-column="60" selection-end-line="478" selection-end-column="60" />
+            <state relative-caret-position="429">
+              <caret line="500" column="94" selection-start-line="500" selection-start-column="94" selection-end-line="500" selection-end-column="94" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
               </folding>
@@ -341,12 +343,12 @@
       <workItem from="1538436525208" duration="27000" />
       <workItem from="1538577790328" duration="723000" />
       <workItem from="1538579381436" duration="16000" />
-      <workItem from="1538686772868" duration="589000" />
+      <workItem from="1538686772868" duration="715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170191000" />
+    <option name="totallyTimeSpent" value="170317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -700,12 +702,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/muro-regalos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="478" column="60" selection-start-line="478" selection-start-column="60" selection-end-line="478" selection-end-column="60" />
+        <state relative-caret-position="429">
+          <caret line="500" column="94" selection-start-line="500" selection-start-column="94" selection-end-line="500" selection-end-column="94" />
           <folding>
             <element signature="n#style#0;n#label#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
           </folding>
