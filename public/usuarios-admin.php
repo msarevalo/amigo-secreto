@@ -83,8 +83,8 @@ if (!isset($_SESSION['username'])){
             $id_eliminar = $lconsulta['idUser'];
             echo "<td style='text-transform: capitalize'>" . $lconsulta[$i] . "</td>";
         }
-        echo "<td><a href='editar-usuario.php?id={$lconsulta[$contador]}'><img src='../img/edit.png' style='width: 35%'></a>
-                              <a onclick='alertaUsuario(" . $id_eliminar . ")'><img src='../img/delete.png' style='width: 25%; cursor: pointer'></a>
+        echo "<td><a href='editar-usuario.php?id={$lconsulta[$contador]}'><img src='../../generador-codigos/images/edit.png' style='width: 35%'></a>
+                              <a onclick='alertaUsuario(" . $id_eliminar . ")'><img src='../../generador-codigos/images/delete.png' style='width: 25%; cursor: pointer'></a>
                               <a onclick='alertaRestablecer(" . $id_eliminar . ")'><img src='../img/restablecer.png' style='width: 25%; cursor: pointer'></a></td>";
         $contador++;
     }

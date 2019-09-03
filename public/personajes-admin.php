@@ -89,8 +89,8 @@ if (!isset($_SESSION['username'])){
             }else{
                 echo "<td style='text-transform: capitalize'>Inactivo</td>";
             }
-            echo "<td><a href='editar-personaje.php?id={$lconsulta[$contador]}'><img src='../img/edit.png' style='width: 35%'></a>
-                              <a onclick='alertaPersonaje(" . $id_eliminar . ")'><img src='../img/delete.png' style='width: 25%; cursor: pointer'></a></td>";
+            echo "<td><a href='editar-personaje.php?id={$lconsulta[$contador]}'><img src='../../generador-codigos/images/edit.png' style='width: 35%'></a>
+                              <a onclick='alertaPersonaje(" . $id_eliminar . ")'><img src='../../generador-codigos/images/delete.png' style='width: 25%; cursor: pointer'></a></td>";
             $contador++;
         }
 
