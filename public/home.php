@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Celmedia | Amigo Secreto</title>
+    <title>LoyalQuo | Amigo Secreto</title>
     <meta charset="UTF-8">
     <!-- Estilos -->
     <link href="../css/estilos.css" rel="stylesheet">
@@ -18,8 +18,8 @@ if (!isset($_SESSION['username'])){
     header("Location: ../public/index.php");
 }
 
-$asignacion = mysqli_query($con, "SELECT * FROM `asignacion` ");
-$resas = mysqli_fetch_all($asignacion);
+//$asignacion = mysqli_query($con, "SELECT * FROM `asignacion` ");
+//$resas = mysqli_fetch_all($asignacion);
 
 ?>
 <body style="background-color: #f1f1f1; font-family: 'Cairo', sans-serif;">
@@ -445,16 +445,16 @@ $resas = mysqli_fetch_all($asignacion);
                 </div>
             </div>
             <?php
-            if (sizeof($resas)== 0){
-                echo "<label style='margin-left: 30%'>Espera el sorteo para participar en el muro</label>";
-            }else{
+            //if (sizeof($resas)== 0){
+                //echo "<label style='margin-left: 30%'>Espera el sorteo para participar en el muro</label>";
+            //}else{
               echo "
             <select style=\"margin-left: 46%\" id=\"persona\" name=\"persona\">
                 <option value=\"0\" selected>Anonimo</option>
-                <option value=\"1\">Publicar con mi personaje</option>
+                <option value=\"1\">Publicar con mi nombre</option>
             </select>
             <button id=\"boton\">Publicar Mensaje</button>";
-            }
+            //}
             ?>
             <br><br>
         </form>
@@ -467,20 +467,24 @@ $resas = mysqli_fetch_all($asignacion);
 
         //echo $_SESSION['id'];
         for ($i = 0; $i<sizeof($respuesta); $i++){
-            $nomPer =mysqli_query($con, "SELECT asignacion.personaje, personajes.nombre, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
+            $nomPer =mysqli_query($con, "SELECT * FROM `user` WHERE `idUser` = " . $respuesta[$i][2]);
             $nom = mysqli_fetch_all($nomPer);
+            $color = mysqli_query($con, "SELECT * FROM `personalizacion` WHERE `idUsuario`=" . $respuesta[$i][2]);
+            $col = mysqli_fetch_all($color);
+            //echo var_dump($col);
             echo "<div style='background-color: #ffffff; margin-bottom: 10px'>";
 
             if (sizeof($nom)==0){
                 echo "<header id='mensajes1'>Anonimo</header><table><tr><label id='date'>" . $respuesta[$i][1];
             }else{
-                if ($nom[0][2] === '#ffffff') {
-                    echo "<header id='mensajes' style='box-shadow: 0 0 1px #818181; background-color: " . $nom[0][2] . "'><label style='color: #222222'>" . $nom[0][1] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
+                //echo $col[0][2];
+                if ($col[0][2] === '#ffffff') {
+                    echo "<header id='mensajes' style='box-shadow: 0 0 1px #818181; background-color: " . $nom[0][2] . "'><label style='color: #222222'>" . $nom[0][3] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
                 }else{
-                    if ($nom[0][2] === '#f1f1f1'){
-                        echo "<header id='mensajes' style='box-shadow: 0 0 1px #818181; background-color: " . $nom[0][2] . "'><label style='color: #222222'>" . $nom[0][1] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
+                    if ($col[0][2] === '#f1f1f1'){
+                        echo "<header id='mensajes' style='box-shadow: 0 0 1px #818181; background-color: " . $nom[0][2] . "'><label style='color: #222222'>" . $nom[0][3] . "</label></header><table><tr><label id='date'>" . $respuesta[$i][1];
                     }else {
-                        echo "<header id='mensajes' style='background-color: " . $nom[0][2] . "'>" . $nom[0][1] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
+                        echo "<header id='mensajes' style='background-color: " . $col[0][2] . "'>" . $nom[0][3] . "</header><table><tr><label id='date'>" . $respuesta[$i][1];
                     }
                 }
             }
@@ -491,10 +495,10 @@ $resas = mysqli_fetch_all($asignacion);
             if ($respuesta[$i][2]==0){
                 echo "<td><img src='../img/anonimo.png' style='width: 100px; height: 100px; padding-left: 5px'></td>";
             }else{
-                $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
-                $img = mysqli_fetch_all($personaje);
+                //$personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $respuesta[$i][2]);
+                //$img = mysqli_fetch_all($personaje);
                 //echo $img[0][2] . "<br>";
-                echo "<td><img src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
+                //echo "<td><img src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "' style='width: 100px; height: 100px; padding-left: 5px'></td>";
             }
             if(strlen($respuesta[$i][3]) > 73) { // verifica si el texto tiene mas de 80 caracteres
 

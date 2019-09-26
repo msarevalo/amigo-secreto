@@ -2,8 +2,8 @@
 
 session_start();
 
-//$con = mysqli_connect("localhost", "celmedia","ninguna123.", "asecreto");
-$con = mysqli_connect("localhost", "root", "celmedia_2017", "asecreto");
+$con = mysqli_connect("localhost", "celmedia","ninguna123.", "asecreto");
+//$con = mysqli_connect("localhost", "root", "celmedia_2017", "asecreto");
 //$con = mysqli_connect("localhost", "celmedia", "ninguna123.", "asecreto");
 
 if (!$con){

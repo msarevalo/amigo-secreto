@@ -42,18 +42,19 @@ $resas = mysqli_fetch_all($asignacion);
     </nav></div>
 
 <div id="texto">
-<header id='public'>Cambia como la gente ve a tu personaje</header>
+<header id='public'>Cambia como te ve la gente</header>
 <form method="post" action="../back/fotoPefil.php" id="fotoperfil" enctype="multipart/form-data">
     <?php
-    $consulta = mysqli_query($con, "SELECT asignacion.personaje FROM asignacion WHERE asignacion.usuario = " . $_SESSION['id']);
+    /*$consulta = mysqli_query($con, "SELECT asignacion.personaje FROM asignacion WHERE asignacion.usuario = " . $_SESSION['id']);
     $respuesta = mysqli_fetch_all($consulta);
 
     $regalo = mysqli_query($con, "SELECT * FROM `regalos` WHERE `idPersonaje` = " . $respuesta[0][0]);
-    $resregalo = mysqli_fetch_all($regalo);
+    $resregalo = mysqli_fetch_all($regalo);*/
 
-    $personaje =mysqli_query($con, "SELECT asignacion.personaje, personajes.ruta, personajes.imagen, personajes.color FROM asignacion INNER JOIN personajes ON asignacion.personaje = personajes.idPersonaje AND asignacion.usuario = " . $_SESSION['id']);
+    $personaje =mysqli_query($con, "SELECT personalizacion.ruta, personalizacion.imagen, personalizacion.color FROM personalizacion WHERE personalizacion.idUsuario = " . $_SESSION['id']);
     $img = mysqli_fetch_all($personaje);
-    if (sizeof($resas) != 0) {
+    echo var_dump($img);
+    //if (sizeof($resas) != 0) {
         ?>
         <label class="file" title="" id="archi">
             <input id="fotografia" name="fotografia" type="file"
@@ -62,19 +63,22 @@ $resas = mysqli_fetch_all($asignacion);
         <?php
         //print_r($img);
         if ($img) {
-            echo "<img id='foto' src='http://52.15.245.23" . $img[0][1] . $img[0][2] . "'></img>";
+            //echo "<img id='foto' src='http://52.15.245.23" . $img[0][0] . $img[0][1] . "'></img>";
+            echo "<img id='foto' src='http://localhost:63342" . $img[0][0] . $img[0][1] . "'></img>";
         }
         ?>
         <br><label class="titulos" for="color" style="margin-left: 40%; padding-top: 10px">Elige tu color</label>
         <?php
-        if (sizeof($resas) != 0) {
-            echo "<input type='color' name='color' id='color' value='" . $img[0][3] . "'></input>
+        //echo $img[0][2];
+        //if (sizeof($resas) != 0) {
+            echo "<input type='color' name='color' id='color' value='" . $img[0][2] . "'></input>
     <br>
     <button style=\"margin-left: 80%\" id=\"boton\">Guardar</button><br><br>";
-    }
-    }else{
+
+    //}
+    /*}else{
         echo "<label style='margin-left: 30%'>Espera el sorteo para editar a tu personaje</label>";
-    }
+    }*/
     ?>
 </form>
 

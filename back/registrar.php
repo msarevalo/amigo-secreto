@@ -26,6 +26,11 @@ if ($pass == $rpass){
     $encrip = password_hash($pass, PASSWORD_BCRYPT);
     $consulta = mysqli_query($con, "INSERT INTO `user` (`correo`, `pass`, `nombre`, `genero`) VALUES ('" . $correo . "', '" . $encrip . "', '" . $nombre . "', '" . $genero . "')");
 
+    $usuario = mysqli_query($con, "SELECT * FROM `user` WHERE `user`.`correo` LIKE '" . $correo . "'");
+    $user = mysqli_fetch_array($usuario);
+
+    echo var_dump($user);
+    $personalizacion = mysqli_query($con, "INSERT INTO `personalizacion` (`idUsuario`, `color`, `ruta`, `imagen`) VALUES  ('" . $user[0] . "', '#3BBFAD', '/amigo-secreto/img/', 'LoyalQuo.jpg')");
 
     $to = $correo;
     $subject = "Registro a Amormania";
